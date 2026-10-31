@@ -1,0 +1,20 @@
+
+== 4 wet t/week (208 t/yr), 3 container bays ==
+  base     capex $48,420 | tip $12,480 heat $2,262 compost $1,248 opex $6,039 | net $9,951/yr | payback 4.9 yr | ROI 21%
+  downside capex $93,061 | tip $6,240 heat $543 compost $0 opex $8,371 | net $-1,588/yr | payback inf yr | ROI -2%
+
+== 8 wet t/week (416 t/yr), 6 container bays ==
+  base     capex $65,406 | tip $24,960 heat $4,523 compost $2,496 opex $8,178 | net $23,801/yr | payback 2.7 yr | ROI 36%
+  downside capex $123,681 | tip $12,480 heat $1,085 compost $0 opex $11,342 | net $2,223/yr | payback 55.6 yr | ROI 2%
+
+== 12 wet t/week (624 t/yr), 8 container bays ==
+  base     capex $76,890 | tip $37,440 heat $6,785 compost $3,744 opex $10,317 | net $37,652/yr | payback 2.0 yr | ROI 49%
+  downside capex $144,424 | tip $18,720 heat $1,628 compost $0 opex $14,313 | net $6,035/yr | payback 23.9 yr | ROI 4%
+
+== 16 wet t/week (832 t/yr), 11 container bays ==
+  base     capex $93,876 | tip $49,920 heat $9,046 compost $4,992 opex $12,456 | net $51,503/yr | payback 1.8 yr | ROI 55%
+  downside capex $175,044 | tip $24,960 heat $2,171 compost $0 opex $17,284 | net $9,847/yr | payback 17.8 yr | ROI 6%
+
+== 20 wet t/week (1040 t/yr), 13 container bays ==
+  base     capex $105,120 | tip $62,400 heat $11,308 compost $6,240 opex $14,595 | net $65,353/yr | payback 1.6 yr | ROI 62%
+  downside capex $195,293 | tip $31,200 heat $2,713 compost $0 opex $20,255 | net $13,658/yr | payback 14.3 yr | ROI 7%
