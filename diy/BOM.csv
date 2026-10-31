@@ -1,0 +1,27 @@
+item,qty,unit_price_low_usd,unit_price_high_usd,price_status,example_source,notes
+Used 20 ft shipping container (wind & water tight) as digester bay,3,1683,2142,sourced,https://used-shipping-containers.com/washington/spokane/20ft-standard-container-wind-water-tight/,"Spokane listing; $1683 WWT, $2142 cargo-worthy (https://used-shipping-containers.com/washington/spokane/20ft-standard-container-cargo-worthy/). Delivery extra. NOT gas-tight as delivered: needs liner + gasketed door (see BUILD.md)"
+New 275 gal IBC tote (percolate tank / pilot),2,200,412.50,sourced,https://baltimore-ibc-tanks.com/products/new/,"$200 Baltimore IBC; $412.50 Cary Co https://www.thecarycompany.com/275-gallon-ibc-tote-new-un-rated-2-inch-camlock-valve-composite-pallet"
+PVC biogas storage bag 10 m3,1,300,400,sourced (import FOB),https://www.tradewheel.com/p/portable-soft-10m3-pvc-domestic-biogas-564313/,"FOB China, freight/duty extra; Puxin 10 m3 also listed https://www.goldsupplier.com/provide/p124144967.html"
+1/2 HP cast-iron submersible pump (percolate recirculation),3,119.99,169.70,sourced,https://www.homedepot.com/p/K2-1-2-HP-Heavy-Duty-Cast-Iron-Sump-Pump-with-Tethered-Switch-SPI05003TPK/312243462,"Range from Home Depot listings; pump sits in liquid tank, motor not rated for hazardous location -> see SAFETY.md"
+Raspberry Pi 5 4GB,1,130,130,sourced,https://www.adafruit.com/product/5812,
+Sequent Microsystems 4-relay HAT (stackable; 2 needed for 6 outputs),2,60,60,sourced,https://sequentmicrosystems.com/products/four-relays-four-inputs-for-raspberry-pi,Relays drive contactor/solenoid coils only
+Waterproof DS18B20 temperature probe,4,9.95,19.95,sourced,https://www.adafruit.com/product/381,"$9.95 PVC; $19.95 3 m PTFE https://www.adafruit.com/product/3846"
+Atlas Scientific EZO-pH circuit,1,45.99,45.99,sourced,https://atlas-scientific.com/embedded-solutions/ezo-ph-circuit/,
+Atlas lab-grade pH probe ENV-40-pH,1,99.99,99.99,sourced,https://atlas-scientific.com/embedded-solutions/ezo-ph-circuit/,Listed on same page
+Atlas electrically isolated EZO carrier board,1,32.99,32.99,sourced,https://atlas-scientific.com/embedded-solutions/ezo-ph-circuit/,Listed on same page
+Winsen MH-440D/MH-441D NDIR CH4 sensor (2-pack),1,100,235,sourced,https://shop.winsen-sensor.com/collections/ndir-gas-sensors,"$100/2 pcs collection page; $235 product page https://shop.winsen-sensor.com/products/mh-440d-ndir-infrared-ch4-sensor-c3h8-sensor; 0-100%VOL range needed for biogas, 0-5%VOL for room air"
+H2S electrochemical module 0-2000 ppm,2,22.50,27.50,sourced (import),https://jxctgas.com/product/5533,One for biogas line (consumable cell) and one for room air
+Pressure transducer 0-15 psi 0.5-4.5 V,1,68,68,sourced,https://www.dataq.com/products/accessories/pressure-sensor/5vindex.html,Coarse for inches-WC gas pressure; a low-range sensor is better (price not verified)
+Adafruit ADS1115 16-bit ADC,2,14.95,14.95,sourced,https://www.adafruit.com/product/1085,
+Macurco GD-2B combustible gas detector with relay (independent hard-wired trip),1,136.22,240,sourced,https://www.surveillance-video.com/security-gd-2b.html,"$240 at https://www.dwyeromega.com/en-us/gd-2b-residential-fixed-combustible-gas-monitor/p/GD-2B-Series"
+Diaphragm gas meter G4,1,54.60,108,sourced,https://www.integritymetersolutions.com/shop/p/mtw-diaphragm-gas-meter,"$108 MTW G4; $54.60-77 at https://gasneeds.com/collections/gas-flow-meters; add pulse output"
+Iron sponge H2S media (per lb),100,0.31,0.40,sourced (bulk industry figure),https://www.scsengineers.com/wp-content/uploads/2019/03/RNG-Works-Presentation-RNG-H2S-Removal-Alternatives-09-10-18-SCS-Engineers.pdf,"Industry cost figure, not a retail page; get local quote"
+1 in flame arrestor (biogas),1,,,import listing only,https://www.indiamart.com/proddetail/biogas-flame-arrest-23739746491.html,"Listed at INR 9500 (India). Get a US-listed, certified unit quoted"
+2 in polyiso foam board 4x8 (R-13),60,32.40,61.88,sourced,https://www.dunnlumber.com/rmax-2-inches-r-13-1-thermosheath-3-foil-faced-closed-cell-polyisocyanurate-foam-insulation-4-x-8-panel-rmax2.html,"Upper bound https://www.mendwright.com/product/mule-hide-2-in-polyiso-insulation-board-4-ft-x-8-ft-sheet/; qty is estimate (~3 containers x ~20 sheets)"
+Open-top 55 gal plastic drum (pilot leach bed),4,95,105,sourced,https://www.uline.com/Product/Detail/S-9945BLU/Drums/Plastic-Drum-with-Lid-55-Gallon-Open-Top-Blue,Pilot rig only
+Biogas boiler/water heater + PEX floor/wall loops,1,,,not priced,,Needs biogas-rated burner; get quote
+Gas-tight liner / gasketed door kit for container,3,,,not priced,,"Critical unknown; get quote from liner fabricator"
+Water-seal pressure relief + condensate trap (DIY PVC),1,,,not priced,,
+Flare (enclosed or candlestick),1,,,not priced,,Get quote
+"Solenoid valves (NC to use, NO flare path), biogas rated",2,,,not priced,,
+Contactors / enclosure / mechanical high-limit thermostat,1,,,not priced,,Electrician to specify
