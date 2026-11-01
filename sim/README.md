@@ -19,11 +19,17 @@ sources or are labelled ASSUMPTION in each model's docstring. No numbers are inv
 | Process (DB id) | Model | Status |
 |---|---|---|
 | Digestion core (PO1-01, PO4-01) | `models/adm1_cstr.py`: BSM2 ADM1 benchmark, HRT sweep | baseline queued |
+| Small-flow modular membrane upgrading | `models/membrane_small.py`: 1 / 2R / 2RR layouts, compressor energy | run, not validated |
 | Membrane biogas upgrading (AIRLIQ-M01, EVONIK-M01) | `models/membrane_gp.py`: selectivity, pressure ratio and stage-cut sweep | baseline queued |
 | AnMBR (VEOLIA-M02, MICRODYN-M01) | QSDsan AnMBR | planned: needs sourced flux and fouling data (GAP-07) |
 | HTC process water + UF/RO (TORAY-M03, DUPONT-M01) | ADM1 on HTC process water | planned: needs a sourced feed COD split (GAP-04) |
 | NH3 contactor and struvite (PO4-01) | QSDsan/EXPOsan modules | planned |
 | Torrefaction condensate VFA (PO3-01) | none suitable yet | open |
+
+## Small-system focus (James, Oct 31, 2026)
+Priority is the DIY leach-bed (`../diy/`) and the $50k-100k small unit (`../small-unit/`): ~1-6 m3/h biogas.
+- **Deprioritized (large-plant only):** multi-stage industrial membrane upgrading packages (smallest found 30-60 Nm3/h), AnMBR plants (economic size 90+ m3/day) and leachate UF/RO (30+ m3/day). See [SMALL-MEMBRANES.md](SMALL-MEMBRANES.md).
+- `models/membrane_small.py` + `sweeps/membrane_small.json`: modular 1/2-stage layouts at small flows, purity/recovery and compressor energy (lower bound). Run, not validated.
 
 ## Running
     nice -n 19 /workspace/venv-ywsim/bin/python sim/run_sweep.py sim/sweeps/<name>.json

@@ -1,0 +1,4 @@
+{"model": "membrane_small",
+ "grid": {"t_per_week": [4, 12, 20], "layout": ["1", "2R", "2RR"],
+          "alpha": [20, 30, 40], "p_feed_bar": [4, 8, 16], "theta": [0.3, 0.4, 0.5]},
+ "note": "t/week: DIY 4 (diy/SPEC.md), small unit 12 base and 20 top (small-unit/results.txt). alpha 30 = EVONIK-M01 claim (unverified); 20/40, pressures and stage cuts are assumption sweeps (4-16 bar spans MDPI 11(12):938 0.4-1.6 MPa). Run, not validated."}
