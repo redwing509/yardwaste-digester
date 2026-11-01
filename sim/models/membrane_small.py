@@ -10,7 +10,7 @@ Wraps membrane_gp.run (single-stage well-mixed model) into stage layouts:
 SIZES (from this repo's specs, all [E] there, not measured):
   DIY leach-bed: ~17 m3 CH4/day at 4 wet t/week (diy/SPEC.md sec. 3)
   small unit: 17/4 m3 CH4/day per wet t/week (small-unit/econ.py), 12 t/wk base
-  biogas CH4 fraction 55% (diy simulator default, [E]) -> x_feed_CO2 0.45
+  biogas CH4 fraction 55% (diy test-fixture value, not a yield estimate, [E]) -> x_feed_CO2 0.45
 SOURCED: CH4 LHV 35.8 MJ/m3 (diy sizing constant). Sanity-check range for
 small membrane upgrading electricity 0.21-0.33 kWh/m3 raw biogas at 5 m3/h
 (MDPI Membranes 11(12):938, 2021); 0.26 kWh/Nm3 commercial 100-750 Nm3/h
@@ -31,6 +31,8 @@ CH4_PER_TPW = 17 / 4  # m3 CH4/day per wet t/week [E in spec]
 
 
 def comp_kwh_per_m3(p_feed_bar):
+    if p_feed_bar <= P_ATM:
+        raise ValueError('p_feed_bar must exceed atmospheric pressure')
     r = p_feed_bar / P_ATM
     n = max(1, ceil(log(r) / log(4)))
     rs = r ** (1 / n)
@@ -51,6 +53,14 @@ def _layout(layout, x, alpha, pr, theta):
 
 def run(t_per_week=4.0, layout='1', alpha=30.0, p_feed_bar=8.0, theta=0.35,
         ch4_frac=0.55):
+    if not (0 < theta < 1):
+        raise ValueError('theta (stage cut) must be in (0, 1)')
+    if not (0 < ch4_frac < 1):
+        raise ValueError('ch4_frac must be in (0, 1)')
+    if t_per_week <= 0 or alpha <= 1:
+        raise ValueError('t_per_week must be > 0 and alpha > 1')
+    if p_feed_bar <= P_ATM:
+        raise ValueError('p_feed_bar must exceed atmospheric pressure')
     x_feed = 1 - ch4_frac
     biogas = CH4_PER_TPW * t_per_week / ch4_frac  # m3/day raw biogas
     pr = P_ATM / p_feed_bar
