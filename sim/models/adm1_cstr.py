@@ -8,10 +8,13 @@ ASSUMPTION (labelled): sweeping Q (HRT) and temperature only; yard-waste
 feed fractionation is an open gap (GAP-02), so no grass/leaf feed is used.
 Check: benchmark steady-state S_ac = 89.3 mg COD/L (Rosen & Jeppsson
 2006, = exposan default_init_conds); compare the Q=170 run to it.
+Units: QSDsan ADM1 S_ch4 is measured as COD and S_IC as C, so imass*24
+gives kg COD/d and kg C/d (checked Oct 31, 2026).
 Output status: run, not validated.
 """
-import numpy as np, qsdsan as qs
+import numpy as np
 from exposan.adm import system as S
+
 
 def run(Q=170.0, T_C=35.0, t_days=200):
     S.Q = Q; S.Temp = 273.15 + T_C

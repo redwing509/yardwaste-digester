@@ -10,7 +10,7 @@ and is cited in the CSVs. **Nothing here is vendor-quoted or field-validated.**
 | membranes | 45 | [membranes.csv](membranes.csv) |
 | applications | 132 | [applications.csv](applications.csv) |
 | process options | 4 | [process_options.csv](process_options.csv) |
-| evidence rows | 252 | pricing/verification subset: [pricing_and_verification_evidence.csv](pricing_and_verification_evidence.csv) |
+| evidence rows | 252 (DB only) | 13-row pricing/verification subset exported: [pricing_and_verification_evidence.csv](pricing_and_verification_evidence.csv) |
 | open gaps | 10 | [gaps.csv](gaps.csv) |
 
 Each row has a `source_url` and a `verify` column.
@@ -22,7 +22,9 @@ Each row has a `source_url` and a `verify` column.
 | 2 | EVONIK-M01 SEPURAN Green | PO1-01 | **unverified**: official PDF gives no matching figure (RV-EVONIK-E01) |
 | 3 | VEOLIA-M02 ZeeWeed 500 AnMBR | PO4-01 wet AD + AnMBR + nutrient recovery | not re-checked |
 | 4 | MICRODYN-M01 BIO-CEL MBR | PO4-01 | not re-checked |
-| 5 | TORAY-M03 HFUG-2020AN UF | PO2-01 HTC + AD of process water + membranes | **unverified**: TORR-A01 has no matching source number (RV-TORR-E01) |
+| 5 | TORAY-M03 HFUG-2020AN UF | PO2-01 HTC + AD of process water + membranes | not re-checked |
+
+Separately, TORR-A01 (torrefaction condensate, belongs to PO3-01, not to the Toray pairing) is **unverified**: the official source has no matching number (RV-TORR-E01).
 
 Also: DUPONT-M01 FilmTec BW30-PRO-400 RO is **verified**: 99.6% rejection (RV-DUPONT-E01).
 
