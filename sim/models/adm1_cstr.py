@@ -6,8 +6,9 @@ of Rosen & Jeppsson (2006) as packaged and verified in exposan.adm
 (QSDsan, NCSA license). NOT yard-waste specific.
 ASSUMPTION (labelled): sweeping Q (HRT) and temperature only; yard-waste
 feed fractionation is an open gap (GAP-02), so no grass/leaf feed is used.
-Check: benchmark steady-state S_ac = 89.3 mg COD/L (Rosen & Jeppsson
-2006, = exposan default_init_conds); compare the Q=170 run to it.
+Check: benchmark steady-state S_ac = 197.63 mg COD/L (Rosen & Jeppsson
+2006, sec. 7 output table: 0.1976297 kg COD/m3). 89.3 mg COD/L is only
+exposan's default_init_conds start value, not the benchmark output.
 Units: QSDsan ADM1 S_ch4 is measured as COD and S_IC as C, so imass*24
 gives kg COD/d and kg C/d (checked Oct 31, 2026).
 Output status: run, not validated.
