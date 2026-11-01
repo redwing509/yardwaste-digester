@@ -21,7 +21,6 @@ Smallest commercial packaged membrane upgraders found [S]:
 - Evonik SEPURAN Green G5X: smallest is 4" (~105 mm x ~1,300 mm, ~22 kg, up to 20 barg); also 6", 6"L, 11" — https://products.evonik.com/assets/94/81/Sepuran_Green_Product_Specification_EN_Asset_4429481.pdf . No per-module Nm3/h published (GAP).
 - UBE CO2 Separator (polyimide): housing types down to CO-0302SES (1.7 kg, 24 barg) and CO-C07F (4.2 kg, 16 barg), "pilot" sizes — https://ube.es/products/biogas-upgrading-biomethane-co2-separator/ . Capacity per module not published on that page (GAP; ask UBE).
 - Mairui/Qingdao MCH-3032A polysulfone: vendor table shows 2-stage (1+4 modules), 16 barg, 83 Nm3/h feed, 97% CH4 / 97% recovery, 25% recycle — https://www.noveson.com/products/ultra.htm (vendor claim, unverified).
-- Grasys: 8" cartridges, plants 50-5,000 m3/h — not small.
 **Best lead for 1-6 m3/h: a single UBE small housing or one Evonik 4" module.** Need vendor capacity curves before sizing.
 
 ## Single- vs two-stage at low flow, and compressor penalty
