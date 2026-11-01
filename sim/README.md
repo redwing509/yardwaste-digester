@@ -28,3 +28,7 @@ sources or are labelled ASSUMPTION in each model's docstring. No numbers are inv
 ## Running
     nice -n 19 /workspace/venv-ywsim/bin/python sim/run_sweep.py sim/sweeps/<name>.json
 Each run appends one row to `results/log.csv` with the commit, the parameters, the outputs and the status.
+
+## Known issues (retro review, Oct 31, 2026)
+- ADM1 benchmark check is **not passing yet**. A local 200-day run at Q=170 (HRT 20 d) gave effluent S_ac of about 199 mg COD/L, while the benchmark steady state is 89.3 mg COD/L (Rosen & Jeppsson 2006). Shorter runs gave other values. Don't use ADM1 outputs until this is explained (possibly a different influent from BSM2 or not at steady state). Status: run, not validated.
+- The membrane model is single-stage and binary, and it raises an error if the requested stage cut isn't reached.

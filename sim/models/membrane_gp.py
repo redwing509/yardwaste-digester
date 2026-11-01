@@ -1,7 +1,7 @@
 """Single-stage complete-mixing CO2/CH4 gas permeation (solution-diffusion,
 Weller-Steiner well-mixed model, binary).
 
-SOURCED (from ../membranes CSVs): feed CH4 70.5% (ANMBR-A02, unverified
+SOURCED (from ../membranes CSVs): feed CH4 70.5% (ANMBR-A02, verified
 row); CO2/CH4 selectivity >30 (EVONIK-M01 vendor claim, UNVERIFIED by r11
 re-check). Verification target: Air Liquide multi-stage claim >98% CH4
 recovery, 96.5-99% CH4 (RV-AIRLIQ-E01, verified) - a single stage is NOT
@@ -11,6 +11,7 @@ pressure drop, pressure ratio and stage cut swept.
 Output status: run, not validated.
 """
 from math import sqrt
+
 
 def _y(x, a, r):
     # permeate CO2 fraction y for retentate CO2 fraction x (complete mixing)
@@ -27,7 +28,11 @@ def run(x_feed_CO2=0.295, alpha=30.0, pr=0.1, theta=0.35):
         th = (x_feed_CO2 - x) / (y - x)
         lo, hi = (x, hi) if th > theta else (lo, x)
     ch4_ret = 1 - x
+    th_ach = (x_feed_CO2 - x) / (y - x)
+    if abs(th_ach - theta) > 1e-4:
+        raise ValueError(f'stage cut {theta} not reached (got {th_ach:.4f})')
     rec = (1 - theta) * ch4_ret / (1 - x_feed_CO2)
     return {'retentate_CH4_pct': round(100 * ch4_ret, 2),
             'CH4_recovery_pct': round(100 * rec, 2),
-            'permeate_CO2_pct': round(100 * y, 2)}
+            'permeate_CO2_pct': round(100 * y, 2),
+            'stage_cut_achieved': round(th_ach, 4)}
