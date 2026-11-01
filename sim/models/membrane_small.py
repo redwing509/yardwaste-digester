@@ -11,7 +11,7 @@ SIZES (from this repo's specs, all [E] there, not measured):
   DIY leach-bed: ~17 m3 CH4/day at 4 wet t/week (diy/SPEC.md sec. 3)
   small unit: 17/4 m3 CH4/day per wet t/week (small-unit/econ.py), 12 t/wk base
   biogas CH4 fraction 55% (diy test-fixture value, not a yield estimate, [E]) -> x_feed_CO2 0.45
-SOURCED: CH4 LHV 35.8 MJ/m3 (diy sizing constant). Sanity-check range for
+ASSUMPTION: CH4 LHV 35.8 MJ/m3 (diy sizing constant, no external source). Sanity-check range for
 small membrane upgrading electricity 0.21-0.33 kWh/m3 raw biogas at 5 m3/h
 (MDPI Membranes 11(12):938, 2021); 0.26 kWh/Nm3 commercial 100-750 Nm3/h
 (Bright PurePac Compact page).
@@ -26,7 +26,7 @@ from math import ceil, log
 from membrane_gp import run as stage
 
 R, T1, K, ETA, P_ATM, VM = 8.314, 298.0, 1.3, 0.65, 1.013, 22.414e-3
-LHV = 35.8  # MJ/m3 CH4
+LHV = 35.8  # MJ/m3 CH4 -- ASSUMPTION (diy sizing constant)
 CH4_PER_TPW = 17 / 4  # m3 CH4/day per wet t/week [E in spec]
 
 
