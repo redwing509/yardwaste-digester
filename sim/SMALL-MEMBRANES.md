@@ -30,9 +30,10 @@ Smallest commercial packaged membrane upgraders found [S]:
 
 ## Model sweep (sim/models/membrane_small.py, sweeps/membrane_small.json) — run, not validated
 243 runs: flows 4/12/20 t/wk x layouts 1 / 2R (retentate in series) / 2RR (2R + stage-2 permeate recycle) x alpha 20/30/40 x 4/8/16 bar x stage cut 0.3-0.5.
-- Single stage: never reached 96% CH4 (best 74.8% at alpha 40, 16 bar). Fine for **boiler/CHP-grade gas enrichment**, not grid/vehicle.
-- 2R: 4/27 combos >=96% (12 t/wk), but recovery only ~43-63%.
-- 2RR: 6/27 >=96%; best 96.8% CH4 at 83.3% recovery (alpha 40, 16 bar, cut 0.4); compressor ~0.78 kW at 3.9 m3/h.
+- Figures below are for 12 t/wk (purity/recovery do not depend on flow in this model).
+- Single stage: never reached 96% CH4 (max 87.6% at alpha 40, 16 bar, cut 0.5, recovery 79.7%). Fine for **boiler/CHP-grade gas enrichment**, not grid/vehicle.
+- 2R: 4/27 combos >=96% (max 97.9%), recovery only ~44-63%.
+- 2RR: 6/27 >=96% (max 98.6% at 59.7% recovery); best recovery 96.8% CH4 at 83.3% recovery (alpha 40, 16 bar, cut 0.4); compressor ~0.78 kW at 3.9 m3/h.
 - Model compressor energy 0.08-0.20 kWh/m3 raw biogas is **below** the sourced 0.21-0.33 because it omits pretreatment, drying, cooling and real small-compressor losses — treat as a lower bound.
 - Membrane area/module count not computed (no sourced permeance) — GAP.
 
