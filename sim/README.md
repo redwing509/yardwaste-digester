@@ -30,5 +30,5 @@ sources or are labelled ASSUMPTION in each model's docstring. No numbers are inv
 Each run appends one row to `results/log.csv` with the commit, the parameters, the outputs and the status.
 
 ## Known issues (retro review, Oct 31, 2026)
-- ADM1 benchmark check is **not passing yet**. A local 200-day run at Q=170 (HRT 20 d) gave effluent S_ac of about 199 mg COD/L, while the benchmark steady state is 89.3 mg COD/L (Rosen & Jeppsson 2006). Shorter runs gave other values. Don't use ADM1 outputs until this is explained (possibly a different influent from BSM2 or not at steady state). Status: run, not validated.
+- ADM1 benchmark check (issue #3): a local 200-day run at Q=170 (HRT 20 d, 35 C) gave effluent S_ac of about 199 mg COD/L. The BSM2 ADM1 steady-state output is S_ac = 197.63 mg COD/L (Rosen & Jeppsson 2006, sec. 7, https://iwa-mia.org/wp-content/uploads/2019/04/bmadm1_report061127.pdf), about 0.7% apart. The earlier 89.3 figure was exposan's `default_init_conds` start value, mislabelled as the benchmark. Other states not yet compared, and shorter runs had not reached steady state. Status: run, not validated.
 - The membrane model is single-stage and binary, and it raises an error if the requested stage cut isn't reached.
