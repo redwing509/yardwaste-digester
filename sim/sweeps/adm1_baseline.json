@@ -1,0 +1,2 @@
+{"model": "adm1_cstr", "grid": {"Q": [170, 113.3, 85], "T_C": [35]},
+ "note": "Q=170 is the sourced benchmark (HRT 20 d); 113.3/85 m3/d = HRT 30/40 d (assumption sweep)"}
