@@ -1,0 +1,16 @@
+# Version updates for actions pinned in .github/workflows.
+# This repo has no Python (or other package) manifest: the DIY controller is
+# stdlib, and the sim stack is an external environment. Do not add a package
+# ecosystem here unless a real manifest is added with it.
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      actions:
+        patterns:
+          - "*"
