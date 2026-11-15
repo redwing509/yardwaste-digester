@@ -1,6 +1,6 @@
 # France — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
 
-Status: DONE (checked). Prompt language: French. Hermes job 20261115-031529-digester-survey-04-france-yard-waste-ad (key dg-survey-04-france, rc 0, 3:15:32–3:17:12 AM America/Los_Angeles, 15 Nov 2026, about 100 seconds). The draft was thin and mixed up several sources, so this note keeps only what the checker opened and confirmed (checked 15 Nov 2026, about 6:20–7:00 AM America/Los_Angeles). Items that could not be confirmed are listed under "Not taken". No paywall bypass sites were used.
+Status: DONE (checked). Prompt language: French. Hermes job 20261115-031529-digester-survey-04-france-yard-waste-ad (key dg-survey-04-france, rc 0, 3:15:32–3:17:12 AM America/Los_Angeles, 15 Nov 2026, about 100 seconds). The draft was thin and mixed up several sources, so this note keeps only what the checker opened and confirmed (checked 15 Nov 2026, about 6:18–6:30 AM America/Los_Angeles). Items that could not be confirmed are listed under "Not taken". No paywall bypass sites were used.
 
 ## Summary
 
