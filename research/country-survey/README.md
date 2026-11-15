@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [03-japan.md](03-japan.md) | Checked 15 Nov 2026 | Japan: Kyoto City demonstration plant (yard waste with food waste and paper), FFPRI wet-milled wood AD pilot, PWRI grass clippings and steam-exploded oak chips with sewage sludge, low pruning-branch yields; municipal biogas (Maniwa) is food waste and night soil. Hermes draft was short and several citations were corrected or dropped. Simulators: none verified. |
