@@ -1,6 +1,6 @@
 # Russia / USSR — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
 
-Status: DONE (checked). Prompt language: Russian. Hermes job 20261115-152306-digester-survey-08-russia-ussr-yard-wast (key dg-survey-08-russia, rc 0, 3:23–3:30 PM America/Los_Angeles, 15 Nov 2026, about 6.6 minutes). The draft was thin: most of its source titles were real, but the authors, years, places and content attached to them were mostly wrong, one paper from Turkmenistan was presented as Russian work, one paper was listed twice under an invented author, and all six simulators were invented. This note keeps only what the checker opened and confirmed (checked 15 Nov 2026, about 6:12–6:45 PM America/Los_Angeles). Items that could not be confirmed are listed under "Not taken". No paywall bypass sites were used.
+Status: DONE (checked). Prompt language: Russian. Hermes job 20261115-152306-digester-survey-08-russia-ussr-yard-wast (key dg-survey-08-russia, rc 0, 3:23–3:30 PM America/Los_Angeles, 15 Nov 2026, about 6.6 minutes). The draft was thin: most of its source titles were real, but the authors, years, places and content attached to them were mostly wrong, one paper from Turkmenistan was presented as Russian work, one paper was listed twice under an invented author, and all six simulators were invented. This note keeps only what the checker opened and confirmed (checked 15 Nov 2026, about 6:12–6:22 PM America/Los_Angeles). Items that could not be confirmed are listed under "Not taken". No paywall bypass sites were used.
 
 ## Summary
 
