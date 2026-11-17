@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [29-argentina.md](29-argentina.md) | Checked 16 Nov 2026 | Argentina: green waste is composted or dumped, not digested. INTI 2021 guide: not suitable as sole digester feed, can join a mix (medium/fine fractions); INTA Esquel lab results not published. CEAMSE Norte III composts 800 t/month of pruning/green waste (~260 t compost). No Argentine yard-waste digester, BMP result or released simulator found. Researched directly (no Hermes). |
