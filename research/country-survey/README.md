@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [37-ireland.md](37-ireland.md) | Checked 16 Nov 2026 | Ireland: AD already takes most biowaste (EPA 2024: 316,000 t AD vs 232,000 t compost of 548,000 t); garden and park waste accepted 56,258 t in 2024, AD share not found. Research focus is agricultural grass silage: UCC 2012 BMP 350–493 L CH4/kg VS by method, pilot CSTR 451 L/kg VS. No Irish yard-waste digester or simulator found. Researched directly (no Hermes). |
