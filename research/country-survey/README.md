@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [27-turkey.md](27-turkey.md) | Checked 16 Nov 2026 | Turkey: lab data but no full-scale yard-waste digester found. METU 2020: alkaline-pretreated yard waste up to 313 mL CH4/g VS (5 % TS); two-stage AD not workable. KSÜ 2025 (HBT): park grass 0.39–0.42 m³ CH4/kg ODM, 59–60 % CH4. Istanbul İSTAÇ digester (2021, 130 t/day) takes food waste. No Turkish simulator found. Researched directly (no Hermes). |
