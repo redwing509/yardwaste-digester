@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [35-portugal.md](35-portugal.md) | Checked 16 Nov 2026 | Portugal: green waste is composted; AD takes food biowaste. Valorsul ETVO 2024: 50,695 t received (40,610 t food, 10,085 t green), food via AD (9,984 MWh), green waste composted. LIPOR composts ~60,000 t/yr food + green waste, plant at its limit, new AD unit planned. Portuguese green-waste AD theses not openable (bot-check). No yard-waste digester or simulator found. Researched directly (no Hermes). |
