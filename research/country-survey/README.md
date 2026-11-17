@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [45-bulgaria.md](45-bulgaria.md) | Checked 16 Nov 2026 | Bulgaria: Sofia Han Bogrov biological plant (44,000 t/yr, in use since Dec 2013) runs two lines: food waste (20,000 t design) through wet pretreatment and AD with CHP; green waste (24,000 t design) shredded and windrow-composted. No Bulgarian yard-waste digester, BMP or simulator found. Researched directly (no Hermes). |
