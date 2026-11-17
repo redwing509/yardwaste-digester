@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [33-thailand.md](33-thailand.md) | Checked 16 Nov 2026 | Thailand: lab leaf AD only. RMUTL leaf/petiole BMP ~25% of theoretical (2012); leaves + food waste in two reactors 104 L methane vs 14 L for food waste alone (2019); VRU leaves + cow manure 4,183 mL methane at 64.61% (2021). Bangkok On Nut organics-sorting biogas project (≥300 t/day, 65% in FY2566); garden-waste share not found. No Thai yard-waste digester or released simulator found. Researched directly (no Hermes). |
