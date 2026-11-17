@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [31-taiwan.md](31-taiwan.md) | Checked 16 Nov 2026 | Taiwan: prunings are chipped/composted (Yilan EPA); digesters take food waste only (Taichung Waipu: 110 t/day raw kitchen waste, ~10,000 kWh/day). ITRI dry AD (~100 m³ biogas/t) started testing orchid-park leaf/stem waste; results not found. NTU 2017: bamboo powder 126 mL CH4/g VS. No Taiwanese yard-waste digester or simulator found. Researched directly (no Hermes). |
