@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [32-indonesia.md](32-indonesia.md) | Checked 16 Nov 2026 | Indonesia: park and tree-trimming waste is composted. Surabaya runs 27 compost houses (95.17 t/day, mostly trimmings and market waste); Bratang gasifies dry branches; Jakarta Bantar Gebang composts ~200 t/day market waste. Only lab AD: UGM 2018 leaf + cow manure batches (best 7.38 L, 60:40). No Indonesian yard-waste digester or simulator found. Researched directly (no Hermes). |
