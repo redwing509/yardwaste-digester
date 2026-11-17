@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [40-ukraine.md](40-ukraine.md) | Checked 16 Nov 2026 | Ukraine: Kyiv (120,000 t/yr of fallen leaves, 2019) discussed a pilot leaf-to-biogas plant with Metener, then in 2021 sent leaves to vermicomposting instead; build status of the biogas plant not found. Lab (2020): fallen leaves at 45 °C, 25 days, 350 L biogas/kg dry matter, up to 65% CH4. No Ukrainian yard-waste digester or simulator found. Researched directly (no Hermes). |
