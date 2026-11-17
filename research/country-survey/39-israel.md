@@ -1,6 +1,6 @@
 # Israel — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
 
-Status: DONE (checked). Researched directly by Grok Bot, no Hermes (James t1114u/t1115u, 16 Nov 2026, about 9:16–9:18 PM America/Los_Angeles). Prompt language: English (COUNTRY_LIST: English is the main engineering-publication language). Israel only. Two passes (James t1084u): Pass 1 = sources opened; Pass 2 = findings below, each with a quote copied from the opened source and its link. Anything not found in an opened source is marked NOT FOUND.
+Status: DONE (checked). Researched directly by Grok Bot, no Hermes (James t1114u/t1115u, 16 Nov 2026, about 9:16 PM America/Los_Angeles). Prompt language: English (COUNTRY_LIST: English is the main engineering-publication language). Israel only. Two passes (James t1084u): Pass 1 = sources opened; Pass 2 = findings below, each with a quote copied from the opened source and its link. Anything not found in an opened source is marked NOT FOUND.
 
 ## Summary
 
