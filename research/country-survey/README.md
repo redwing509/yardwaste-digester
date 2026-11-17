@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [30-south-africa.md](30-south-africa.md) | Checked 16 Nov 2026 | South Africa: no yard-waste digester. UJ 2016 Robinson Deep feasibility: garden waste ~168 t/day (34 % of organics, est. 41 % of energy) but left out of the pilot design; the 50 t/day pilot broke ground Sept 2026. Gauteng plans garden-waste chipping/composting. UJ 2016 lawn-grass thesis: NaOH raised total CH4 813→1,204 NmL per batch. No released simulator found. Researched directly (no Hermes). |
