@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [46-egypt.md](46-egypt.md) | Checked 16 Nov 2026 | Egypt (thin; most leads blocked): national biogas push (Aug 2025) targets crop residues and animal waste via farm biogas units; garden or pruning waste not mentioned. No Egyptian yard-waste digester, BMP or simulator found. Researched directly (no Hermes). |
