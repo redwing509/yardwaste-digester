@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [38-new-zealand.md](38-new-zealand.md) | Checked 16 Nov 2026 | New Zealand: Ecogas Reporoa digests 75,000 t/yr of food waste. Christchurch contract (Ecogas, consented Aug 2025, start early 2027) covers kerbside and garden organics with AD plus biomass processing; garden-organics route not found. Massey 2012: leached shredded green waste 0.23 vs grass 0.534 m3 biogas/kg COD (tannins suspected). No released NZ simulator found. Researched directly (no Hermes). |
