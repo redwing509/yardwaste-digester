@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [44-serbia.md](44-serbia.md) | Checked 16 Nov 2026 | Serbia: Belgrade park waste (JKP Zelenilo, ~3,000 ha, ~8,000 m3/yr leaves) is composted and large branches heat greenhouses; not digested. Serbia has 44 biogas plants (~44 MW, 2025); none found taking yard waste. Only AD number: a 2023 review literature value of 369 m3 CH4/t organic dry matter for green waste. No simulator found. Researched directly (no Hermes). |
