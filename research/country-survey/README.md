@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [23-norway.md](23-norway.md) | Checked 16 Nov 2026 | Norway: garden/park waste is composted, not digested. SSB table 12359: 103 thousand t of park and garden waste treated biologically in 2024, all by composting (0 t to biogas 2018–2023). Food-waste digesters (Romerike, Mjøsanlegget, IVAR, Ecopro) use garden waste only in compost/soil products. A UK yield (642 m3/t VS) that Hermes presented as Norwegian was removed. No Norwegian yard-waste digester or simulator found. |
