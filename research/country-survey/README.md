@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [36-greece.md](36-greece.md) | Checked 16 Nov 2026 | Greece: green waste is composted, mainly at the Ano Liosia EMA (design 40,000 t/yr prunings + 60,000 t/yr source-separated organics; 2021 "Green Factory" upgrade). Patras/NTUA 2020: NaOH-pretreated grass lawn BMP 427.07 L CH4/kg VS (+25.7% vs untreated), net heat positive only at 20% loading or lower NaOH. No Greek yard-waste digester or simulator found. Researched directly (no Hermes). |
