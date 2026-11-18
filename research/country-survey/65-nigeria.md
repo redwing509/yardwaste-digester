@@ -1,0 +1,47 @@
+# Nigeria — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
+
+Status: DONE (checked). Prompt language: English. Nigeria only. Hermes job 20261117-212310-digester-survey-65-nigeria-yard-waste-ad (key dg-survey-65-nigeria, rc 0, 9:23–10:42 PM America/Los_Angeles, 17 Nov 2026, about 79 minutes; status DONE). Report in English; the draft was complete (Pass 1 S1–S19 + Pass 2 sections 1–13, one "End of report"). Checked 18 Nov 2026 against open copies only.
+
+## Summary
+
+Nigeria has no anaerobic digester for yard, park or garden waste. Federal regulations define "Leaf and yard waste" but say nothing about digesting it, and NESREA's 2025 draft assessment counts Abuja's recoverable "Garden/park" waste as 0 t/d while calling for 900 t/day of organic-waste treatment (composting, biogas, black-soldier flies). Lagos is where organic-waste plants are being built, and they take market and food waste: the Ikosi Fruit Market digester in Ketu (C40 tender July 2024, launched February 2026, starting at 2 t/day or more and planned to grow to at least 12 t/day) and a 200 t/day black-soldier-fly plant. Green landscape waste is composted privately (Waste2Table, Ikorodu). Nigerian lab work on woody or grassy feedstock uses sawmill wood chips and sawdust, pretreated sawdust, and grass co-digested with manure.
+
+## Verified findings
+
+- **Yard waste defined in federal law, no digestion rule** — National Environmental (Sanitation and Wastes Control) Regulations, 2009 (NESREA): "“Leaf and yard waste” means vegetative matter resulting from gardening horticulture, landscaping or land clearing operations, including materials such as tree and shrub trimmings, plant remains, grass clippings, leaves, trees and stumps …". The word "anaerobic" does not occur in the text. https://nesrea.gov.ng/wp-content/uploads/2025/05/Sanitation_and_Wastes_Control_Regulations-2009.pdf
+- **Abuja green waste counted as zero** — NESREA, "The Assessment Report of Gaps and Needs of Solid Waste Management in Nigeria" (full draft, file dated 15 Oct 2025, 101 pages), Table 3: "Kitchen/canteen 857", "Garden/park 0" (t/d); "Organic waste treatment facilities (e.g. composting, biogas, black-soldier flies, etc.) with a total capacity of 900 t/day are needed to recover the organic waste generated in Abuja"; it also recommends home composting because "more than 62% of household waste is organic". https://nesrea.gov.ng/wp-content/uploads/2025/10/Full-draft-Report-Solid-Waste-Management-Edited-15102025-Revised_compressed.pdf
+- **Ikosi Fruit Market digester, Ketu, Lagos (market waste, not yard waste)** — C40 RFP, 26 July 2024: the market generates "an average of 30 TPD of solid waste, of which about 90% is organic"; the plant will start by "initially diverting at least 2 TPD" and "expand to a capacity of at least 12 TPD"; Lagos disposes of "5,600 TPD of organic waste" and fewer than 200 TPD of collected waste reach processing plants. https://www.c40.org/wp-content/uploads/2024/07/20240726-RFP-Organic-waste-diversion-through-a-biogas-plant-at-Ikosi-Fruit-Market.pdf . Launch reported 9 Feb 2026 ("This facility will systematically collect the market's organic waste and feed it into an anaerobic digester"; FCDO-funded). https://www.environewsnigeria.com/waste-2-energy-lagos-launches-ikosi-market-anaerobic-digester/
+- **Lagos organic waste volume** — LAWMA MD (Punch, 22 Sep 2025): "nearly half of the 13,000 tonnes of waste generated daily in Lagos was organic … roughly 6,500 tonnes". https://punchng.com/lagos-produces-6500-tonnes-of-organic-waste-daily-lawma/ . Proganics' 200 t/day black-soldier-fly plant (Guardian Nigeria, 22 Sep 2025) is insect conversion, not AD. https://guardian.ng/news/nigeria/metro/lawma-launches-organic-waste-project-to-cut-methane-emissions-in-lagos/
+- **Lagos prunings, fate unknown** — LASPARK: "Total nos. of trees pruned till date: 35009. Total nos. of trees felled till date: 2704." The page does not say what happens to the material. https://moelagos.gov.ng/agencies/lagos-state-parks-and-garden-agency-laspark/
+- **Private green-waste composting, Ikorodu** — Waste2Table accepts "green landscape waste, market perishable waste, household food waste, … wood shavings, industrial green waste" for composting (company page; no tonnage). https://waste2table.com/composting/
+- **Lab methane from wood waste** — Molua et al., FUDMA J. Sci. 7(6) 209–213, 2023 (University of Delta, Agbor; College of Education, Warri): maximum "228.4 mL CH4/g VS added" at 35 °C. The material was "Wood chips and sawdust … collected from a local sawmill", so this is sawmill waste, not municipal tree trimmings. The substrate-to-inoculum ratio is given as 2:1 in the text but in a different form in Table 1. https://doi.org/10.33003/fjs-2023-0706-2118
+- **Grass co-digestion, Zaria** — Alfa, Adie, Iorhemen, Okafor, Ajayi, Danhunsi & Akali (ABU Zaria; Landmark University), Nigerian Journal of Technology 32(3) 478–484, 2013: cow dung + lemon grass, a 25-litre digester running for 30 days, "0.146m3 (0.100m3 after scrubbing)", 68.53 % methane (about 0.19 L of gas per litre of reactor per day, a normal rate). The DOI printed on the page (10.4314/njt.323.700) does not resolve. https://www.nijotech.com/index.php/nijotech/article/view/700 . Musa (ABU MSc, 2017): cow dung or chicken droppings with *Digitaria smutsii* grass, 0.0647–0.1188 m³ per digester. https://kubanni.abu.edu.ng/items/2d381e09-53de-468d-95c5-7dd549384846
+- **Mixed feed with leaves and grass, Kano** — Ahmad (Audu Bako College of Agriculture, Danbatta), AJER 7(1) 01–03, 2018: 120 kg feed (cow dung 40, kitchen waste 50, dry leaves 5, grass 25 kg) produced "0.7014kg of biogas" in 20 days. The paper gives the digester size as both 300 litres and 300 gallons. https://ajer.org/papers/Vol-7-issue-1/A07010103.pdf
+- **Design only** — Abowei, Akinwande & Akpa (Rivers State University), IJASRE 5(3) 96–109, 2019: a cow-dung and grass-clippings stirred-tank co-digester, about 10.0 m³ at 90 % conversion (MATLAB 7.1). No measured gas. https://doi.org/10.31695/IJASRE.2019.33112
+- **Sawdust pretreatment** — Olanipekun (Bells University of Technology, Ota) & Oladejo (LAUTECH), LAUTECH J. Civ. Environ. Stud. 9(1), 2022: oak sawdust with poultry dung, methane 65.05 % after biological pretreatment and 62.27 % after alkaline pretreatment. https://doi.org/10.36108/laujoces/2202.90.0110
+- **Foreign team, Nigerian data** — Dickson, Hastings & Smith (University of Aberdeen), Front. Sustain. 4, 2023: Abuja's organic municipal waste (7.1 × 10⁷ kg/yr) could give 3.6 × 10⁶ m³/yr of biogas, or 7.8 × 10³ MWh/yr of electricity ("8% of annual electricity requirement in Abuja"). This is a model of municipal organic waste, not yard waste. https://doi.org/10.3389/frsus.2023.1173474
+- **Policy** — National Energy Masterplan 2022 (ECN) endorses biogas digesters in general ("capable of sustaining household, industrial and institutional energy needs"). It has no yard-waste target, tariff or biomethane rule. https://energy.gov.ng/Energy_Policies_Plan/APPROVED_NEMP_2022.pdf
+
+## Simulators and modeling tools
+
+Simulators found: none added. MATLAB 7.1 was used for an authors' own co-digester design model (Abowei et al. 2019; commercial general software), and modified Gompertz kinetics were fitted in Excel or used for simulation (Musa 2017; Owamah 2019). These are kinetic models, not released tools. A "Not added from Digester 65 Nigeria" line is in the simulator candidates list. Nothing installed.
+
+## Not taken (unverified, contradicted or not yard waste)
+
+- The draft's claim that the Zaria result "0.146 m³ from 25 L in 30 days" is "physically implausible" is an arithmetic error (≈0.19 L/L·d, not 4.9). The result stands.
+- "Tree trimmings" as the tested substrate in Molua et al. 2023: the methods say sawmill wood chips and sawdust.
+- Food waste + maize husk (Owamah 2019, Delta State University, 28.92 L biogas/g VS as printed) is agricultural waste, not yard waste. Cow dung + elephant grass (Saleh & Sillah 2022, ABU Zaria, 30-litre digester) uses a cultivated energy grass.
+- The EarthCare/LAWMA Ikorodu compost plant (press article returned 403; search excerpt only) and the RMI Oko Oba biogas analysis (not opened) are not used.
+
+NOT FOUND: a Nigerian digester fed mainly with yard, park or garden waste; a Nigerian methane-potential test on lawn grass, leaves or prunings alone; dry AD, HTC, torrefaction or membrane upgrading for green waste; a biomethane or feed-in tariff rule (no naira amounts found); a released Nigerian digester simulator.
+
+## Hermes status
+
+The Hermes job ran on the we-research profile (DeepSeek-V4.1-Flash) with rc 0 and took about 79 minutes. The draft was complete with one "End of report". No source or DOI was invented, and every quote checked (63 scripted checks) was verbatim. The main faults were:
+- an arithmetic error that wrongly marked the Zaria result as implausible;
+- the wrong feedstock for the headline lab result (sawmill wood waste, reported as tree trimmings);
+- under-reading of opened documents (the Ikosi capacity in the C40 RFP, the NESREA report's length and its home-composting recommendation);
+- fields marked "not shown" that were printed: authors, affiliations, digester size and an available PDF;
+- one wrong affiliation (Bells University of Technology, reported as LAUTECH only);
+- one paraphrased title;
+- a printed DOI that does not resolve, not flagged.
