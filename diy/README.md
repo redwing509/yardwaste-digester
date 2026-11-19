@@ -1,7 +1,7 @@
 # DIY Yard-Waste Digester: Open Build Spec
 
 An open design for a farm-scale **batch dry (leach-bed) anaerobic digester** for grass silage + leaves,
-built from off-the-shelf parts, with Raspberry Pi control code (Python, MIT).
+built from off-the-shelf parts, with Raspberry Pi control code (Python, MIT). That control code is part of Compost Bench; the ADM1 benchmark harness lives in [`../compost-bench/`](../compost-bench/).
 
 > **DRAFT / NOT REVIEWED.** Biogas is flammable and H2S is lethal. Nothing here is a certified design.
 > A licensed engineer, an electrician familiar with hazardous locations, and your local permitting

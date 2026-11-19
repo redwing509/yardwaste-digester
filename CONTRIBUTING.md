@@ -1,6 +1,6 @@
 # Contributing to Yard-Waste Digester
 
-Contributions are welcome: feedstock data, gas-yield measurements, corrections to the economics, parts substitutions, build photos and notes, safety improvements, and control code.
+Contributions are welcome: feedstock data, gas-yield measurements, corrections to the economics, parts substitutions, build photos and notes, safety improvements, control code, and improvements to Compost Bench (`diy/src/digester/` and `compost-bench/`).
 
 Open an issue to discuss your contribution, or fork the repository and open a pull request targeting `main`. Include a clear description, why the change helps, and its sources or test evidence (measured data, logs, or a working build). Do not submit secrets, personal information, or material you don't have permission to share. Identify authorship and any third-party licenses.
 
