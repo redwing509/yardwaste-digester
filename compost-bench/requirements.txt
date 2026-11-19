@@ -1,0 +1,5 @@
+# Direct dependencies for the ADM1 S_ch4 benchmark runner.
+# Unit tests in tests/ do not require these packages.
+# The 200-day integration (launch-adm1-liquid-sch4-20261108.sh) does.
+numpy
+exposan>=1.5.3

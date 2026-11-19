@@ -1,0 +1,53 @@
+{
+  "stage_id": "adm1-liquid-sch4-benchmark-20261108",
+  "model": "adm1_sch4_benchmark",
+  "source_commit": "acb83b818a716f974c05665f897ff60713e5850e",
+  "model_sha256": "02248d12825c980cae635a88e06dd27029bf1fcd86ba8c22968f556f8857c11b",
+  "max_runs": 1,
+  "publish": false,
+  "default_output_dir": "results/adm1-liquid-sch4",
+  "citation": "Rosen & Jeppsson 2006, Aspects on ADM1 Implementation within the BSM2 Framework, section 7 steady-state output, state 9 Sch4 = 0.0550887764460 kg COD m-3. https://iwa-mia.org/wp-content/uploads/2019/04/bmadm1_report061127.pdf",
+  "point": {
+    "Q_m3_d": 170,
+    "T_C": 35,
+    "t_days": 200,
+    "method": "BDF",
+    "t_eval_step_d": 5,
+    "state_reset_hook": "reset_cache"
+  },
+  "benchmark": {
+    "variable": "S_ch4",
+    "phase": "liquid_effluent",
+    "published_value": "0.0550887764460",
+    "published_unit": "kg COD/m3",
+    "comparison_unit": "mg COD/L",
+    "unit_factor_mg_L_per_kg_m3": 1000,
+    "accessor": "effluent.iconc['S_ch4']",
+    "not_this_value": "gas-phase Sgas,ch4 = 1.6256072099814 kg COD/m3 is a different row and is not used"
+  },
+  "identity_echo": {
+    "role": "identity_echo_not_a_new_comparison",
+    "variable": "S_ac",
+    "published_value": "0.1976297169375",
+    "published_unit": "kg COD/m3",
+    "note": "Acetate was already compared. Recorded only so this integration can be recognized. baseline221 Q=170 stored S_ac_eff_mg_L 198.65."
+  },
+  "not_compared": [
+    "S_IC",
+    "pH",
+    "Sgas_ch4",
+    "Q=113.3",
+    "Q=85",
+    "membrane_gp",
+    "membrane_small",
+    "yard-waste feed"
+  ],
+  "notes": [
+    "One BSM2 benchmark state beyond acetate. Not a yard-waste or DIY 1-6 m3/h prediction.",
+    "Q=170 m3/d is the benchmark flow, not a small-unit design flow.",
+    "baseline221 already completed membrane and ADM1 rows in this repository. This stage does not rerun that sweep.",
+    "S_IC is deferred because the table is kmole C/m3 while exposan stores S_IC as carbon mass times C_mw. pH is deferred because this repo has no established pH read.",
+    "No pass/fail tolerance is declared. Status stays run, not validated.",
+    "The launcher does not git commit, push, open a PR, ssh, or publish."
+  ]
+}
