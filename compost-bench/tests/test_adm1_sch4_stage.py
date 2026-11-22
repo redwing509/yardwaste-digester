@@ -55,16 +55,34 @@ class PublishedValueTests(unittest.TestCase):
 
 class GuardTests(unittest.TestCase):
     def test_rejects_other_flows_before_importing_exposan(self):
-        self.assertNotIn("exposan", sys.modules)
-        with self.assertRaises(ValueError):
-            bench.run(Q=113, T_C=35, t_days=200)
-        with self.assertRaises(ValueError):
-            bench.run(Q=85, T_C=35, t_days=200)
-        with self.assertRaises(ValueError):
-            bench.run(Q=170, T_C=55, t_days=200)
-        with self.assertRaises(ValueError):
-            bench.run(Q=170, T_C=35, t_days=10)
-        self.assertNotIn("exposan", sys.modules)
+        """This check runs in a fresh interpreter so it does not depend on
+        whether another test already imported exposan (the old global
+        import-order assertion).
+        """
+        script = textwrap.dedent("""
+            import sys
+            sys.path.insert(0, sys.argv[1])
+            import adm1_sch4_benchmark as bench
+            assert "exposan" not in sys.modules
+            for kwargs in (
+                {"Q": 113, "T_C": 35, "t_days": 200},
+                {"Q": 85, "T_C": 35, "t_days": 200},
+                {"Q": 170, "T_C": 55, "t_days": 200},
+                {"Q": 170, "T_C": 35, "t_days": 10},
+            ):
+                try:
+                    bench.run(**kwargs)
+                except ValueError:
+                    pass
+                else:
+                    raise SystemExit("expected ValueError")
+            assert "exposan" not in sys.modules
+        """)
+        proc = subprocess.run(
+            [sys.executable, "-c", script, str(SRC)],
+            capture_output=True, text=True, check=False,
+        )
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
 
     def test_hrt_and_temperature_identity(self):
         bench.assert_benchmark_identity(20, "308.15")
@@ -379,12 +397,31 @@ class RunnerTests(unittest.TestCase):
         env = os.environ.copy()
         env["YWSIM_REQUIRE_RUNTIME"] = "1"
         env["YWSIM_PYTHON"] = "/nonexistent/compost-bench-runtime-python"
+        env.pop("YWSIM_ALLOW_INTEGRATION", None)
         proc = subprocess.run(
             [sys.executable, str(SRC / "run_once.py"), str(CONFIG)],
-            capture_output=True, text=True, env=env, check=False,
+            capture_output=True, text=True, env=env, check=False, timeout=15,
         )
         self.assertEqual(proc.returncode, 2)
         self.assertIn("/nonexistent/compost-bench-runtime-python", proc.stdout)
+        self.assertNotIn("exposan", proc.stderr)
+
+    def test_same_interpreter_cannot_start_200_day_run(self):
+        """If YWSIM_REQUIRE_RUNTIME=1 and YWSIM_PYTHON is this interpreter,
+        the unit-test process still must not start the 200-day integration.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            env = os.environ.copy()
+            env["YWSIM_REQUIRE_RUNTIME"] = "1"
+            env["YWSIM_PYTHON"] = sys.executable
+            env["YWSIM_RESULT_DIR"] = str(Path(tmp) / "out")
+            env.pop("YWSIM_ALLOW_INTEGRATION", None)
+            proc = subprocess.run(
+                [sys.executable, str(SRC / "run_once.py"), str(CONFIG)],
+                capture_output=True, text=True, env=env, check=False, timeout=15,
+            )
+        self.assertEqual(proc.returncode, 2)
+        self.assertIn("YWSIM_ALLOW_INTEGRATION", proc.stdout)
         self.assertNotIn("exposan", proc.stderr)
 
 

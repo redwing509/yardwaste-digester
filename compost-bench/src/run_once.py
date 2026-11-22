@@ -323,6 +323,7 @@ def execute(config_path, result_dir, *, model_run=None, apply_caps=True, cpu_id=
         atomic_write(record_path, json.dumps(record, indent=2, sort_keys=True) + "\n")
         try:
             if model_run is None:
+                assert_integration_allowed()
                 sys.path.insert(0, str(HERE))
                 from adm1_sch4_benchmark import run as model_run
             outputs = model_run(Q=params["Q_m3_d"], T_C=params["T_C"], t_days=params["t_days"])
@@ -406,9 +407,22 @@ def assert_runtime_python():
         )
 
 
+def assert_integration_allowed():
+    """Unit tests must never start the 200-day integration.
+
+    The public launcher sets YWSIM_ALLOW_INTEGRATION=1. The unit-test
+    process, and any subprocess it starts, leave that variable unset.
+    """
+    if os.environ.get("YWSIM_ALLOW_INTEGRATION") != "1":
+        raise ConfigError(
+            "refusing the 200-day integration unless YWSIM_ALLOW_INTEGRATION=1"
+        )
+
+
 def cli(argv):
     try:
         assert_runtime_python()
+        assert_integration_allowed()
         if len(argv) != 2:
             raise ConfigError("usage: run_once.py CONFIG.json")
         result_dir = os.environ.get("YWSIM_RESULT_DIR")
