@@ -305,14 +305,23 @@ class MappingTests(unittest.TestCase):
         self.assertAlmostEqual(m["CH4_kgCOD_d"], 900.0)
         self.assertEqual(m["T_C"], 35.0)
 
-    def test_parse_dynamic_output_uses_last_row(self):
-        lines = ["0.0;" + ";".join(str(i) for i in range(42)) + ";\n"]
-        lines.append("200.0;" + ";".join(str(100 + i) for i in range(42)) + ";\n")
+    def test_parse_dynamic_output_uses_state_at_t_days_not_last_row(self):
+        # jADM1 labels rows with the step start time. A one-line -dynamic
+        # run with step=200 writes label 0.0 (state at 200 d) then a
+        # continuation labelled 200.0 (state at 400 d). Score the first.
+        first = [float(i) for i in range(42)]
+        second = [100.0 + i for i in range(42)]
+        lines = [
+            "0.0;" + ";".join(str(v) for v in first) + ";\n",
+            "200.0;" + ";".join(str(v) for v in second) + ";\n",
+        ]
         parsed = parse_dynamic_output("".join(lines), 200.0)
         self.assertEqual(parsed["finish_d"], 200.0)
-        self.assertEqual(parsed["x"][0], 100.0)
-        self.assertEqual(parsed["x"][41], 141.0)
+        self.assertEqual(parsed["row_label"], 0.0)
+        self.assertEqual(parsed["x"][0], 0.0)
+        self.assertEqual(parsed["x"][41], 41.0)
         self.assertEqual(parsed["n_rows"], 2)
+        self.assertNotEqual(parsed["x"][0], 100.0)
 
 
 if __name__ == "__main__":

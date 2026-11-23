@@ -80,8 +80,8 @@ Q-05b third independent ADM1 check (jADM1_BSM) of the two Q-05 brewery
 methane FAILs plus the packaged BSM2 centre, and an IAPWS-IF97 steam-table
 check of both vapor-pressure formulas. The rule was frozen in
 `PRE-REGISTERED-BAND-Q05B.md` on 22 Nov 2026, 5:57 PM PST, before any
-jADM1_BSM integration of those points. Official result:
-`Q05B-RESULTS.md` (PASS, SIDES_WITH_QSDSAN). Steam table:
+jADM1_BSM integration of those points. Official r2 result (state at 200 d, re-extracted after r1 scored a 400 d
+continuation): `Q05B-RESULTS.md` (PASS, SIDES_WITH_QSDSAN). Steam table:
 `STEAM-TABLE-Q05B.md` (QSDSAN_CLOSER). The Q-05 FAIL is not overturned.
 
 ```

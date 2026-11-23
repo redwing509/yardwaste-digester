@@ -1,8 +1,8 @@
 {
   "band_commit": "1216299e8af1069f895d48e0b605b579ce6f852e",
   "comparison": {
-    "band_commit_note": "Rule frozen at feat/q05b-third-adm1:1216299 before any jADM1_BSM integration.",
     "centre_pass": true,
+    "extract": "r2 re-extract of t=200 d rows from the 6:04 PM PST official CSVs",
     "merge_eligible": true,
     "overall_siding": "SIDES_WITH_QSDSAN",
     "points": [
@@ -19,33 +19,33 @@
             "CH4_kgCOD_d": {
               "agrees": true,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.03113457101822668565587842133",
+              "rel_err": "0.03113460420502155636968151947",
               "status": "ok",
-              "x": 4553.039725010865,
+              "x": 4553.039569054433,
               "x_ref": 4699.352034674073
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.0009779870148417316837278092829",
+              "rel_err": "0.001027309532322785875267850976",
               "status": "ok",
-              "x": 197.6297164828913,
+              "x": 197.61995934539152,
               "x_ref": 197.82318498904522
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.00004246962566772200404804173668",
+              "rel_err": "0.00004246988734965926538868246484",
               "status": "ok",
-              "x": 55.08877645083722,
+              "x": 55.08877643642087,
               "x_ref": 55.091116149917724
             },
             "pH": {
-              "abs_err": "0.0002799561609445",
+              "abs_err": "0.0002878721212445",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 7.465537768578924,
+              "x": 7.465529852618624,
               "x_ref": 7.4658177247398685
             }
           },
@@ -53,43 +53,43 @@
             "CH4_kgCOD_d": {
               "agrees": true,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.00003295631067801774554606309090",
+              "rel_err": "0.00003292205629387699372047590282",
               "status": "ok",
-              "x": 4553.039725010865,
+              "x": 4553.039569054433,
               "x_ref": 4552.8896785641355
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.005117935601808110073349276084",
+              "rel_err": "0.005167053726709323936248932632",
               "status": "ok",
-              "x": 197.6297164828913,
+              "x": 197.61995934539152,
               "x_ref": 198.64637584198314
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.001170018210639136406773870133",
+              "rel_err": "0.001170018472026002038461251242",
               "status": "ok",
-              "x": 55.08877645083722,
+              "x": 55.08877643642087,
               "x_ref": 55.1533068241985
             },
             "pH": {
-              "abs_err": "0.001653737064516",
+              "abs_err": "0.001661653024816",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 7.465537768578924,
+              "x": 7.465529852618624,
               "x_ref": 7.46719150564344
             }
           }
         },
         "siding": "AGREES_WITH_BOTH",
         "third": {
-          "CH4_kgCOD_d": 4553.039725010865,
-          "S_ac_eff_mg_L": 197.6297164828913,
-          "S_ch4_eff_mg_L": 55.08877645083722,
-          "pH": 7.465537768578924
+          "CH4_kgCOD_d": 4553.039569054433,
+          "S_ac_eff_mg_L": 197.61995934539152,
+          "S_ch4_eff_mg_L": 55.08877643642087,
+          "pH": 7.465529852618624
         }
       },
       {
@@ -105,33 +105,33 @@
             "CH4_kgCOD_d": {
               "agrees": false,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.08275427664181190939745283961",
+              "rel_err": "0.08275420503852485178954767336",
               "status": "ok",
-              "x": 966.7751299571831,
+              "x": 966.775066023677,
               "x_ref": 892.8850717225141
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.0001662190629278600338922874269",
+              "rel_err": "0.0001269084988047202856317910612",
               "status": "ok",
-              "x": 41.615160823271076,
+              "x": 41.61352517969818,
               "x_ref": 41.60824473982035
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.0004130351041465918907756877549",
+              "rel_err": "0.0004130532434518700444810047691",
               "status": "ok",
-              "x": 41.356553084293,
+              "x": 41.35655233380388,
               "x_ref": 41.373641850763754
             },
             "pH": {
-              "abs_err": "0.000142432707652",
+              "abs_err": "0.000102492106610",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 6.745763191388072,
+              "x": 6.745803131989114,
               "x_ref": 6.745905624095724
             }
           },
@@ -139,43 +139,43 @@
             "CH4_kgCOD_d": {
               "agrees": true,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.00001558305154101179124128579484",
+              "rel_err": "0.00001564918120016397765831867585",
               "status": "ok",
-              "x": 966.7751299571831,
+              "x": 966.775066023677,
               "x_ref": 966.7901954986289
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.001537503044859805905032598691",
+              "rel_err": "0.001498138583748470259161995872",
               "status": "ok",
-              "x": 41.615160823271076,
+              "x": 41.61352517969818,
               "x_ref": 41.55127561050212
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.001026032684575749403992285867",
+              "rel_err": "0.001026050812757082731813855673",
               "status": "ok",
-              "x": 41.356553084293,
+              "x": 41.35655233380388,
               "x_ref": 41.39902984202064
             },
             "pH": {
-              "abs_err": "0.001250718235992",
+              "abs_err": "0.001210777634950",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 6.745763191388072,
+              "x": 6.745803131989114,
               "x_ref": 6.747013909624064
             }
           }
         },
         "siding": "SIDES_WITH_QSDSAN",
         "third": {
-          "CH4_kgCOD_d": 966.7751299571831,
-          "S_ac_eff_mg_L": 41.615160823271076,
-          "S_ch4_eff_mg_L": 41.356553084293,
-          "pH": 6.745763191388072
+          "CH4_kgCOD_d": 966.775066023677,
+          "S_ac_eff_mg_L": 41.61352517969818,
+          "S_ch4_eff_mg_L": 41.35655233380388,
+          "pH": 6.745803131989114
         }
       },
       {
@@ -191,33 +191,33 @@
             "CH4_kgCOD_d": {
               "agrees": false,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.05595405816805828095618408040",
+              "rel_err": "0.05585227398051821222302740227",
               "status": "ok",
-              "x": 196.18782593733982,
+              "x": 196.16891524864667,
               "x_ref": 185.7920090554886
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.02576469642620379222092141131",
+              "rel_err": "0.0008242363942562450322147025045",
               "status": "ok",
-              "x": 21.7409592551733,
+              "x": 21.212349207226637,
               "x_ref": 21.194879616075188
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.0009895046357467490862501910821",
+              "rel_err": "0.001074706809986706030336315739",
               "status": "ok",
-              "x": 45.220710041714355,
+              "x": 45.21685332265674,
               "x_ref": 45.26550046426314
             },
             "pH": {
-              "abs_err": "0.017307118309961",
+              "abs_err": "0.000626244766785",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 6.714521756484293,
+              "x": 6.731202630027469,
               "x_ref": 6.731828874794254
             }
           },
@@ -225,58 +225,59 @@
             "CH4_kgCOD_d": {
               "agrees": true,
               "metric": "CH4_kgCOD_d",
-              "rel_err": "0.0001659939156018429278221470993",
+              "rel_err": "0.00006958718056593011416471316690",
               "status": "ok",
-              "x": 196.18782593733982,
+              "x": 196.16891524864667,
               "x_ref": 196.15526535677733
             },
             "S_ac_eff_mg_L": {
               "agrees": true,
               "metric": "S_ac_eff_mg_L",
-              "rel_err": "0.02774501739610626900259594303",
+              "rel_err": "0.002756407806884663709821802775",
               "status": "ok",
-              "x": 21.7409592551733,
+              "x": 21.212349207226637,
               "x_ref": 21.154040046096426
             },
             "S_ch4_eff_mg_L": {
               "agrees": true,
               "metric": "S_ch4_eff_mg_L",
-              "rel_err": "0.0009221643088625414713886202271",
+              "rel_err": "0.001007372226327710951330689080",
               "status": "ok",
-              "x": 45.220710041714355,
+              "x": 45.21685332265674,
               "x_ref": 45.26244945713542
             },
             "pH": {
-              "abs_err": "0.019034012151543",
+              "abs_err": "0.002353138608367",
               "agrees": true,
               "metric": "pH",
               "status": "ok",
-              "x": 6.714521756484293,
+              "x": 6.731202630027469,
               "x_ref": 6.733555768635836
             }
           }
         },
         "siding": "SIDES_WITH_QSDSAN",
         "third": {
-          "CH4_kgCOD_d": 196.18782593733982,
-          "S_ac_eff_mg_L": 21.7409592551733,
-          "S_ch4_eff_mg_L": 45.220710041714355,
-          "pH": 6.714521756484293
+          "CH4_kgCOD_d": 196.16891524864667,
+          "S_ac_eff_mg_L": 21.212349207226637,
+          "S_ch4_eff_mg_L": 45.21685332265674,
+          "pH": 6.731202630027469
         }
       }
     ],
     "q05_fail_unchanged": true,
     "steam_table": {
       "overall_closer": "QSDSAN_CLOSER",
-      "path": "/workspace/ywsim-results/q05b-jadm1/steam_table.json",
+      "path": "/workspace/ywsim-results/q05b-jadm1-r2/steam_table.json",
       "qsdsan_ok": true
     },
     "study_pass": true,
-    "written_at": "2026-11-22 06:04:31 PM PST"
+    "written_at": "2026-11-22 06:10:53 PM PST"
   },
-  "harness_commit_at_run": "e6af0092ad28a0be0a1d5dd178c5ef06d158b7f2",
   "id": "Q-05b",
+  "parser_fix_note": "r1 (6:04:31 PM PST) scored the last CSV row (state at 400 d). r2 re-extracts the unique row whose label+step equals t_days (state at 200 d) from the same official CSVs. Java was not rerun.",
   "q05_fail_unchanged": true,
+  "revision": "r2",
   "source_checksums": {
     "files": [
       {
@@ -369,6 +370,7 @@
   },
   "summary": {
     "centre_pass": true,
+    "extract": "r2 re-extract of t=200 d rows from the 6:04 PM PST official CSVs",
     "merge_eligible": true,
     "overall_siding": "SIDES_WITH_QSDSAN",
     "points": [
@@ -380,10 +382,10 @@
         "role": "anchor",
         "siding": "AGREES_WITH_BOTH",
         "third": {
-          "CH4_kgCOD_d": 4553.039725010865,
-          "S_ac_eff_mg_L": 197.6297164828913,
-          "S_ch4_eff_mg_L": 55.08877645083722,
-          "pH": 7.465537768578924
+          "CH4_kgCOD_d": 4553.039569054433,
+          "S_ac_eff_mg_L": 197.61995934539152,
+          "S_ch4_eff_mg_L": 55.08877643642087,
+          "pH": 7.465529852618624
         }
       },
       {
@@ -394,10 +396,10 @@
         "role": "brewery_fail",
         "siding": "SIDES_WITH_QSDSAN",
         "third": {
-          "CH4_kgCOD_d": 966.7751299571831,
-          "S_ac_eff_mg_L": 41.615160823271076,
-          "S_ch4_eff_mg_L": 41.356553084293,
-          "pH": 6.745763191388072
+          "CH4_kgCOD_d": 966.775066023677,
+          "S_ac_eff_mg_L": 41.61352517969818,
+          "S_ch4_eff_mg_L": 41.35655233380388,
+          "pH": 6.745803131989114
         }
       },
       {
@@ -408,17 +410,17 @@
         "role": "brewery_fail",
         "siding": "SIDES_WITH_QSDSAN",
         "third": {
-          "CH4_kgCOD_d": 196.18782593733982,
-          "S_ac_eff_mg_L": 21.7409592551733,
-          "S_ch4_eff_mg_L": 45.220710041714355,
-          "pH": 6.714521756484293
+          "CH4_kgCOD_d": 196.16891524864667,
+          "S_ac_eff_mg_L": 21.212349207226637,
+          "S_ch4_eff_mg_L": 45.21685332265674,
+          "pH": 6.731202630027469
         }
       }
     ],
     "q05_fail_unchanged": true,
     "steam_overall_closer": "QSDSAN_CLOSER",
     "study_pass": true,
-    "written_at": "2026-11-22 06:04:31 PM PST"
+    "written_at": "2026-11-22 06:10:53 PM PST"
   },
   "third_model": {
     "commit": "dda4fb23b8f645d77737b8fdca1022830773f05b",
@@ -426,5 +428,5 @@
     "java": "Eclipse Temurin 17.0.21.1+2",
     "name": "jADM1_BSM"
   },
-  "written_at": "2026-11-22 06:04:31 PM PST"
+  "written_at": "2026-11-22 06:10:53 PM PST"
 }

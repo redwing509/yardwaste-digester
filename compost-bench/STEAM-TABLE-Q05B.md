@@ -35,8 +35,20 @@ low, which is the same offset diagnosed after Q-05. That diagnosis is not
 reopened; this table is the pre-registered physical-accuracy check of the
 two formulas.
 
-No separate NIST Chemistry WebBook table row was retrieved in this pass.
-The IF97 critical-point identity above is the corroboration required by
-the frozen method. A later named IAPWS-95 / NIST tabulation, if added,
-would have to disagree with IF97 by more than 0.00005 bar before it would
-be flagged, and it would still not decide ADM1 siding.
+The frozen method also asks for a named tabulated cross-check (NIST
+Chemistry WebBook, or an equivalent IAPWS-95 / Wagner–Pruss table) at the
+same two temperatures. That row was not retrieved in this pass and is
+recorded here as a deviation from the written method. The IF97
+critical-point identity (p_sat(647.096 K) = 22.064 MPa) was checked and
+is optional under the frozen text; it is not a substitute for the named
+table. Closeness still uses IAPWS-IF97 as the primary reference, so
+**QSDSAN_CLOSER** stands. A later named table would have to disagree with
+IF97 by more than 0.00005 bar before it would be flagged, and it would
+still not decide ADM1 siding.
+
+The official `steam_table.json` was written at 6:02:55 PM PST, after the
+method was frozen in `1216299` (5:59:11 PM PST) and before the official
+jADM1 score. The first steam-only attempt at 6:01:30 PM was INCOMPLETE
+because of a wrong qsdsan import path; that file was overwritten by the
+6:02:55 PM report after the import was corrected. The coefficients and
+closeness rule were not changed.

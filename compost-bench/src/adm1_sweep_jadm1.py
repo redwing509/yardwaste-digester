@@ -133,8 +133,18 @@ def parse_steady_result(text: str) -> list:
     return {"finish_d": finish, "x": vec}
 
 
-def parse_dynamic_output(text: str, t_days: float) -> dict:
-    """Parse jADM1 Main.runDynamic() dynamic_output.csv (time + 42 states)."""
+def parse_dynamic_output(text: str, t_days: float, step_d=None) -> dict:
+    """Parse jADM1 Main.runDynamic() dynamic_output.csv (time + 42 states).
+
+    Each row is labelled with the step *start* time and holds the state at
+    start + step. A one-line influent file is also read one extra time
+    because CSVReader only sets `finished` after the empty read that
+    follows the last line, so the official CLI performs a second
+    continuation step. The state at t_days is the unique row whose
+    label + step equals t_days, not the last row.
+    """
+    step = float(t_days) if step_d is None else float(step_d)
+    end = float(t_days)
     rows = []
     for raw in text.splitlines():
         line = raw.strip()
@@ -146,8 +156,24 @@ def parse_dynamic_output(text: str, t_days: float) -> dict:
         rows.append([float(p) for p in parts[:43]])
     if not rows:
         raise ValueError("dynamic_output.csv is empty")
-    last = rows[-1]
-    return {"finish_d": last[0], "x": last[1:], "n_rows": len(rows)}
+    chosen = None
+    for row in rows:
+        if abs(row[0] + step - end) <= 1e-9:
+            if chosen is not None:
+                raise ValueError(f"multiple rows correspond to t={end}")
+            chosen = row
+    if chosen is None:
+        raise ValueError(
+            f"no row with label+step == {end} (step={step}, labels={[r[0] for r in rows]})"
+        )
+    return {
+        "finish_d": chosen[0] + step,
+        "x": chosen[1:],
+        "n_rows": len(rows),
+        "row_label": chosen[0],
+        "step_d": step,
+        "labels": [r[0] for r in rows],
+    }
 
 
 def metrics_from_x(x) -> dict:
@@ -243,5 +269,7 @@ def run_jadm1_point(
     metrics["status"] = "ok"
     metrics["t_days"] = float(t_days)
     metrics["finish_d"] = parsed["finish_d"]
+    metrics["row_label"] = parsed["row_label"]
+    metrics["n_output_rows"] = parsed["n_rows"]
     metrics["returncode"] = proc.returncode
     return metrics
