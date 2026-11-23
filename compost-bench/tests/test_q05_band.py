@@ -239,5 +239,39 @@ class StatusAllowListTests(unittest.TestCase):
         self.assertFalse(qsdsan_status_finished("incomplete"))
 
 
+
+
+from adm1_sweep_pyadm1 import integration_times
+from run_q05 import _params_match, _reusable_ok_keys
+
+
+class IntegrationGridTests(unittest.TestCase):
+    def test_grid_includes_endpoint_when_not_divisible(self):
+        import numpy as np
+        times = integration_times(1.0, 0.6)
+        self.assertEqual(list(np.round(times, 12)), [0.0, 0.6, 1.0])
+        times = integration_times(200.0, 0.25)
+        self.assertEqual(times[0], 0.0)
+        self.assertAlmostEqual(float(times[-1]), 200.0)
+        self.assertEqual(len(times), 801)
+
+
+class ResumeIdentityTests(unittest.TestCase):
+    def test_params_match_and_reusable_keys(self, tmp_path=None):
+        import tempfile, os, json
+        point = {"key": "K", "feed": "brewery", "T_C": 35.0, "Q": 170.0, "conc_scale": 1.0, "t_days": 200, "class": "S"}
+        ident = {"harness_git_head": "abc"}
+        rec = {**point, "status": "ok", "_run_identity": ident}
+        stale_days = {**rec, "t_days": 100}
+        stale_ident = {**rec, "_run_identity": {"harness_git_head": "def"}}
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "points.jsonl"
+            path.write_text(json.dumps(stale_days) + "\n" + json.dumps(stale_ident) + "\n" + json.dumps(rec) + "\n")
+            have = _reusable_ok_keys(path, [point], ident)
+            self.assertEqual(have, {"K"})
+        self.assertFalse(_params_match({**point, "t_days": 100}, point))
+        self.assertTrue(_params_match(point, point))
+
+
 if __name__ == "__main__":
     unittest.main()

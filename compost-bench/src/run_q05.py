@@ -5,8 +5,10 @@ git checkout). Does not call git, open a PR, or publish.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -72,7 +74,43 @@ def score_q02_anchor(official_dir: Path) -> dict:
     return report
 
 
-def _have_keys(points_path: Path) -> set:
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 16), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _run_identity() -> dict:
+    """Current harness identity. Resume only if a cached row matches this."""
+    repo = STAGE.parent
+    ident = {
+        "subset_sha256": _sha256(STAGE / "config" / "q05-subset.json"),
+        "packaged_sha256": _sha256(STAGE / "config" / "q05-packaged-influent.json"),
+        "sweep_sha256": _sha256(HERE / "adm1_sweep_pyadm1.py"),
+        "band_sha256": _sha256(HERE / "adm1_q05_band.py"),
+        "run_q05_sha256": _sha256(HERE / "run_q05.py"),
+    }
+    try:
+        ident["harness_git_head"] = subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], cwd=str(repo), text=True
+        ).strip()
+    except Exception:
+        ident["harness_git_head"] = None
+    return ident
+
+
+def _params_match(rec: dict, point: dict) -> bool:
+    for key in ("feed", "T_C", "Q", "conc_scale", "t_days", "class"):
+        if rec.get(key) != point.get(key):
+            return False
+    return True
+
+
+def _reusable_ok_keys(points_path: Path, points: list, identity: dict) -> set:
+    """Skip only ok rows whose params and harness identity match this run."""
+    want = {p["key"]: p for p in points}
     have = set()
     if not points_path.is_file():
         return have
@@ -80,8 +118,14 @@ def _have_keys(points_path: Path) -> set:
         if not line.strip():
             continue
         rec = json.loads(line)
-        if rec.get("key") and rec.get("status") == "ok":
-            have.add(rec["key"])
+        key = rec.get("key")
+        if rec.get("status") != "ok" or key not in want:
+            continue
+        if rec.get("_run_identity") != identity:
+            continue
+        if not _params_match(rec, want[key]):
+            continue
+        have.add(key)
     return have
 
 
@@ -105,6 +149,7 @@ def _run_one(point: dict) -> dict:
         "t_days": point["t_days"],
         "class": point["class"],
         "status": "failed",
+        "_run_identity": _run_identity(),
     }
     try:
         pred = run_sweep_pyadm1(
@@ -168,7 +213,8 @@ def main(argv):
     only = argv[1:]
     points = [p for p in subset["points"] if not only or p["key"] in only]
     points_path = out / "pyadm1_points.jsonl"
-    have = _have_keys(points_path)
+    identity = _run_identity()
+    have = _reusable_ok_keys(points_path, points, identity)
     todo = [p for p in points if p["key"] not in have]
     summary = {
         "written_at": _now(),
@@ -179,6 +225,7 @@ def main(argv):
         "n_todo": len(todo),
         "workers": workers,
         "q02_anchor_pass": anchor.get("pass"),
+        "run_identity": identity,
     }
     _json(out / "SUMMARY.json", summary)
 
@@ -213,7 +260,19 @@ def main(argv):
     if pred_dir.is_dir():
         for path in pred_dir.glob("*.json"):
             rec = json.loads(path.read_text())
-            if rec.get("status") == "ok":
+            if rec.get("status") == "ok" and rec.get("key"):
+                point = next((p for p in points if p["key"] == rec["key"]), None)
+                if point is None:
+                    continue
+                ident = rec.get("_run_identity")
+                if ident is not None and ident != identity:
+                    continue
+                if ident is None and not _params_match(rec, point):
+                    continue
+                if ident is None:
+                    # Legacy official r2 rows have no identity stamp; accept
+                    # them only when this run's parameters still match.
+                    pass
                 predictions[rec["key"]] = rec
     # jsonl fallback if a prediction file is missing but slim row exists
     if points_path.is_file():
@@ -221,8 +280,17 @@ def main(argv):
             if not line.strip():
                 continue
             rec = json.loads(line)
-            if rec.get("status") == "ok" and rec.get("key") not in predictions:
-                predictions[rec["key"]] = rec
+            if rec.get("status") != "ok" or rec.get("key") in predictions:
+                continue
+            point = next((p for p in points if p["key"] == rec["key"]), None)
+            if point is None:
+                continue
+            ident = rec.get("_run_identity")
+            if ident is not None and ident != identity:
+                continue
+            if ident is None and not _params_match(rec, point):
+                continue
+            predictions[rec["key"]] = rec
 
     comparison = evaluate_subset(predictions, subset)
     comparison["written_at"] = _now()
@@ -239,6 +307,7 @@ def main(argv):
         "n_passed": comparison.get("n_passed"),
         "missing": comparison.get("missing"),
         "workers": workers,
+        "run_identity": identity,
     }
     _json(out / "SUMMARY.json", summary)
     print(json.dumps(summary, indent=2, sort_keys=True, default=str))

@@ -126,6 +126,39 @@ def _gas_rates(ns: dict, t_op: float) -> dict:
     }
 
 
+def integration_times(t_days, step_d):
+    """Return the 0..t_days grid, always including the exact endpoint once."""
+    import numpy as np
+    step = float(step_d)
+    end = float(t_days)
+    if step <= 0:
+        raise ValueError("step_d must be positive")
+    times = np.arange(0.0, end + 1e-12, step)
+    if len(times) == 0 or abs(float(times[-1]) - end) > 1e-12:
+        times = np.append(times, end)
+    return times
+
+
+def wrap_simulate_checked(ns):
+    """Refuse a short or failed official solve_ivp call (r.y alone hides this)."""
+    def simulate_checked(t_step, solvermethod):
+        import scipy.integrate
+        r = scipy.integrate.solve_ivp(
+            ns["ADM1_ODE"], t_step, ns["state_zero"], method=solvermethod
+        )
+        wanted = float(t_step[-1])
+        got = float(r.t[-1]) if len(getattr(r, "t", [])) else None
+        if (not r.success) or got is None or abs(got - wanted) > 1e-8:
+            raise RuntimeError(
+                f"official simulate did not reach the requested endpoint: "
+                f"success={r.success} message={getattr(r, 'message', '')!r} "
+                f"t_end={got} wanted={wanted}"
+            )
+        return r.y
+    ns["simulate"] = simulate_checked
+    return ns
+
+
 def run_sweep_pyadm1(
     feed: str,
     t_c: float,
@@ -142,9 +175,10 @@ def run_sweep_pyadm1(
 
     influent = scale_influent(feed, conc_scale, packaged=packaged)
     ns = load_official(pyadm1_path)
+    wrap_simulate_checked(ns)
     constants = apply_temperature(ns, t_c)
     ns["q_ad"] = float(q_m3_d)
-    times = np.arange(0.0, float(t_days) + 1e-12, step_d)
+    times = integration_times(t_days, step_d)
     rows = []
     for t in times:
         row = {"time": float(t), "Q": float(q_m3_d)}
