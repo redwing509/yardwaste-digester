@@ -139,18 +139,28 @@ class InfluentAndTemperatureTests(unittest.TestCase):
         packaged = load_packaged_influent()
         base = packaged["feeds"]["bsm2"]
         scaled = scale_influent("bsm2", 1.5, packaged=packaged)
-        self.assertEqual(scaled["S_IC"], base["S_IC"])
-        self.assertEqual(scaled["S_IN"], base["S_IN"])
         self.assertEqual(scaled["S_cation"], base["S_cation"])
         self.assertEqual(scaled["S_su"], base["S_su"] * 1.5)
         self.assertEqual(scaled["X_xc"], base["X_xc"] * 1.5)
         self.assertEqual(scaled["X_su"], 0.0)
         brew = scale_influent("brewery", 1.0, packaged=packaged)
         self.assertEqual(brew["S_su"], 3.0)
-        self.assertEqual(brew["S_IC"], base["S_IC"])
-        # Packaged BSM2 inorganic C/N differ from Rosen Table 5 (Q-02).
-        self.assertNotEqual(base["S_IC"], 0.04)
-        self.assertNotEqual(base["S_IN"], 0.01)
+        # kwargs store S_IC / S_IN as kg C or N /m3; PyADM1 needs kmol/m3.
+        self.assertEqual(base["S_IC"], 0.480428)
+        self.assertEqual(base["S_IN"], 0.140067)
+        mw_c = packaged["pyadm1_unit_conversion"]["S_IC"]["divide_by_MW"]
+        mw_n = packaged["pyadm1_unit_conversion"]["S_IN"]["divide_by_MW"]
+        self.assertAlmostEqual(mw_c, 12.0107)
+        self.assertAlmostEqual(mw_n, 14.0067)
+        self.assertAlmostEqual(scaled["S_IC"], 0.04)
+        self.assertAlmostEqual(brew["S_IC"], 0.04)
+        self.assertAlmostEqual(brew["S_IN"], 0.01)
+        # Scaling must not change converted inorganic C/N.
+        unscaled = scale_influent("bsm2", 1.0, packaged=packaged)
+        self.assertAlmostEqual(unscaled["S_IC"], scaled["S_IC"])
+        self.assertAlmostEqual(unscaled["S_IN"], scaled["S_IN"])
+        self.assertAlmostEqual(unscaled["S_IC"], 0.480428 / 12.0107)
+        self.assertAlmostEqual(unscaled["S_IN"], 0.140067 / 14.0067)
 
     def test_temperature_constants_match_official_35c_comments(self):
         c = temperature_constants(35.0)

@@ -43,16 +43,28 @@ def load_packaged_influent(path=INFLUENT_FILE):
 
 
 def scale_influent(feed: str, conc_scale: float, packaged=None) -> dict:
+    """Return influent in official PyADM1 units (kg COD/m3, kmol C or N/m3).
+
+    EXPOsan 1.5.3 stores S_IC and S_IN as kg C/m3 and kg N/m3. Convert those
+    two fields with the pinned component molecular weights. COD keys are
+    already kg COD/m3. Inorganic C/N and ions are not scaled.
+    """
     packaged = packaged if packaged is not None else load_packaged_influent()
     if feed not in packaged["feeds"]:
         raise ValueError(f"unknown feed {feed!r}")
     base = packaged["feeds"][feed]
     scale = float(conc_scale)
-    out = dict(base)
+    out = {k: float(v) for k, v in base.items()}
     for key in packaged["cod_keys"]:
         if key not in out:
             raise KeyError(f"COD key {key} missing from feed {feed}")
-        out[key] = float(out[key]) * scale
+        out[key] = out[key] * scale
+    conv = packaged.get("pyadm1_unit_conversion") or {}
+    for field in ("S_IC", "S_IN"):
+        mw = float(conv[field]["divide_by_MW"])
+        if mw <= 0:
+            raise ValueError(f"invalid MW for {field}")
+        out[field] = out[field] / mw
     return out
 
 

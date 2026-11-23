@@ -46,6 +46,8 @@ def _now():
 
 
 def _json(path, payload):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     tmp = Path(str(path) + ".tmp")
     tmp.write_text(json.dumps(payload, indent=2, sort_keys=True, default=str) + "\n")
     tmp.replace(path)
