@@ -24,6 +24,12 @@ from adm1_q05b_band import (
     verify_source_checksums,
 )
 from iapws_if97_psat import P_C_MPA, T_C_K, psat_bar, psat_mpa, rosen_psat_bar
+from adm1_sweep_jadm1 import (
+    jadm1_influent_vector,
+    jadm1_initial_vector,
+    metrics_from_x,
+    parse_steady_result,
+)
 
 
 class RegistrationTests(unittest.TestCase):
@@ -244,6 +250,59 @@ class IapwsMethodTests(unittest.TestCase):
         self.assertGreater(p35, 0.05)
         self.assertLess(p35, 0.07)
         self.assertGreater(p35, p30)
+
+
+
+class MappingTests(unittest.TestCase):
+    def test_initial_vector_layout(self):
+        vec = jadm1_initial_vector(30.0)
+        self.assertEqual(len(vec), 42)
+        self.assertEqual(vec[36], 30.0)
+        self.assertEqual(vec[35], 0.0)
+        # Official digester_initial S_ac and S_gas_ch4.
+        self.assertAlmostEqual(vec[6], 0.089315)
+        self.assertAlmostEqual(vec[33], 1.6535)
+
+    def test_influent_uses_converted_sic_and_flow(self):
+        vec = jadm1_influent_vector("brewery", 1.0, 170.0)
+        self.assertEqual(len(vec), 42)
+        self.assertEqual(vec[35], 170.0)
+        # 0.480428 kg C/m3 / 12.0107 = 0.04 kmol C/m3
+        self.assertAlmostEqual(vec[9], 0.480428 / 12.0107, places=12)
+        self.assertAlmostEqual(vec[10], 0.140067 / 14.0067, places=12)
+        self.assertEqual(vec[0], 3.0)  # brewery S_su unscaled
+        scaled = jadm1_influent_vector("brewery", 0.5, 68.0)
+        self.assertEqual(scaled[0], 1.5)
+        self.assertEqual(scaled[35], 68.0)
+        # Inorganic C is not scaled.
+        self.assertEqual(scaled[9], vec[9])
+
+    def test_parse_and_extractor(self):
+        text = (
+            "Simulation time; 10; Start; 0.0; Finish; 200.0\n"
+            + "".join(
+                f"State no; {i};\t Influent; 0.0;\t Effluent; {float(i)}\n"
+                for i in range(1, 43)
+            )
+        )
+        parsed = parse_steady_result(text)
+        self.assertEqual(parsed["finish_d"], 200.0)
+        self.assertEqual(len(parsed["x"]), 42)
+        self.assertEqual(parsed["x"][0], 1.0)
+        # indices 33 and 38 are 1-based states 34 and 39 → values 34 and 39
+        x = [0.0] * 42
+        x[6] = 0.0416
+        x[8] = 0.0414
+        x[33] = 1.5
+        x[36] = 35.0
+        x[38] = 600.0
+        x[39] = 6.75
+        m = metrics_from_x(x)
+        self.assertAlmostEqual(m["S_ac_eff_mg_L"], 41.6)
+        self.assertAlmostEqual(m["S_ch4_eff_mg_L"], 41.4)
+        self.assertAlmostEqual(m["pH"], 6.75)
+        self.assertAlmostEqual(m["CH4_kgCOD_d"], 900.0)
+        self.assertEqual(m["T_C"], 35.0)
 
 
 if __name__ == "__main__":
