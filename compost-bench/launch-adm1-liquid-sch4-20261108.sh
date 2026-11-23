@@ -29,6 +29,7 @@ if ! command -v "$PY" >/dev/null 2>&1 && [[ ! -x "$PY" ]]; then
 fi
 
 export YWSIM_REQUIRE_RUNTIME=1
+export YWSIM_ALLOW_INTEGRATION=1
 export YWSIM_PYTHON="$PY"
 export YWSIM_RESULT_DIR="$OUT"
 export YWSIM_CPU="$CPU"

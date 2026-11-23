@@ -1,0 +1,66 @@
+{
+  "id": "Q-05",
+  "written": "2026-11-22 4:40 PM PST",
+  "written_before_pyadm1_runs": true,
+  "band_document": "PRE-REGISTERED-BAND-Q05.md",
+  "pyadm1_commit": "e7f806e1984a382ce6d6c17ad595561e3e8b293d",
+  "qsdsan_sources": {
+    "dgs2_points": {
+      "path": "/workspace/ywsim-results/20261113-dgs2/points.jsonl",
+      "sha256": "1b22b09edaf4b8f74fd3e0a9b2c4131bb2fcfe60eaa3178c95b7cec858e96796"
+    },
+    "dgs2_summary": {
+      "path": "/workspace/ywsim-results/20261113-dgs2/summary.json",
+      "sha256": "ae712a839c5b869ebe0b9c0ff9dcc7c98446839cf1e1eaf4ee46707d0189a2ea"
+    },
+    "dgs3_points": {
+      "path": "/workspace/ywsim-results/20261120-dgs3/points.jsonl",
+      "sha256": "c702de89b2888f5d6d2db48d090b945d6756218f51a08c868ebad3c88d378c2a"
+    },
+    "dgs3_summary": {
+      "path": "/workspace/ywsim-results/20261120-dgs3/summary.json",
+      "sha256": "d59769ff837cb514935716b6d9ea713d8aca65ff1b33aad0ab176a2032a64f05"
+    }
+  },
+  "q02_anchor": {
+    "band_document": "PRE-REGISTERED-BAND-Q02.md",
+    "official_results": "/workspace/ywsim-results/q02-fullstate-r3",
+    "harness_commit": "2c97936"
+  },
+  "points": [
+    {"key": "DGS:bsm2:T35:Q170:s1", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 35.0, "Q": 170.0, "conc_scale": 1.0},
+    {"key": "DGS:bsm2:T30:Q68:s0.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 30.0, "Q": 68.0, "conc_scale": 0.5},
+    {"key": "DGS:bsm2:T40:Q255:s1.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 40.0, "Q": 255.0, "conc_scale": 1.5},
+    {"key": "DGS:bsm2:T30:Q255:s1.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 30.0, "Q": 255.0, "conc_scale": 1.5},
+    {"key": "DGS:bsm2:T40:Q68:s0.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 40.0, "Q": 68.0, "conc_scale": 0.5},
+    {"key": "DGS:brewery:T35:Q170:s1", "source": "dgs2", "class": "S", "t_days": 200, "feed": "brewery", "T_C": 35.0, "Q": 170.0, "conc_scale": 1.0},
+    {"key": "DGS:brewery:T40:Q255:s1.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "brewery", "T_C": 40.0, "Q": 255.0, "conc_scale": 1.5},
+    {"key": "DGS:brewery:T30:Q68:s0.5", "source": "dgs2", "class": "S", "t_days": 200, "feed": "brewery", "T_C": 30.0, "Q": 68.0, "conc_scale": 0.5},
+    {"key": "DGS:bsm2:T32.5:Q113.3:s1.25", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 32.5, "Q": 113.3, "conc_scale": 1.25},
+    {"key": "DGS:bsm2:T37.5:Q208:s0.75", "source": "dgs2", "class": "S", "t_days": 200, "feed": "bsm2", "T_C": 37.5, "Q": 208.0, "conc_scale": 0.75},
+    {"key": "DGS3A:bsm2:T35:Q170:s1.75", "source": "dgs3", "class": "O", "t_days": 200, "feed": "bsm2", "T_C": 35.0, "Q": 170.0, "conc_scale": 1.75},
+    {"key": "DGS3A:bsm2:T35:Q170:s4", "source": "dgs3", "class": "O", "t_days": 200, "feed": "bsm2", "T_C": 35.0, "Q": 170.0, "conc_scale": 4.0},
+    {"key": "DGS3A:bsm2:T40:Q255:s4", "source": "dgs3", "class": "O", "t_days": 200, "feed": "bsm2", "T_C": 40.0, "Q": 255.0, "conc_scale": 4.0},
+    {"key": "DGS3B:bsm2:T40:Q255:s1.5:t400", "source": "dgs3", "class": "O", "t_days": 400, "feed": "bsm2", "T_C": 40.0, "Q": 255.0, "conc_scale": 1.5},
+    {"key": "DGS3B:bsm2:T30:Q255:s1.5:t400", "source": "dgs3", "class": "O", "t_days": 400, "feed": "bsm2", "T_C": 30.0, "Q": 255.0, "conc_scale": 1.5}
+  ],
+  "class_S": {
+    "S_ac_eff_mg_L_rel": 0.05,
+    "S_ch4_eff_mg_L_rel": 0.05,
+    "S_ac_abs_floor_mg_L": 0.01,
+    "S_ch4_abs_floor_mg_L": 0.01,
+    "pH_abs": 0.10,
+    "CH4_kgCOD_d_rel": 0.05,
+    "CH4_abs_floor_kgCOD_d": 1e-6
+  },
+  "class_O": {
+    "S_ac_eff_mg_L_rel": 0.10,
+    "S_ch4_eff_mg_L_rel": 0.10,
+    "S_ac_abs_floor_mg_L": 0.01,
+    "S_ch4_abs_floor_mg_L": 0.01,
+    "pH_abs": 0.20,
+    "CH4_kgCOD_d_rel": 0.10,
+    "CH4_abs_floor_kgCOD_d": 1e-6
+  },
+  "required_metrics": ["S_ac_eff_mg_L", "S_ch4_eff_mg_L", "pH", "CH4_kgCOD_d"]
+}

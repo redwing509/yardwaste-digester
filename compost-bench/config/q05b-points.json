@@ -1,0 +1,122 @@
+{
+  "id": "Q-05b",
+  "written": "2026-11-22 5:57 PM PST",
+  "written_before_jadm1_runs": true,
+  "band_document": "PRE-REGISTERED-BAND-Q05B.md",
+  "third_model": {
+    "name": "jADM1_BSM",
+    "url": "https://github.com/liampetti/jADM1_BSM",
+    "commit": "dda4fb23b8f645d77737b8fdca1022830773f05b",
+    "license": "Apache-2.0",
+    "not_used": "liampetti/jADM1 (modified hydrolysis)"
+  },
+  "q05_fail_unchanged": true,
+  "required_metrics": [
+    "S_ac_eff_mg_L",
+    "S_ch4_eff_mg_L",
+    "pH",
+    "CH4_kgCOD_d"
+  ],
+  "class_S": {
+    "S_ac_eff_mg_L_rel": 0.05,
+    "S_ch4_eff_mg_L_rel": 0.05,
+    "S_ac_abs_floor_mg_L": 0.01,
+    "S_ch4_abs_floor_mg_L": 0.01,
+    "pH_abs": 0.1,
+    "CH4_kgCOD_d_rel": 0.05,
+    "CH4_abs_floor_kgCOD_d": 1e-06
+  },
+  "q05_sources": {
+    "comparison": {
+      "path": "/workspace/ywsim-results/q05-pyadm1-subset/comparison.json",
+      "sha256": "b8ec6efa01b5dd73bce08dfd22da89493069aa9b75bea7c258a9ffb3409f4885"
+    },
+    "pyadm1_points": {
+      "path": "/workspace/ywsim-results/q05-pyadm1-subset/pyadm1_points.jsonl",
+      "sha256": "09859e2207fca554b708d25dff39255f5bfe8621021d0cd71bd9680c1f13657d"
+    },
+    "summary": {
+      "path": "/workspace/ywsim-results/q05-pyadm1-subset/SUMMARY.json",
+      "sha256": "2dbd3e1e08f68bce18c01adc5d8fc189365898217fcd53c1efdda203317723e8"
+    },
+    "packaged_influent": {
+      "path": "config/q05-packaged-influent.json",
+      "sha256": "c4881f9c1ed41e64e62a72f035924e6eca47b08e1489d120e86a88b394796644"
+    },
+    "digester_initial": {
+      "path": "/workspace/digester-tools/src/PyADM1/src/digester_initial.csv",
+      "sha256": "3b2076def9b00cea22cc138af41822caa9ffc5416c126cf84f8d5239839cea3c"
+    }
+  },
+  "points": [
+    {
+      "key": "DGS:bsm2:T35:Q170:s1",
+      "role": "anchor",
+      "feed": "bsm2",
+      "T_C": 35.0,
+      "Q": 170.0,
+      "conc_scale": 1.0,
+      "t_days": 200,
+      "class": "S",
+      "q05_pass": true,
+      "pyadm1": {
+        "S_ac_eff_mg_L": 197.82318498904522,
+        "S_ch4_eff_mg_L": 55.091116149917724,
+        "pH": 7.4658177247398685,
+        "CH4_kgCOD_d": 4699.352034674073
+      },
+      "qsdsan": {
+        "S_ac_eff_mg_L": 198.64637584198314,
+        "S_ch4_eff_mg_L": 55.1533068241985,
+        "pH": 7.46719150564344,
+        "CH4_kgCOD_d": 4552.8896785641355
+      }
+    },
+    {
+      "key": "DGS:brewery:T35:Q170:s1",
+      "role": "brewery_fail",
+      "feed": "brewery",
+      "T_C": 35.0,
+      "Q": 170.0,
+      "conc_scale": 1.0,
+      "t_days": 200,
+      "class": "S",
+      "q05_pass": false,
+      "pyadm1": {
+        "S_ac_eff_mg_L": 41.60824473982035,
+        "S_ch4_eff_mg_L": 41.373641850763754,
+        "pH": 6.745905624095724,
+        "CH4_kgCOD_d": 892.8850717225141
+      },
+      "qsdsan": {
+        "S_ac_eff_mg_L": 41.55127561050212,
+        "S_ch4_eff_mg_L": 41.39902984202064,
+        "pH": 6.747013909624064,
+        "CH4_kgCOD_d": 966.7901954986289
+      }
+    },
+    {
+      "key": "DGS:brewery:T30:Q68:s0.5",
+      "role": "brewery_fail",
+      "feed": "brewery",
+      "T_C": 30.0,
+      "Q": 68.0,
+      "conc_scale": 0.5,
+      "t_days": 200,
+      "class": "S",
+      "q05_pass": false,
+      "pyadm1": {
+        "S_ac_eff_mg_L": 21.194879616075188,
+        "S_ch4_eff_mg_L": 45.26550046426314,
+        "pH": 6.731828874794254,
+        "CH4_kgCOD_d": 185.7920090554886
+      },
+      "qsdsan": {
+        "S_ac_eff_mg_L": 21.154040046096426,
+        "S_ch4_eff_mg_L": 45.26244945713542,
+        "pH": 6.733555768635836,
+        "CH4_kgCOD_d": 196.15526535677733
+      }
+    }
+  ]
+}

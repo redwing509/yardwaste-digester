@@ -1,0 +1,319 @@
+{
+  "citation": "Rosen, C. and Jeppsson, U. (2006). Aspects on ADM1 Implementation within the BSM2 Framework. Technical report, Department of Industrial Electrical Engineering and Automation, Lund University. Section 7, Tables 5 and 6.",
+  "url": "https://iwa-mia.org/wp-content/uploads/2019/04/bmadm1_report061127.pdf",
+  "source_note": "Values copied from the opened text extraction of the report at /workspace/tolerance-research/sources/rosen-jeppsson-adm1.txt (Table 6, lines 1455-1503). They match the S_ch4 and S_ac constants already shipped in compost-bench. A later install note recorded sha256 c8d343cbd74ef23b5f85da004a82d4422df142a680a278b286a462a4d8c69d7a for an IWA download that is not present on this box; the local PDF at /workspace/tolerance-research/sources/rosen-jeppsson-adm1.pdf has sha256 ffec4ad6680bd6a84671ca82102c2c92b4e9751f0f5189782abce3590af6fe8c. Numbers were not invented.",
+  "conditions": {
+    "Q_m3_d": 170.0,
+    "T_C": 35.0,
+    "t_days": 200,
+    "HRT_d": 20.0,
+    "V_liq_m3": 3400.0,
+    "V_gas_m3": 300.0,
+    "solver_note": "Table 6 was produced with Matlab ode15s, relative tolerance 1e-10, absolute tolerance 1e-12. Qgas is the flow at atmospheric pressure, not headspace pressure."
+  },
+  "table6": {
+    "S_su": {
+      "value": "0.011954829716958",
+      "unit": "kg COD.m-3",
+      "state": 1,
+      "class": "A"
+    },
+    "S_aa": {
+      "value": "0.005314740171633",
+      "unit": "kg COD.m-3",
+      "state": 2,
+      "class": "A"
+    },
+    "S_fa": {
+      "value": "0.098621400930799",
+      "unit": "kg COD.m-3",
+      "state": 3,
+      "class": "A"
+    },
+    "S_va": {
+      "value": "0.011625006463861",
+      "unit": "kg COD.m-3",
+      "state": 4,
+      "class": "A"
+    },
+    "S_bu": {
+      "value": "0.013250729666269",
+      "unit": "kg COD.m-3",
+      "state": 5,
+      "class": "A"
+    },
+    "S_pro": {
+      "value": "0.015783666284542",
+      "unit": "kg COD.m-3",
+      "state": 6,
+      "class": "A"
+    },
+    "S_ac": {
+      "value": "0.197629716937552",
+      "unit": "kg COD.m-3",
+      "state": 7,
+      "class": "A"
+    },
+    "S_h2": {
+      "value": "0.000000235945059",
+      "unit": "kg COD.m-3",
+      "state": 8,
+      "class": "B"
+    },
+    "S_ch4": {
+      "value": "0.055088776445959",
+      "unit": "kg COD.m-3",
+      "state": 9,
+      "class": "A"
+    },
+    "S_IC": {
+      "value": "0.152677870626333",
+      "unit": "kmole C.m-3",
+      "state": 10,
+      "class": "A"
+    },
+    "S_IN": {
+      "value": "0.130229815803682",
+      "unit": "kmole N.m-3",
+      "state": 11,
+      "class": "A"
+    },
+    "S_I": {
+      "value": "0.328697663721532",
+      "unit": "kg COD.m-3",
+      "state": 12,
+      "class": "A"
+    },
+    "X_c": {
+      "value": "0.308697663721532",
+      "unit": "kg COD.m-3",
+      "state": 13,
+      "class": "A"
+    },
+    "X_ch": {
+      "value": "0.027947240435040",
+      "unit": "kg COD.m-3",
+      "state": 14,
+      "class": "A"
+    },
+    "X_pr": {
+      "value": "0.102574106106682",
+      "unit": "kg COD.m-3",
+      "state": 15,
+      "class": "A"
+    },
+    "X_li": {
+      "value": "0.029483049707287",
+      "unit": "kg COD.m-3",
+      "state": 16,
+      "class": "A"
+    },
+    "X_su": {
+      "value": "0.420165982454567",
+      "unit": "kg COD.m-3",
+      "state": 17,
+      "class": "A"
+    },
+    "X_aa": {
+      "value": "1.179171798923700",
+      "unit": "kg COD.m-3",
+      "state": 18,
+      "class": "A"
+    },
+    "X_fa": {
+      "value": "0.243035344719442",
+      "unit": "kg COD.m-3",
+      "state": 19,
+      "class": "A"
+    },
+    "X_c4": {
+      "value": "0.431921105635979",
+      "unit": "kg COD.m-3",
+      "state": 20,
+      "class": "A"
+    },
+    "X_pro": {
+      "value": "0.137305908933954",
+      "unit": "kg COD.m-3",
+      "state": 21,
+      "class": "A"
+    },
+    "X_ac": {
+      "value": "0.760562658313215",
+      "unit": "kg COD.m-3",
+      "state": 22,
+      "class": "A"
+    },
+    "X_h2": {
+      "value": "0.317022953361272",
+      "unit": "kg COD.m-3",
+      "state": 23,
+      "class": "A"
+    },
+    "X_I": {
+      "value": "25.617395327443063",
+      "unit": "kg COD.m-3",
+      "state": 24,
+      "class": "A"
+    },
+    "S_cat": {
+      "value": "0.040000000000000",
+      "unit": "kmole.m-3",
+      "state": 25,
+      "class": "A"
+    },
+    "S_an": {
+      "value": "0.020000000000000",
+      "unit": "kmole.m-3",
+      "state": 26,
+      "class": "A"
+    },
+    "Qad": {
+      "value": "170.0000000000000",
+      "unit": "m3.d-1",
+      "state": null,
+      "class": "A",
+      "required": true
+    },
+    "Top": {
+      "value": "35.00000000000000",
+      "unit": "deg_C",
+      "state": null,
+      "class": "A",
+      "required": true
+    },
+    "pH": {
+      "value": "7.465537769904638",
+      "unit": "1",
+      "state": null,
+      "class": "A",
+      "required": true
+    },
+    "SH+": {
+      "value": "0.000000034234361",
+      "unit": "kmole H+.m-3",
+      "state": null,
+      "class": "A",
+      "required": false
+    },
+    "S_va-": {
+      "value": "0.011596247072545",
+      "unit": "kg COD.m-3",
+      "state": 27,
+      "class": "A",
+      "required": false
+    },
+    "S_bu-": {
+      "value": "0.013220826248532",
+      "unit": "kg COD.m-3",
+      "state": 28,
+      "class": "A",
+      "required": false
+    },
+    "S_pro-": {
+      "value": "0.015742783191567",
+      "unit": "kg COD.m-3",
+      "state": 29,
+      "class": "A",
+      "required": false
+    },
+    "S_ac-": {
+      "value": "0.197241155436605",
+      "unit": "kg COD.m-3",
+      "state": 30,
+      "class": "A",
+      "required": false
+    },
+    "S_hco3-": {
+      "value": "0.142777479392078",
+      "unit": "kmole C.m-3",
+      "state": 31,
+      "class": "A",
+      "required": false
+    },
+    "S_co2": {
+      "value": "0.009900391234255",
+      "unit": "kmole C.m-3",
+      "state": null,
+      "class": "A",
+      "required": false
+    },
+    "S_nh3": {
+      "value": "0.004090928458444",
+      "unit": "kmole N.m-3",
+      "state": 32,
+      "class": "A",
+      "required": false
+    },
+    "S_nh4+": {
+      "value": "0.126138887345238",
+      "unit": "kmole N.m-3",
+      "state": null,
+      "class": "A",
+      "required": false
+    },
+    "Sgas_h2": {
+      "value": "0.000010241035595",
+      "unit": "kg COD.m-3",
+      "state": 33,
+      "class": "B",
+      "required": true
+    },
+    "Sgas_ch4": {
+      "value": "1.625607209981422",
+      "unit": "kg COD.m-3",
+      "state": 34,
+      "class": "C",
+      "required": true
+    },
+    "Sgas_co2": {
+      "value": "0.014150534678395",
+      "unit": "kmole C.m-3",
+      "state": 35,
+      "class": "C",
+      "required": true
+    },
+    "pgas_h2": {
+      "value": "0.000016399182640",
+      "unit": "bar",
+      "state": null,
+      "class": "B",
+      "required": true
+    },
+    "pgas_ch4": {
+      "value": "0.650779632823186",
+      "unit": "bar",
+      "state": null,
+      "class": "C",
+      "required": true
+    },
+    "pgas_co2": {
+      "value": "0.362552713328102",
+      "unit": "bar",
+      "state": null,
+      "class": "C",
+      "required": true
+    },
+    "Pgas": {
+      "value": "1.069016490408918",
+      "unit": "bar",
+      "state": null,
+      "class": "C",
+      "required": true
+    },
+    "Qgas": {
+      "value": "2955.703454193784",
+      "unit": "Nm3.d-1",
+      "state": null,
+      "class": "D",
+      "required": true
+    }
+  },
+  "class_limits": {
+    "A": 0.01,
+    "B": 0.05,
+    "C": 0.02,
+    "D": 0.05
+  },
+  "zero_abs_limit": 1e-12
+}
