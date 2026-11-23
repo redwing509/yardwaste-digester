@@ -28,6 +28,7 @@ from adm1_sweep_jadm1 import (
     jadm1_influent_vector,
     jadm1_initial_vector,
     metrics_from_x,
+    parse_dynamic_output,
     parse_steady_result,
 )
 
@@ -303,6 +304,15 @@ class MappingTests(unittest.TestCase):
         self.assertAlmostEqual(m["pH"], 6.75)
         self.assertAlmostEqual(m["CH4_kgCOD_d"], 900.0)
         self.assertEqual(m["T_C"], 35.0)
+
+    def test_parse_dynamic_output_uses_last_row(self):
+        lines = ["0.0;" + ";".join(str(i) for i in range(42)) + ";\n"]
+        lines.append("200.0;" + ";".join(str(100 + i) for i in range(42)) + ";\n")
+        parsed = parse_dynamic_output("".join(lines), 200.0)
+        self.assertEqual(parsed["finish_d"], 200.0)
+        self.assertEqual(parsed["x"][0], 100.0)
+        self.assertEqual(parsed["x"][41], 141.0)
+        self.assertEqual(parsed["n_rows"], 2)
 
 
 if __name__ == "__main__":

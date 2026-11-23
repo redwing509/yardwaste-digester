@@ -95,12 +95,17 @@ def jadm1_influent_vector(feed: str, conc_scale: float, q_m3_d: float, packaged=
     return vec
 
 
-def write_semicolon_row(path: Path, values) -> None:
+def write_delimited_row(path: Path, values, delim=";") -> None:
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    # jADM1 CSVReader splits on ';' and parseDouble each field.
-    line = ";".join(f"{v:.16g}" for v in values) + ";\n"
+    # Trailing delimiter is tolerated (empty field after the last value).
+    line = delim.join(f"{v:.16g}" for v in values) + delim + "\n"
     path.write_text(line)
+
+
+def write_semicolon_row(path: Path, values) -> None:
+    """jADM1 StateVariables.readVar / default CSVReader split on ';'."""
+    write_delimited_row(path, values, delim=";")
 
 
 def parse_steady_result(text: str) -> list:
@@ -126,6 +131,23 @@ def parse_steady_result(text: str) -> list:
         raise ValueError(f"expected 42 effluent states, got {len(effluent)}: {sorted(effluent)}")
     vec = [effluent[i] for i in range(1, 43)]
     return {"finish_d": finish, "x": vec}
+
+
+def parse_dynamic_output(text: str, t_days: float) -> dict:
+    """Parse jADM1 Main.runDynamic() dynamic_output.csv (time + 42 states)."""
+    rows = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        parts = [p for p in line.split(";") if p != ""]
+        if len(parts) < 43:
+            raise ValueError(f"expected time + 42 states, got {len(parts)}: {line[:120]}")
+        rows.append([float(p) for p in parts[:43]])
+    if not rows:
+        raise ValueError("dynamic_output.csv is empty")
+    last = rows[-1]
+    return {"finish_d": last[0], "x": last[1:], "n_rows": len(rows)}
 
 
 def metrics_from_x(x) -> dict:
@@ -167,15 +189,25 @@ def run_jadm1_point(
     init_path = workdir / "initial.csv"
     inf_path = workdir / "influent.csv"
     write_semicolon_row(init_path, jadm1_initial_vector(t_c, initial=load_pyadm1_initial(initial_csv)))
-    write_semicolon_row(
+    # jADM1_BSM Main.java sets `steady = true` only *after* runSteady(), so
+    # checkArgs() treats `-in` as a dynamic file whenever `-steady` is used
+    # (and also when `-steady` is omitted, because runSteady is the default).
+    # The official CLI therefore ignores a steady influent file. A one-line
+    # comma-separated `-dynamic` influent with `-step` = t_days applies the
+    # same influent via Model.setInfluent and integrates [0, t_days] once
+    # with the same DAE model. `-init` is unaffected (it does not test the
+    # steady flag). Dynamic `-in` is split on comma, not semicolon.
+    write_delimited_row(
         inf_path,
         jadm1_influent_vector(feed, conc_scale, q_m3_d, packaged=packaged),
+        delim=",",
     )
     cmd = [
         str(jadm1_bin),
-        "-steady",
+        "-dynamic",
         "-s", "0.0",
         "-f", str(float(t_days)),
+        "-step", str(float(t_days)),
         "-init", str(init_path),
         "-in", str(inf_path),
     ]
@@ -197,10 +229,13 @@ def run_jadm1_point(
         raise RuntimeError(
             f"jADM1_BSM exited {proc.returncode}: {(proc.stderr or proc.stdout or '')[-2000:]}"
         )
-    result_file = workdir / "steady_result.csv"
-    text = result_file.read_text() if result_file.is_file() else (proc.stdout or "")
-    parsed = parse_steady_result(text)
-    if parsed["finish_d"] is not None and abs(parsed["finish_d"] - float(t_days)) > 1e-6:
+    result_file = workdir / "dynamic_output.csv"
+    if not result_file.is_file():
+        raise RuntimeError(
+            f"jADM1_BSM did not write {result_file}: {(proc.stderr or proc.stdout or '')[-2000:]}"
+        )
+    parsed = parse_dynamic_output(result_file.read_text(), t_days)
+    if parsed["finish_d"] is None or abs(parsed["finish_d"] - float(t_days)) > 1e-6:
         raise RuntimeError(
             f"jADM1 finish time {parsed['finish_d']} != requested {t_days}"
         )
