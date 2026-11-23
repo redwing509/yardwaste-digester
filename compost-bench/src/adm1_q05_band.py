@@ -9,6 +9,15 @@ from pathlib import Path
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 SUBSET_FILE = CONFIG_DIR / "q05-subset.json"
 REQUIRED = ("S_ac_eff_mg_L", "S_ch4_eff_mg_L", "pH", "CH4_kgCOD_d")
+# Band: a qsdsan row whose status is not a finished run is a completeness FAIL.
+FINISHED_QSDSAN_STATUS = frozenset({"run, not validated", "run"})
+
+
+def qsdsan_status_finished(status_txt: str) -> bool:
+    s = (status_txt or "").strip().lower()
+    if not s or any(w in s for w in ("failed", "error", "timeout", "running", "incomplete")):
+        return False
+    return s in {x.lower() for x in FINISHED_QSDSAN_STATUS}
 
 
 def sha256_file(path: Path) -> str:
@@ -131,7 +140,7 @@ def evaluate_point(point: dict, pred: dict, qsdsan_row: dict, subset=None) -> di
     rows = []
     ok = True
     status_txt = str(qsdsan_row.get("status") or "")
-    if "failed" in status_txt.lower() or not status_txt:
+    if not qsdsan_status_finished(status_txt):
         ok = False
     for name in required:
         row = evaluate_metric(name, pred.get(name), qsdsan_row.get(name), limits)

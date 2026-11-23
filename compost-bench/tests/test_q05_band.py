@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from adm1_q05_band import (
+    qsdsan_status_finished,
     evaluate_metric,
     evaluate_point,
     evaluate_subset,
@@ -222,6 +223,20 @@ class IntegrationGuardTests(unittest.TestCase):
         )
         self.assertNotEqual(proc.returncode, 0)
         self.assertIn("YWSIM_ALLOW_INTEGRATION", proc.stderr)
+
+
+
+
+class StatusAllowListTests(unittest.TestCase):
+    def test_qsdsan_status_allow_list(self):
+        self.assertTrue(qsdsan_status_finished("run, not validated"))
+        self.assertTrue(qsdsan_status_finished("run"))
+        self.assertFalse(qsdsan_status_finished(""))
+        self.assertFalse(qsdsan_status_finished("failed"))
+        self.assertFalse(qsdsan_status_finished("timeout"))
+        self.assertFalse(qsdsan_status_finished("error"))
+        self.assertFalse(qsdsan_status_finished("running"))
+        self.assertFalse(qsdsan_status_finished("incomplete"))
 
 
 if __name__ == "__main__":
