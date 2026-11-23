@@ -20,3 +20,6 @@ Harness defects are open and this work is not validated. The S_ch4 comparison is
 ## Improvements welcome
 
 This project is free and open source under the MIT license. You can use the code, and you can request improvements by opening a GitHub [issue](https://github.com/redwing509/yardwaste-digester/issues/new) or a pull request from a fork. Every proposed change is reviewed before it is merged. See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Coding process
+
+Models and contributors writing code should follow the adopted coding process in [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/superpowers-adopted/](docs/superpowers-adopted/). The official review set, frozen pass rules, and owner merge approval still come first.
