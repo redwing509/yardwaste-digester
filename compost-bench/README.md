@@ -60,6 +60,18 @@ bash launch-adm1-fullstate-q02.sh
 
 PyADM1 is loaded from `/workspace/digester-tools/src/PyADM1` at commit e7f806e1. The official tree is not edited.
 
+Q-05 packaged design-sweep subset (PyADM1 vs stored QSDsan DGS2/DGS3 rows),
+with the Q-02 BSM2 Table 6 check as the anchor. The subset and band were
+frozen in `PRE-REGISTERED-BAND-Q05.md` on 22 Nov 2026, 4:40 PM PST, before
+any new PyADM1 sweep integrations:
+
+```
+export YWSIM_RESULT_DIR=$HOME/compost-bench-results-q05
+export YWSIM_PYTHON=/workspace/digester-tools/envs/pyadm1/bin/python
+export YWSIM_WORKERS=2
+bash launch-q05.sh
+```
+
 
 ## Dependency licenses
 
