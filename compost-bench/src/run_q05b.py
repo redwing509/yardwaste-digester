@@ -213,9 +213,12 @@ def main(argv=None):
         raise SystemExit("refusing jADM1 integration unless YWSIM_ALLOW_INTEGRATION=1")
 
     steam_path = result_dir / "steam_table.json"
+    steam = None
     if steam_path.is_file():
         steam = json.loads(steam_path.read_text())
-    else:
+        if steam.get("overall_closer") in (None, "INCOMPLETE") or not steam.get("qsdsan_ok", False):
+            steam = None
+    if steam is None:
         steam = steam_table_report()
         _json(steam_path, steam)
 

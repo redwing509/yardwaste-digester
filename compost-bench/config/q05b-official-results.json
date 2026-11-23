@@ -275,6 +275,51 @@
     "written_at": "2026-11-22 06:10:53 PM PST"
   },
   "id": "Q-05b",
+  "named_table_crosscheck": {
+    "command": "CoolProp.CoolProp.PropsSI('P', 'T', T_K, 'Q', 0, 'HEOS::Water') / 1e5",
+    "flag_raised": false,
+    "flag_threshold_bar": 5e-05,
+    "if97_closeness_unchanged": "QSDSAN_CLOSER",
+    "note": "This is the equivalent named IAPWS-95 / Wagner\u2013Pruss tabulated cross-check allowed by PRE-REGISTERED-BAND-Q05B.md. NIST Chemistry WebBook was not retrieved. Closeness still uses IAPWS-IF97 as the primary reference. A disagreement larger than 0.00005 bar between IF97 and this table is flagged but does not decide ADM1 siding or which formula is closer.",
+    "official_r1_csv_sha256": {
+      "DGS:brewery:T30:Q68:s0.5": {
+        "bytes": 1674,
+        "path": "/workspace/ywsim-results/q05b-jadm1/runs/DGS_brewery_T30_Q68_s0.5/dynamic_output.csv",
+        "sha256": "0bd4648080cbe0855afff4677f443151be75d2bbe7d2faabcec8cc3882222f2c"
+      },
+      "DGS:brewery:T35:Q170:s1": {
+        "bytes": 1655,
+        "path": "/workspace/ywsim-results/q05b-jadm1/runs/DGS_brewery_T35_Q170_s1/dynamic_output.csv",
+        "sha256": "ee88fb72ae705bd5d310b3761754b21a11a906b937ded98423c044f52325e0c6"
+      },
+      "DGS:bsm2:T35:Q170:s1": {
+        "bytes": 1630,
+        "path": "/workspace/ywsim-results/q05b-jadm1/runs/DGS_bsm2_T35_Q170_s1/dynamic_output.csv",
+        "sha256": "9a78c9bb9efef3ed6695047c3bac36bf84a553aef10f617934c5bf768cc891ae"
+      }
+    },
+    "python": "/workspace/venv-ywsim/bin/python",
+    "rows": {
+      "30.00_C": {
+        "T_K": 303.15,
+        "abs_diff_bar": 2.824964e-06,
+        "flag_gt_0_00005_bar": false,
+        "iapws95_coolprop_bar": 0.042469708369,
+        "if97_bar": 0.042466883405,
+        "qsdsan_H2O_Psat_bar": 0.042469708368
+      },
+      "35.00_C": {
+        "T_K": 308.15,
+        "abs_diff_bar": 3.959627e-06,
+        "flag_gt_0_00005_bar": false,
+        "iapws95_coolprop_bar": 0.056290161068,
+        "if97_bar": 0.056286201441,
+        "qsdsan_H2O_Psat_bar": 0.056290161067
+      }
+    },
+    "source": "CoolProp 8.0.0 HEOS::Water (IAPWS-95 Helmholtz equation of state; Wagner and Pruss, J. Phys. Chem. Ref. Data 31, 387\u2013535, 2002; IAPWS R6-95).",
+    "written_at": "2026-11-22 06:54:41 PM PST"
+  },
   "parser_fix_note": "r1 (6:04:31 PM PST) scored the last CSV row (state at 400 d). r2 re-extracts the unique row whose label+step equals t_days (state at 200 d) from the same official CSVs. Java was not rerun.",
   "q05_fail_unchanged": true,
   "revision": "r2",

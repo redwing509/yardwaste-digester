@@ -1,6 +1,6 @@
 # Q-05b steam-table check
 
-**Written:** Sun 22 Nov 2026, 6:02:55 PM PST (America/Los_Angeles, UTC-8),
+**Official IF97 / formula values written at:** Sun 22 Nov 2026, 6:02:55 PM PST (America/Los_Angeles, UTC-8),
 after the method was frozen in `PRE-REGISTERED-BAND-Q05B.md` at `1216299`
 (5:59:11 PM PST) and before the official 200-day jADM1_BSM score was
 recorded. This file reports the formula comparison. It does **not** change
@@ -37,14 +37,28 @@ two formulas.
 
 The frozen method also asks for a named tabulated cross-check (NIST
 Chemistry WebBook, or an equivalent IAPWS-95 / Wagner–Pruss table) at the
-same two temperatures. That row was not retrieved in this pass and is
-recorded here as a deviation from the written method. The IF97
-critical-point identity (p_sat(647.096 K) = 22.064 MPa) was checked and
-is optional under the frozen text; it is not a substitute for the named
-table. Closeness still uses IAPWS-IF97 as the primary reference, so
-**QSDSAN_CLOSER** stands. A later named table would have to disagree with
-IF97 by more than 0.00005 bar before it would be flagged, and it would
-still not decide ADM1 siding.
+same two temperatures. That row was missing from the 6:02:55 PM PST
+report and was recorded as a deviation. It was completed at 6:53 PM PST
+from CoolProp 8.0.0 `HEOS::Water` (IAPWS-95 Helmholtz EOS; Wagner and
+Pruss, J. Phys. Chem. Ref. Data 31, 387–535, 2002; IAPWS R6-95), which
+is the equivalent named IAPWS-95 path allowed by the frozen method. NIST
+Chemistry WebBook was not retrieved. The IF97 critical-point identity is
+optional under the frozen text and is not a substitute for this row.
+
+| T | IAPWS-IF97 (bar) | IAPWS-95 CoolProp 8.0.0 (bar) | \|IF97−IAPWS-95\| | flag (> 0.00005 bar) |
+| --- | ---: | ---: | ---: | --- |
+| 30.00 °C | 0.042466883405 | 0.042469708369 | 0.000002825 | no |
+| 35.00 °C | 0.056286201441 | 0.056290161068 | 0.000003960 | no |
+
+No flag is raised. Closeness still uses IAPWS-IF97 as the primary
+reference, so **QSDSAN_CLOSER** stands. The IAPWS-95 values agree with
+qsdsan `H2O.Psat` to 1e-12 bar, which is consistent with QSDsan /
+thermosteam using the same IAPWS-95 formulation; that agreement does not
+change the IF97-primary closeness rule and does not decide ADM1 siding.
+The official IF97 / formula `steam_table.json` from 6:02:55 PM PST was
+not overwritten. The named-table file is
+`config/q05b-named-table-crosscheck.json` and
+`/workspace/ywsim-results/q05b-jadm1-r2/named_table_crosscheck.json`.
 
 The official `steam_table.json` was written at 6:02:55 PM PST, after the
 method was frozen in `1216299` (5:59:11 PM PST) and before the official

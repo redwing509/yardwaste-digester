@@ -18,7 +18,7 @@ passed and the review set had no must-fix, a public push and merge
 - Overall brewery siding: **SIDES_WITH_QSDSAN**
 - Packaged BSM2 centre sanity: **PASS** (CH4 agrees with both frozen
   references; liquids agree with both)
-- Steam-table closeness: **QSDSAN_CLOSER** (see `STEAM-TABLE-Q05B.md`)
+- Steam-table closeness: **QSDSAN_CLOSER** (see `STEAM-TABLE-Q05B.md`). The named IAPWS-95 / CoolProp 8.0.0 cross-check, completed 6:53 PM PST, differs from IF97 by less than 0.00005 bar at both temperatures (no flag). IF97 remains the primary closeness reference.
 - **Q-05 FAIL unchanged**
 
 Third model: jADM1_BSM commit

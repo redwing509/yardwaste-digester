@@ -215,6 +215,6 @@ def evaluate_study(thirds: dict, study=None, require_checksums=True) -> dict:
         "overall_siding": overall,
         "study_pass": study_pass,
         "merge_eligible": study_pass,
-        "q05_fail_unchanged": True,
+        "q05_fail_unchanged": bool(study.get("q05_fail_unchanged", True)),
         "points": points,
     }

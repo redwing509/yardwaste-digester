@@ -210,7 +210,7 @@ def run_jadm1_point(
     timeout_s=7200,
 ):
     _require_allow()
-    workdir = Path(workdir)
+    workdir = Path(workdir).resolve()
     workdir.mkdir(parents=True, exist_ok=True)
     init_path = workdir / "initial.csv"
     inf_path = workdir / "influent.csv"
