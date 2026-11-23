@@ -9,3 +9,4 @@ Each country note includes a short **Simulators and modeling tools** section. To
 | File | Status | What it is |
 | --- | --- | --- |
 | [01-germany.md](01-germany.md) | Checked 14 Nov 2026 | Germany: commercial and municipal dry / high-solids AD of garden, park and biowaste, plus the 2025 DBFZ Pilot-SBG biorefinery in Leipzig. Most separately collected green waste is still composted. Includes a checked Simulators found section (SIMBA#biogas, BENSIM, BENOPT, and STRIKE-GOLDD as used by DBFZ). |
+| [02-usa.md](02-usa.md) | Checked 15 Nov 2026 | United States: dry / high-solids AD of yard trimmings with food waste (ZWE SMARTFERM plants in California, UW Oshkosh BIOFerm), UC Davis and Bucknell yield data, NREL ReSOURCE (VFA, not methane). Hermes first pass was too thin and was redone; unverified claims are listed and dropped. Includes a checked Simulators section (ADM1F, JMTK-ADM1, PyADM1, BioWin). |

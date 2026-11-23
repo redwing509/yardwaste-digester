@@ -1,0 +1,52 @@
+# United States — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
+
+Status: DONE (checked). Prompt language: English. Hermes first draft (job 20261114-215002-digester-survey-02-usa-yard-waste-ad, key dg-survey-02-usa, rc 0, about 80 seconds, 9:50–9:51 PM America/Los_Angeles 14 Nov 2026) was too thin and had many unverified claims, so a second pass (job 20261115-000844-digester-survey-02-usa-r2, key dg-survey-02-usa-r2, rc 0, 12:08–12:22 AM America/Los_Angeles 15 Nov 2026) was run. The r2 draft was still partly unsourced (its own simulator section said none were found). This note is built from what the checker opened and confirmed on the pages themselves; claims that could not be opened are listed under "Not taken". Checked 15 Nov 2026, about 12:10–12:35 AM America/Los_Angeles.
+
+## Summary
+
+The United States has a small number of documented dry (high-solids, batch plug-flow) anaerobic digesters that take yard trimmings and green waste together with food waste: SMARTFERM plants from Zero Waste Energy in California (Monterey, South San Francisco, Napa) and the BIOFerm FERMITIGO plant at the University of Wisconsin Oshkosh. Yard waste is usually a secondary feedstock mixed with food waste, because green waste gives much less biogas; separately collected residential yard trimmings are mostly composted. Published US yard-waste yield figures are few: the 2005 UC Davis / California Energy Commission batch tests and the 2014 Bucknell pilot. The vendor flyer yields are design figures, not measured operating data.
+
+## Verified findings
+
+**Zero Waste Energy SMARTFERM flyers (official PDFs, opened).** Monterey Regional Waste Management District, Marina CA: 4 steel dry digesters, 40 ft long, up to 5,000 t/a organic waste, 100 kW CHP, 21-day batch, operations began February 2013. South San Francisco (Blue Line Transfer): 8 steel digesters, 44 ft, up to 11,200 t/a of food and green waste, 21-day batch, 120,000+ DGE/yr CNG, operations began January 2015. Both flyers list in a "Results" table thermophilic operation (125–131 °F), biogas yield 3,000–3,200 CF/ton and methane 58–62 %. These are marketing / design-basis numbers; the flyers do not call them measured plant data (the Hermes draft said "measured on-site"; that is not supported). Napa flyer (2018, opened via search snapshot; the site returned a bot challenge to direct download): 5 concrete digesters, up to 25,000 t/a, estimated 330,000 DGE/yr, same yield table. Flyer year: the files sit under a 2019 upload path and are labelled 2018.
+
+**BioCycle, "Solid Waste District Pilots Dry Fermentation Digester" (Abbie Beane, 18 Nov 2013, opened).** Monterey pilot sized for 5,000 t/a, mixed food waste 70 % and ground yard trimmings 30 %; each digester holds 60–65 t; thermophilic; retention 25–28 days quoted for pathogen reduction; 2G Cenergy 100 kW CHP (the Hermes "120 kW" was wrong); methane content reported 63.5 % (from May–July 2013 operating data, not the flyer's 58–62 %); highest throughput 82 % of capacity in May 2013; MRWMD was able to run 70–80 % food waste; digestate composted in on-site windrows; capacity about 120 t green waste and 280 t food waste per month.
+
+**Napa (BioCycle, Paula Luu, 7 April 2026, opened).** The currently described Napa digester is designed for about 44,000 t/a, initially one-third food waste and two-thirds green waste, up to 500,000 DGE/yr of CNG, roughly 21-day thermophilic cycle, about 18 % mass reduction, $10 million CalRecycle grant plus federal investment tax credits; owned by the City of Napa, operated by Napa Recycling, technology by Zero Waste Energy; residential organics (mostly yard trimmings and soiled paper) are sent primarily to composting because of low methane potential. This replaces the older 25,000 t/a / 330,000 DGE design in the 2018 flyer. A CARB LCFS design-based pathway summary (search snippet, not fully opened) models 30,000 t/a food scraps and 3,000 t/a urban landscaping waste at up to 44,000 t/a SSO, 320,000 DGE/yr and a 500 kW CHP. The Hermes draft's "construction 2024–2025" was not confirmed.
+
+**University of Wisconsin Oshkosh (BIOFerm, FERMITIGO).** From the official EPA presentation by Kleinheinz (opened): 4 fermenters, each 70 ft × 23 ft × 16.7 ft, total fermenter volume 26,887 ft³, 28-day cycle, installed electric capacity 350 kW, CHP generator 370 kW (the draft's 16.5 ft was a slip). BioCycle 2011/2012 (Anaerobic Digest, June 2011; Nora Goldstein, Feb 2012; search snippets and an opened page): 8,000 t/a design, 2G Cenergy 370 kW CHP, about 2.3 million kWh/yr expected, 7,900 MMbtu thermal. BioCycle "Anaerobic Digest" (search snippet): about 10,000 t/a actual feed with food scraps 48 %, yard trimmings 17 %, farm residue 35 %; it started operating in 2011. BIOFerm's own case study (search snippet) calls it North America's first industrial-scale high-solids digester. The draft's "Dr. Chuck Rasmussen" was not confirmed and was dropped.
+
+**UC Davis / California Energy Commission, 2005 contractor report (Zhang, El-Mashad, Hartman, Wang, Rapport, Choate, Gamble; opened).** Batch tests at 50 °C. Green waste (City of Vacaville) methane yield 202 mL/gVS at 10 days and 226 mL/gVS at 28 days, VS destruction 79.3 %, biogas 2,862.5 ft³/ton wet weight at 55 % methane; food waste 338 and 435 mL/gVS, 5,078 ft³/ton at 73 % methane. This is the clearest open number for green waste alone. Green-waste moisture content 65 % (the "VS/TS 78 %" figure was not rechecked).
+
+**Bucknell University pilot (Drennan and DiStefano, Waste Management 34(7):1289–1298, 2014; record opened, full text not open).** Pilot high-solids digestion of food plus landscape waste. Stable at 2 g COD/L-day (232 L CH4/kg COD fed; 229 L CH4/kg VS fed); inhibitory ammonia at 15 g COD/L-day (211 and 272 respectively). The authors found landscape waste had low biodegradability and was not suitable to raise the C:N ratio.
+
+**NREL ReSOURCE (ARPA-E project page, opened).** Organized as a project at the national laboratory in Golden CO (now named "National Laboratory of the Rockies" on the page), partner Colorado State University, ARPA-E OPEN 2021, $3,508,800, 1 Oct 2022 – 31 Dec 2025, status Alumni. It uses arrested anaerobic digestion to make volatile fatty acids (for aviation fuel, lubricants, surfactants) from solid food waste, manure and yard waste; the page claims about 120 kt/yr of feedstock access. It is not a methane digester and has no plant-scale yard-waste yields. The Hermes dates (2023–2026), "struvite", and "HTC concept" statements were not found and were dropped.
+
+**EPA AgSTAR.** The *Project Development Handbook* (EPA 430-B-20-001, 3rd ed.) opened: it is about digesters on farms, not municipal yard-waste plants. The Hermes use of it as a source for yard-waste AD, RINs and LCFS was incorrect and was dropped.
+
+**Policy.** California's Low Carbon Fuel Standard has a design-based pathway application for Napa food scraps and urban landscaping waste (CARB staff summary, partly opened). No open source was found for a quantified RIN or LCFS credit value for yard-waste AD, and no state yard-waste landfill-ban list was verified; those Hermes statements are unconfirmed.
+
+## Corrections to Hermes (summary)
+
+- 3,000–3,200 CF/ton and 58–62 % methane are in the ZWE flyers' "Results" tables, but as vendor design figures; BioCycle's operating methane was 63.5 %.
+- Monterey CHP is 100 kW, not 120 kW. Napa is now 44,000 t/a (2026), not only 25,000 t/a.
+- The "University of California, Davis 2022 steam-explosion study" (PubMed 16752609) is really Dereix, Parker and Kennedy, Water Environment Research, May 2006, DOI 10.2175/106143006x95456, on municipal wastewater sludge, not UC Davis and not yard waste. It is dropped from findings.
+- ReSOURCE dates and content corrected above. The AgSTAR handbook is about farms. "Dr. Chuck Rasmussen" and "51 % of sites use yard waste" were not confirmed. The r2 NREL "40–60 % efficiency" claim was not found in the BETO report text checked and was dropped.
+- Dropped as unsupported: a University of Illinois 2022 yard-waste AD thesis, a "2024 DOE report on advanced AD modeling", the "EPA Biogas Toolkit 2021" BioWin case study, the energy.gov "Engineers turning refuse into resources" press release URL (returned HTTP 404), and the City of Norman OK CWSRF yard-waste co-compost item.
+
+## Simulators and modeling tools
+
+Nothing was installed. Installing any tool below still needs a separate OK.
+
+**Simulators found**
+
+- **ADM1F** (Los Alamos National Laboratory, USA). C++ implementation of ADM1 with a faster solver; ADM1F_SRT version with solids-retention-time changes. License BSD-3-Clause (GitHub API). Official repository: https://github.com/lanl/ADM1F ; documentation https://elchin.github.io/ADM1F_docs/ . Last push 17 July 2024. Citation as "used in the NREL project" was not found and was dropped.
+- **JMTK-ADM1** (PSOR Laboratory, University of Connecticut, USA). ADM1 in Julia ModelingToolkit, constant and dynamic influent versions. License MIT. https://github.com/PSORLab/JMTK-ADM1 . Last push 3 Aug 2022. A "2024 DOE report" citation was not found.
+- **PyADM1** (Peyman, GitHub user CaptainFerMag; affiliation and country not stated). Python ADM1 implementation based on the BSM2 version and ring-tested against the BSM2 MATLAB implementation. License MIT. https://github.com/CaptainFerMag/PyADM1 . Last push 9 Aug 2022. Not shown to be a US tool and the Illinois thesis citation was not found; kept only as an open ADM1 code. (It was already noted as not installed in the 31 Oct digester inventory.)
+- **BioWin** (EnviroSim, Flamborough, Ontario, Canada; not a US developer). Commercial wastewater/AD plant simulator, proprietary. Official page https://www.envirosim.com/biowin/ resolves (the page opened is the training material page). "Free academic license" and the EPA case-study citation could not be confirmed.
+
+**Not added.** No US-specific yard-waste or dry-AD simulator (such as one tied to SMARTFERM or BIOFerm) was verified. No dedicated US hydrothermal-carbonization or torrefaction process simulator was verified.
+
+## Limits
+
+The Napa 2018 flyer and the BioCycle 2011 and Anaerobic Digest items were seen as search snapshots, not as fully opened pages. The Bucknell full text and the CARB summary were not fully read. Nothing was found on US pretreatment (steam explosion, HTC, torrefaction) at yard-waste plants; "nothing found" is a search result, not proof. Hermes ran for 80 seconds and 14 minutes; most of its added claims could not be confirmed.
