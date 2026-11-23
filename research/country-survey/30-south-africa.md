@@ -1,0 +1,32 @@
+# South Africa — yard-waste / green-waste / lignocellulosic anaerobic digestion (checked)
+
+Status: DONE (checked). Researched directly by Grok Bot, no Hermes (James t1114u/t1115u, 16 Nov 2026, about 9:02–9:04 PM America/Los_Angeles). Prompt language: English (main research language per COUNTRY_LIST). South Africa only. Two passes (James t1084u): Pass 1 = sources opened; Pass 2 = findings below, each with a quote copied from the opened source and its link. Anything not found in an opened source is marked NOT FOUND.
+
+## Summary
+
+South Africa has no yard-waste digester, but garden waste is a big share of what is landfilled and has been counted as a possible digester feed. A 2016 University of Johannesburg feasibility study for a biogas pilot at Johannesburg's Robinson Deep landfill recorded garden waste at "about 168 ton/day" and estimated it could give 41 % of the site's organic-waste energy, but "This feasibility study only focuses on the three sources" other than garden waste, which "might be required" to be pre-treated. The pilot now being built there (ground broken Sept 2026) will take "about 50 t of source-separated biodegradable waste daily". Johannesburg and Tshwane's garden-waste plan is chipping and composting. A 2016 UJ M.Tech thesis studied lawn-grass digestion; NaOH pretreatment raised total methane "from 813 to 1204 NmL" (totals per batch, not per gram VS). Cape Town's New Horizons plant (2017) takes municipal, wet-trade and organic waste, not garden waste specifically.
+
+## Verified findings
+
+- **Robinson Deep (Johannesburg) feasibility study** — University of Johannesburg for City of Johannesburg, *Feasibility Study – Implementation of a Pilot Biogas Plant at Robinson Deep Landfill*, ref. CoJ/UJ/WTE/FS003, 3 Feb 2016 (https://www.dbsa.org/sites/default/files/media/documents/2021-07/RFP163-2021%20CoJ%20Biomethane%20UJ%20Feasibility%20study.pdf): "Historical data for garden waste, a potential substrate for anaerobic digestion, was also recorded with about 168 ton/day. This put the total organic waste at 495.8 tons/day or 180,959 ton/year"; Table 4-8 row "Garden waste 34% 61,345 [t/yr] 5,579,941 [m3/yr biogas] 120,516 [GJ/yr] 41%"; "depending on the lignocellulose content of the garden waste some degree of pre-treatment might be required … This feasibility study only focuses on the three sources highlighted earlier"; TS "for mixed and garden waste was 27.33 and 29.26%". The garden-waste biogas figure is the study's estimate, not a measurement.
+- **Robinson Deep pilot under construction** — Engineering News, 9 Sept 2026 (https://www.engineeringnews.co.za/article/city-of-johannesburg-breaks-ground-on-biodigester-pilot-plant-2026-09-09): "a facility designed to process about 50 t of source-separated biodegradable waste daily using anaerobic digestion technology"; partners "Global Environment Facility (GEF), the United Nations Environment" Programme; "Construction is scheduled for completion in March 2027, followed by plant commissioning and a 12-month operational testing phase." Whether garden waste is in the feed: NOT FOUND.
+- **Gauteng garden-waste plan = chipping and composting** — VDMA business-opportunity factsheet ZAF 19 (https://www.vdma.eu/documents/34570/3317050/Business_Opportunity_ZAF_19.pdf/bce02d4a-5f4b-42cd-3196-a62b59fe6a37?t=1741187354623): Tshwane and Johannesburg "aim to divert at least 50% of their current organic and garden waste volumes from landfill by 2030"; C40 Cities "has issued a tender for consultants to develop and analyse the garden waste chipping programme"; sought: "garden waste chipping and composting facilities". (Industry factsheet, secondary.)
+- **UJ lawn-grass digestion thesis** — Sibiya N. T., *Enhancing biogas production from lawn grass by optimizing …*, Master of Technology, University of Johannesburg, 2016 (supervisor Prof. Edison Muzenda; https://ujcontent.uj.ac.za/view/pdfCoverPage?download=true&filePid=136216590007691&instCode=27UOJ_INST): batch digester "(1000 mL) with the working volume of 800 mL", AMPTS II; "co-digestion has been considered as the most preferable method"; "The suitable environmental condition for AD on this study was found to be at 45 ºC and pH of 6.5, while the optimal retention time was found to be 8 days"; "pre-treating lawn grass with 0.093 M NaOH at 40 and 55 ºC prior the AD process resulted in a significant increase in bio-methane potential from 813 to 1204 NmL and methane content from 40 to 52 %." **Check note:** 813 and 1204 NmL are totals per batch, not NmL/g VS (a search summary had mislabeled them as per g VS).
+- **Cape Town New Horizons (Athlone) plant, 2017** — IOL, 25 Jan 2017 (https://iol.co.za/news/south-africa/western-cape/2017-01-25-cape-town-pioneers-turning-waste-into-energy/): "The New Horizons waste-to-energy plant will process on average 500 tons of municipal solid waste, wet-trade waste and pure organic waste to produce liquid Bio-CO2, compressed biomethane, renewable natural gas (RNG), organic fertiliser and refuse-derived fuel." Anaergia (https://www.anaergia.com/about-us/media-center/article-first-large-scale-organic-waste-to-energy-plant-in-africa-opened-in-cape-town-using-anaergia-technology/): "It converts municipal solid waste into renewable, clean energy using technology from the Anaergia group". Current operating status and garden-waste share: NOT FOUND.
+
+## Simulators and modeling tools
+
+Simulators found (after check): none added.
+
+- Stellenbosch University PhD: Mossissa A. T., *Development of a techno-economic analysis tool for anaerobic digestion in smallholder farming systems in the context of the water-energy-food nexus*, 2022-04 (https://scholar.sun.ac.za/handle/10019.1/124962). The record holds the thesis PDF; a released, downloadable tool and its license: NOT FOUND. Not added.
+- A WEST-based sulphate-reduction AD modelling thesis in the UKZN repository (hdl.handle.net/10413/882) — HTTP 500; not used.
+
+## Not taken (unverified)
+
+- Cape Town Bellville garden-waste BMP (UCT, hdl.handle.net/11427/16970) seen only in a search summary — HTTP 500; not used.
+
+NOT FOUND: a South African digester taking mainly yard/garden waste; a measured garden-waste BMP per g VS in an opened South African source; an LCA of yard-waste AD in South Africa; an HTC or torrefaction pilot for yard waste; a released South African digester simulator.
+
+## Method status
+
+No Hermes job (direct research per James t1114u/t1115u). 9 URLs attempted: 7 opened with HTTP 200 and used, 2 HTTP 500. No DOI cited.
