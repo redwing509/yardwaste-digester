@@ -220,9 +220,11 @@ def run_jadm1_point(
     # (and also when `-steady` is omitted, because runSteady is the default).
     # The official CLI therefore ignores a steady influent file. A one-line
     # comma-separated `-dynamic` influent with `-step` = t_days applies the
-    # same influent via Model.setInfluent and integrates [0, t_days] once
-    # with the same DAE model. `-init` is unaffected (it does not test the
-    # steady flag). Dynamic `-in` is split on comma, not semicolon.
+    # same influent via Model.setInfluent and integrates with the same DAE
+    # model. The CLI also performs a second, unrequested continuation step
+    # (see parse_dynamic_output); the official metric is the state at
+    # t_days, not the continuation. `-init` is unaffected (it does not
+    # test the steady flag). Dynamic `-in` is split on comma, not semicolon.
     write_delimited_row(
         inf_path,
         jadm1_influent_vector(feed, conc_scale, q_m3_d, packaged=packaged),

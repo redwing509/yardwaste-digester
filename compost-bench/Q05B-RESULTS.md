@@ -99,7 +99,7 @@ jADM1_BSM implements the Rosen / Jeppsson water-vapor formula (the same
 closed form as official PyADM1), yet its methane mass rate agrees with
 QSDsan to 0.002–0.007% and misses official PyADM1 by 5.6–8.3% on the two
 brewery points, which is the same side of the Q-05 5% band as QSDsan.
-The packaged centre methane is also within 0.004% of QSDsan and 3.11% of
+The packaged centre methane is also within 0.0033% of QSDsan and 3.11% of
 PyADM1 (inside the 5% band, so AGREES_WITH_BOTH).
 
 Under the frozen rule this is a conclusive **SIDES_WITH_QSDSAN** result.
