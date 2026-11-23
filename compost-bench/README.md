@@ -75,6 +75,22 @@ bash launch-q05.sh
 ```
 
 
+
+Q-05b third independent ADM1 check (jADM1_BSM) of the two Q-05 brewery
+methane FAILs plus the packaged BSM2 centre, and an IAPWS-IF97 steam-table
+check of both vapor-pressure formulas. The rule was frozen in
+`PRE-REGISTERED-BAND-Q05B.md` on 22 Nov 2026, 5:57 PM PST, before any
+jADM1_BSM integration of those points. Official result:
+`Q05B-RESULTS.md` (PASS, SIDES_WITH_QSDSAN). Steam table:
+`STEAM-TABLE-Q05B.md` (QSDSAN_CLOSER). The Q-05 FAIL is not overturned.
+
+```
+export YWSIM_RESULT_DIR=$HOME/compost-bench-results-q05b
+export YWSIM_PYTHON=/workspace/venv-ywsim/bin/python
+export JADM1_BIN=/workspace/digester-tools/bin/jadm1-bsm
+bash launch-q05b.sh
+```
+
 ## Dependency licenses
 
 These packages are not vendored here. Install them yourself.
