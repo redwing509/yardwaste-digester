@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://mkipgo.ks.gov.ba/sites/mkipgo.ks.gov.ba/files/2022-05/plan_upravljanja_otpadom_kantona_sarajevo_za_period_2015-2020.godina.pdf",
+  "doi": "",
+  "title": "PLAN UPRAVLJANJA OTPADOM KANTONA SARAJEVO ZA PERIOD 2015. - 2020.GODINA (cover: Sarajevo, juni 2015.godine)",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "FALSE",
+  "quote": "VERBATIM ON PAGE: \"Tabela 1: Operativni ciljevi za integrirani sistem\" with header \"Vremenski period 2011 2014 2018\" and row \"Biorazgradivi otpad iz vrtova i parkova 30% 50% 70%\" (lines 203-217 of extracted full text). NOT ON PAGE: the rest of the recorded quote, \"na području Kantona Sarajevo generiše preko 30.252,6 tona/godišnje biorazgradivog otpada. Pošto se biorazgradivi otpad ne prikuplja odvojeno, uglavnom završava na deponiji Smiljevići sa preostalim komunalnim otpadom\" — searches for \"30.252,6\", \"generiše preko\", \"ne prikuplja odvojeno\", \"preostalim komunalnim\" returned zero matches; \"Smiljevići\" appears only in unrelated KEAP-priority text (lines 585 and 589).",
+  "how_verified": "web_extract opened the PDF and saved full text (50,000 chars) to /workspace/hermes-box/research-home-t1358u/cache/web/mkipgo.ks.gov.ba-e2244a3eca.md; search_files and read_file then checked each phrase of the recorded quote against the extracted page text",
+  "how_opened": "full text",
+  "limitations": "Only the text layer of the PDF was checkable; table layout may be flattened in extraction. No DOI exists for this document. Title matches the recording. First segment of the recorded quote matches verbatim; the full recorded quote is altered/missing, so verdict FALSE."
+}

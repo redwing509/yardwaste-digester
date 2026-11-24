@@ -1,0 +1,31 @@
+{
+  "checked": "2026-11-24 11:59:40 AM PST",
+  "summary": "S01 and S02 official PDFs opened (HTTP 200). Recorded Hermes quotes are spliced; component sentences are verbatim and will be quoted separately. S03 live CCAC URL returned 403; the same official PDF was opened from the Internet Archive snapshot 20220329011512. S04 official voda.ba PDF opened; Hermes used 'istraživana' where the PDF says 'ispitivana' — use the PDF wording.",
+  "rows": [
+    {
+      "url": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/Federalni-plan-upravljanja-otpadom-2012-2017-Final.pdf",
+      "http_status": 200,
+      "quote_check": "PARTS_VERBATIM",
+      "note": "Two operational objectives appear verbatim as separate bullets. The recorded quote joins them and adds a parenthetical citation."
+    },
+    {
+      "url": "https://mkipgo.ks.gov.ba/sites/mkipgo.ks.gov.ba/files/2022-05/plan_upravljanja_otpadom_kantona_sarajevo_za_period_2015-2020.godina.pdf",
+      "http_status": 200,
+      "quote_check": "PARTS_VERBATIM",
+      "note": "Tabela 1 header years 2011/2014/2018 and the garden/park waste row 30%/50%/70% are on the page, as is the 30,252.6 t/year + Smiljevići sentence. The recorded quote splices the table and the later sentence."
+    },
+    {
+      "url": "https://www.ccacoalition.org/sites/default/files/resources/6_se_europe_cities_organic_waste_mgt_guidance_final_draft.pdf",
+      "http_status": 403,
+      "opened_via": "https://web.archive.org/web/20220329011512id_/https://www.ccacoalition.org/sites/default/files/resources/6_se_europe_cities_organic_waste_mgt_guidance_final_draft.pdf",
+      "quote_check": "PARTS_VERBATIM_ON_ARCHIVE",
+      "note": "Live URL 403. Wayback official snapshot of the same PDF opened. English guideline sentence and several Bosnian sentences are on the PDF, but the recorded quote is a splice and slightly rewords the AD definition."
+    },
+    {
+      "url": "https://www.voda.ba/uimages/Mirnesa%20Zohorovic%20i%20sar%20ZR.pdf",
+      "http_status": 200,
+      "quote_check": "NEAR_QUOTE_NOT_VERBATIM",
+      "note": "PDF says 'U ovom radu ispitivana je anaerobna kodigestija...' not 'Rezime: ...istraživana je...'. Affiliation of the Tuzla faculty is printed on the title block. Use the PDF wording."
+    }
+  ]
+}

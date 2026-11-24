@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://www.ccacoalition.org/sites/default/files/resources/6_se_europe_cities_organic_waste_mgt_guidance_final_draft.pdf",
+  "doi": "",
+  "title": "PRIRUČNIK ZA UPRAVLJANJE BIO OTPADOM",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "FALSE",
+  "quote": "Page text (§5 intro): \"Anaerobna digestija je biološka razgradnja organskog otpada u odsustvu kiseonika (anaerobnoj sredini), pri čemu se generišu metan i ugljen dioksid.\" Translation: \"Anaerobic digestion is the biological degradation of organic waste in the absence of oxygen (anaerobic environment), whereby methane and carbon dioxide are generated.\" The recorded wording \"Anaerobna digestija je biohemijski proces koji podrazumeva mikrobiološku razgradnju organske materije bez prisustva kiseonika... generišu metan i ugljen dioksid\" is NOT verbatim on the page.",
+  "how_verified": "Opened the PDF URL with web_extract; read the saved extraction with read_file; searched it with search_files for the recorded phrases (\"metan i ugljen dioksid\", \"Zeleni (baštenski) otpad\", \"mikrobiološku razgradnju\", \"biohemijski\").",
+  "how_opened": "full text",
+  "limitations": "Extraction capped at ~50k chars ends mid-sentence; §5.2 and §5.3 body text (incl. any AD acceptable-materials list such as \"Zeleni (baštenski) otpad\") was not captured, so that part of the recorded quote cannot be checked. Verbatim matches found: CCAC intro sentence (§1 Executive Summary: \"The Guideline for Bio-Waste Management was developed as part of expert assistance approved by the Climate and Clean Air Coalition (CCAC) in October 2019 for the cities of Bijeljina...\", and the bio-otpad definition (\"Pojam \"bio-otpad\"... uključuje isključivo otpad iz bašte i parkova, otpad od hrane iz domaćinstava, restorana, ugostiteljskih i maloprodajnih objekata...\"). Since part of the recorded quote is altered, verdict is FALSE."
+}

@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "claim_or_test": "Digester 71 Bosnia and Herzegovina — yard-waste / green-waste anaerobic digestion (first bite-size slice)",
+      "url": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/Federalni-plan-upravljanja-otpadom-2012-2017-Final.pdf",
+      "title": "Federalni plan upravljanja otpadom 2012-2017",
+      "what_was_measured": "Not a measurement; the opened source names two operational objectives (policy targets): Operativni cilj 2.3 — separately collect bio-waste from gardens and parks; Operativni cilj 2.8 — biodegradable waste used for production of compost and biofuels",
+      "population_or_system": "Federacija Bosne i Hercegovine (FBiH) waste-management system; Federalni plan upravljanja otpadom 2012-2017, Federalno ministarstvo okoliša i turizma FBiH, Sarajevo, decembar 2011",
+      "measured_result_quote": "Operativni cilj 2.3: Odvojeno prikupiti bio-otpad iz vrtova i parkova; Operativni cilj 2.8: Biorazgradljivi otpad iskorišten za proizvodnju komposta i biogoriva (Federalni plan upravljanja otpadom 2012-2017, Federalno ministarstvo okoliša i turizma FBiH, Sarajevo, decembar 2011).",
+      "how_opened": "full text",
+      "negatives_or_limits": "No digester or yard/garden-waste anaerobic digestion measurement or operating-plant result is reported in this source; it sets policy targets only. Could not confirm the printed page number of the objective list (TOC cites Tabela 14 on page 39); no DOI exists for this document."
+    }
+  ],
+  "notes": "Only the verdict-TRUE source in VERIFIED.json (S01) was used. SOURCES.json lists S02–S04, but they are not verdict-TRUE entries in VERIFIED.json and were not re-opened for this job, so they were excluded per instructions. No dedicated yard/garden-waste anaerobic digestion plant or digester result in BiH is reported in the opened source; such a plant/measurement is not found/not reported in the opened source."
+}
