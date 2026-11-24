@@ -7,6 +7,7 @@ Compost Bench is the yard-waste digester control code and its test harness.
 
 ## Honest limits
 
+- Both previously reported harness defects are fixed (Hermes job `20261124-150134-digester-harness-defects-readonly` and a controller spot-check on a fresh clone of main `a5893a9`). Scientific validation remains open: official Q-05 is a FAIL against the pre-registered 5% band (`Q05-RESULTS-R2.md`). Results are not scientifically validated.
 - The one-point liquid S_ch4 helper still records a difference only. The Q-02 full-state comparison uses the pre-registered pass/fail band in `PRE-REGISTERED-BAND-Q02.md` (frozen 21 Nov 2026, 11:12 PM PST, before the new 200-day runs). Yard-waste and 55 °C claims are out of scope.
 - This benchmark is the published BSM2 ADM1 steady-state case (Rosen & Jeppsson 2006, section 7). It is not a yard-waste feed prediction and not a DIY leach-bed result.
 - The unit-test suite cannot start the 200-day integration: `run_once.py` and `run_fullstate.py` refuse unless `YWSIM_ALLOW_INTEGRATION=1`, which only the launchers set. The same-interpreter case is covered by `test_same_interpreter_cannot_start_200_day_run`.
