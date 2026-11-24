@@ -1,0 +1,49 @@
+{
+  "checked": "2026-11-24",
+  "timezone": "America/Los_Angeles",
+  "note": "Controller opened these files independently. Official PDFs and HTML were not committed. Hermes first-pass splices are not used in the country note.",
+  "sources": [
+    {
+      "id": "S01-news",
+      "url": "https://energetskiportal.ba/sarajevo-planira-obradu-do-15-000-tona-biootpada-godisnje-jkp-rad-raspisao-tender-za-studiju-o-kompostani-i-biogasnom-postrojenju/",
+      "http": 200,
+      "how_opened": "live HTML full text",
+      "role": "secondary news report dated 14.05.2026; capacity figures attributed to tender documents not opened here"
+    },
+    {
+      "id": "S02-fpuo",
+      "url": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/FPUO_Knjiga-2-Plan_nacrt_v2.pdf",
+      "http": 200,
+      "how_opened": "official PDF full text, 210 pages",
+      "role": "official FBiH waste-plan draft, March 2026, Book 2"
+    },
+    {
+      "id": "S03-adm1",
+      "url": "https://ijcce.ac.ir/article_700930_2b2adc7856893aa37fb3e55ce1d4194c.pdf",
+      "http": 200,
+      "how_opened": "official journal PDF full text",
+      "role": "University of Tuzla ADM1 paper, 2023"
+    },
+    {
+      "id": "ejn-procurement",
+      "url": "https://docs.ejn.gov.ba/Procurement/4ad81f45-fdc1-4708-b202-b613d51e13ac.html",
+      "http": 200,
+      "how_opened": "official eJN HTML full text",
+      "role": "notice 3-1-2-60-3-106/26, sent 18.3.2026, bid deadline 07.04.2026"
+    },
+    {
+      "id": "ejn-termination",
+      "url": "https://docs.ejn.gov.ba/Termination/683972e0-675d-4c73-8c17-d9e16ff5529b.html",
+      "http": 200,
+      "how_opened": "official eJN HTML full text",
+      "role": "notice 3-1-2-60-4-169/26, sent 11.5.2026, cancelled 08.05.2026"
+    },
+    {
+      "id": "rad-nabavke",
+      "url": "https://rad.com.ba/kjkp-rad/javne-nabavke",
+      "http": 200,
+      "how_opened": "official KJKP RAD HTML",
+      "role": "lists a 2026 procurement plan; that plan PDF is a scan with no text layer and was not OCR'd; no wording taken from it"
+    }
+  ]
+}

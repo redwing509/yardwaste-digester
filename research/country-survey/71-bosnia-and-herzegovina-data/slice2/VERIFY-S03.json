@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://ijcce.ac.ir/article_700930_2b2adc7856893aa37fb3e55ce1d4194c.pdf",
+  "doi": "",
+  "title": "Experimental and Numerical Analysis of the Co-Digestion Process of Municipal Sludge with Fruit and Vegetable Waste",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "TRUE",
+  "quote": "In this work, a simulation of the process of co-digestion of waste sludge with fruit and vegetable waste was carried out numerically, with Anaerobic digestion model no. 1 model (ADM1) and experimentally. ... The International Water Association (IWA) Anaerobic Digestion Model No. 1, Batstone et al., has mainly been used for the simulation of digestion for different substrates, and it is already a universally accepted model for anaerobic digestion.",
+  "how_verified": "Opened the URL with web_extract; compared the recorded quote against the page text.",
+  "how_opened": "full text",
+  "limitations": "No DOI appears on the page (only journal code 1021-9986/2023/8/2819-2833), so the doi field is left empty; the second sentence contains the citation marker [12] inserted by the journal, otherwise it matches verbatim."
+}
