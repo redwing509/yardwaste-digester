@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/Federalni-plan-upravljanja-otpadom-2012-2017-Final.pdf",
+  "doi": "",
+  "title": "FEDERALNI PLAN UPRAVLJANJA OTPADOM 2012-2017",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "TRUE",
+  "quote": "• Operativni cilj 2.3: Odvojeno prikupiti bio-otpad iz vrtova i parkova; • Operativni cilj 2.8:Biorazgradljivi otpad iskorišten za proizvodnju komposta i biogoriva",
+  "how_verified": "Opened the URL with web_extract (full-text PDF extraction); the cover, title, date (Sarajevo, decembar 2011), and ministry (Federalno ministarstvo okoliša i turizma) matched the recorded citation. Located both operative goals in the saved full text of that URL and compared them word-for-word with the recorded quote.",
+  "how_opened": "full text",
+  "limitations": "PDF text extraction may carry minor artifacts: each item carries a leading bullet (•) on the page, and \"2.8:\" has no following space (\"2.8:Biorazgradljivi\"); I treated those as non-substantive. Could not confirm the printed page number of the list (TOC cites Tabela 14 on page 39). No DOI exists for this document."
+}

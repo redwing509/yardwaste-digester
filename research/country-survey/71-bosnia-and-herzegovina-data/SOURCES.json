@@ -1,0 +1,49 @@
+{
+  "queries": [
+    {"lang": "bs", "query": "anaerobna degradacija otpada Bosna i Hercegovina biogas vrtnjički otpad"},
+    {"lang": "bs", "query": "biogas iz zelenog otpada Bosna i Hercegovina anaerobna fermentacija"},
+    {"lang": "sr", "query": "биогас зелећи отпад Босна и Херцеговина анаеробна дигестија"},
+    {"lang": "bs", "query": "bio-otpad iz vrtova i parkova plan upravljanja otpadom Federacija BiH Kantona Sarajevo kompost biogoriva"},
+    {"lang": "en", "query": "bio-waste management guideline Bijeljina Republika Srpska anaerobic digestion garden waste"},
+    {"lang": "en", "query": "anaerobic co-digestion sewage sludge fruit vegetable waste biogas Tuzla University Bosnia"}
+  ],
+  "sources": [
+    {
+      "url": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/Federalni-plan-upravljanja-otpadom-2012-2017-Final.pdf",
+      "title": "Federalni plan upravljanja otpadom 2012-2017",
+      "why_relevant": "Official FBiH Federal Ministry of Environment and Tourism waste plan setting targets for separate collection of garden/park bio-waste and for using biodegradable waste to make compost and biofuels.",
+      "how_opened": "full text",
+      "quote": "Operativni cilj 2.3: Odvojeno prikupiti bio-otpad iz vrtova i parkova; Operativni cilj 2.8: Biorazgradljivi otpad iskorišten za proizvodnju komposta i biogoriva (Federalni plan upravljanja otpadom 2012-2017, Federalno ministarstvo okoliša i turizma FBiH, Sarajevo, decembar 2011).",
+      "quote_en": "EN (my translation): Operational objective 2.3: 'Separately collect bio-waste from gardens and parks'; Operational objective 2.8: 'Biodegradable waste used for production of compost and biofuels'.",
+      "jurisdiction": "FBiH"
+    },
+    {
+      "url": "https://mkipgo.ks.gov.ba/sites/mkipgo.ks.gov.ba/files/2022-05/plan_upravljanja_otpadom_kantona_sarajevo_za_period_2015-2020.godina.pdf",
+      "title": "Plan upravljanja otpadom Kantona Sarajevo 2015. - 2020. godine",
+      "why_relevant": "Official Canton Sarajevo waste plan with separate-collection targets for biodegradable waste from gardens and parks, and data that most such waste is landfilled at Smiljevići.",
+      "how_opened": "full text",
+      "quote": "Tabela 1: Operativni ciljevi za integrirani sistem - Biorazgradivi otpad iz vrtova i parkova 30% 50% 70% (vremenski periodi 2011, 2014, 2018); ...na području Kantona Sarajevo generiše preko 30.252,6 tona/godišnje biorazgradivog otpada. Pošto se biorazgradivi otpad ne prikuplja odvojeno, uglavnom završava na deponiji Smiljevići sa preostalim komunalnim otpadom (Plan upravljanja otpadom Kantona Sarajevo 2015-2020, jun 2015).",
+      "quote_en": "EN (my translation): Table 1: Biodegradable waste from gardens and parks - separate collection targets 30% (2011), 50% (2014), 70% (2018); ...over 30,252.6 tons per year of biodegradable waste is generated in Canton Sarajevo; since biodegradable waste is not collected separately, it mostly ends up at the Smiljevići landfill with the rest of municipal waste.",
+      "jurisdiction": "Kanton Sarajevo (FBiH)"
+    },
+    {
+      "url": "https://www.ccacoalition.org/sites/default/files/resources/6_se_europe_cities_organic_waste_mgt_guidance_final_draft.pdf",
+      "title": "Priručnik za upravljanje bio otpadom (Guideline for Bio-Waste Management)",
+      "why_relevant": "UNEP Climate and Clean Air Coalition bio-waste guideline prepared for Bijeljina, Republika Srpska, BiH (pilot city) plus Serbian cities; defines bio-waste as including garden and park waste and lists green (garden) waste as anaerobic-digestion feedstock yielding biogas (methane and carbon dioxide) and digestate.",
+      "how_opened": "full text",
+      "quote": "The Guideline for Bio-Waste Management was developed as part of expert assistance approved by the Climate and Clean Air Coalition (CCAC) in October 2019 for the cities of Bijeljina, Republika Srpska, Bosnia and Herzegovina, and Vrbas and Novi Sad, Serbia. ... Pojam \"bio-otpad\" ... uključuje isključivo otpad iz bašte i parkova, otpad od hrane iz domaćinstava, restorana, ugostiteljskih i maloprodajnih objekata...; sekcija 5.3 Anaerobna digestija: 'Anaerobna digestija je biohemijski proces koji podrazumeva mikrobiološku razgradnju organske materije bez prisustva kiseonika... generišu metan i ugljen dioksid'; prihvatljivi materijali za AD uključuju 'Zeleni (baštenski) otpad'.",
+      "quote_en": "EN (my translation): 'Bio-waste' under the Waste Framework Directive includes exclusively garden and park waste, food waste from households, restaurants, catering and retail outlets...; section 5.3 Anaerobic digestion: 'Anaerobic digestion is a biochemical process of microbiological degradation of organic matter in the absence of oxygen... methane and carbon dioxide are generated'; acceptable AD feedstocks include 'Green (garden) waste'.",
+      "jurisdiction": "RS (Bijeljina pilot city; BiH + SEE region)"
+    },
+    {
+      "url": "https://www.voda.ba/uimages/Mirnesa%20Zohorovic%20i%20sar%20ZR.pdf",
+      "title": "Anaerobna kodigestija otpadnog mulja iz postrojenja za prečišćavanje komunalnih otpadnih voda i drugog organskog otpada",
+      "why_relevant": "Peer-reviewed University of Tuzla (BiH) laboratory study of anaerobic co-digestion of sewage sludge with kitchen waste and fruit/vegetable (green) processing waste for biogas production — the closest peer-reviewed BiH AD evidence, though it is sludge co-digestion rather than dedicated yard-waste AD.",
+      "how_opened": "full text",
+      "quote": "Rezime: ...istraživana je anaerobna kodigestija otpadnog mulja sa postrojenja za prečišćavanje komunalnih otpadnih voda, kao osnovnog supstrata uz dodatak tri vrste organskog otpada (pileći ekskrementi, kuhinjski otpad i otpad od prerade voća i povrća) u cilju povećanja upotrebne vrijednosti otpadnog mulja kao sirovine za proizvodnju bioplina... Autori: Tehnološki fakultet Univerziteta u Tuzli, Bosna i Hercegovina.",
+      "quote_en": "EN (my translation): Abstract: ...anaerobic co-digestion of sewage sludge from a municipal wastewater treatment plant, as the main substrate with addition of three types of organic waste (chicken manure, kitchen waste, and fruit and vegetable processing waste), to increase the value of sewage sludge as a raw material for biogas production... Authors: Faculty of Technology, University of Tuzla, Bosnia and Herzegovina.",
+      "jurisdiction": "BiH"
+    }
+  ],
+  "notes": "Native-language-first search (bs/hr/sr Latin; one Cyrillic query) done, then English only to confirm sources already found. No BiH source found describing an operating dedicated yard/garden-waste anaerobic digestion plant; evidence is two official waste plans, a regional guideline, and one lab-scale co-digestion study. Excluded after opening: FAOLEX mne139058 (Montenegro regulation, Službeni list CG, not BiH) and a Kosovo mkipgo page (.ks government, not .ba BiH). Search stopped at 4 sources."
+}

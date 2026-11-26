@@ -1,0 +1,52 @@
+[
+  {
+    "source": {
+      "i": 1,
+      "url": "https://energetskiportal.ba/sarajevo-planira-obradu-do-15-000-tona-biootpada-godisnje-jkp-rad-raspisao-tender-za-studiju-o-kompostani-i-biogasnom-postrojenju/",
+      "title": "Sarajevo planira obradu do 15.000 tona biootpada godišnje - JKP RAD raspisao tender za studiju o kompostani i biogasnom postrojenju",
+      "why_relevant": "Planned FBiH (Kanton Sarajevo) composting + biogas plant at Smiljevići landfill naming yard/garden and kitchen bio-waste; kitchen waste to be treated by anaerobic digestion, biogas for electricity and heat via CHP.",
+      "how_opened": "full text",
+      "quote": "Prema tenderskoj dokumentaciji, projekat podrazumijeva izradu studije opravdanosti i idejnog rješenja za kompostanu i biogasno postrojenje koje bi omogućilo efikasno zbrinjavanje vrtnog i kuhinjskog otpada, odnosno njegovo pretvaranje u korisni kompost i biogas. Za vrtni otpad predviđen je proces kompostiranja... Kada je riječ o kuhinjskom otpadu, planirano je njegovo zbrinjavanje kroz biogasno postrojenje zasnovano na anaerobnoj digestiji... Predviđeno je da se proizvedeni biogas koristi za proizvodnju električne i toplotne energije putem kogeneracijskog sistema. Dokumentacija predviđa da bi početni kapacitet kompostane iznosio oko 5.000 tona vrtnog biootpada godišnje... Biogasno postrojenje bi u početnoj fazi obrađivalo oko 250 tona kuhinjskog otpada godišnje, dok bi dugoročni cilj bio povećanje kapaciteta na 5.000 tona godišnje.",
+      "quote_en": "Translation: The project foresees a feasibility study and conceptual design for a composting and biogas plant to treat yard and kitchen waste... Yard waste: composting. Kitchen waste: treatment in a biogas plant based on anaerobic digestion... biogas for electricity and heat via CHP. Initial composting capacity ~5,000 t/yr yard bio-waste; biogas plant initially ~250 t/yr kitchen waste, long-term target 5,000 t/yr.",
+      "jurisdiction": "FBiH"
+    },
+    "verify_file": "/workspace/research-rotation/t1358u/bosnia-71-slice2/runs/VERIFY-S01.json",
+    "verdict": "TRUE",
+    "verify": {
+      "url_opened": "https://energetskiportal.ba/sarajevo-planira-obradu-do-15-000-tona-biootpada-godisnje-jkp-rad-raspisao-tender-za-studiju-o-kompostani-i-biogasnom-postrojenju/",
+      "doi": "",
+      "title": "Sarajevo planira obradu do 15.000 tona biootpada godišnje – JKP RAD raspisao tender za studiju o kompostani i biogasnom postrojenju",
+      "claim": "the recorded quote was verbatim on the opened page",
+      "verdict": "TRUE",
+      "quote": "Prema tenderskoj dokumentaciji, projekat podrazumijeva izradu studije opravdanosti i idejnog rješenja za kompostanu i biogasno postrojenje koje bi omogućilo efikasno zbrinjavanje vrtnog i kuhinjskog otpada, odnosno njegovo pretvaranje u korisni kompost i biogas. Za vrtni otpad predviđen je proces kompostiranja... Kada je riječ o kuhinjskom otpadu, planirano je njegovo zbrinjavanje kroz biogasno postrojenje zasnovano na anaerobnoj digestiji... Predviđeno je da se proizvedeni biogas koristi za proizvodnju električne i toplotne energije putem kogeneracijskog sistema. Dokumentacija predviđa da bi početni kapacitet kompostane iznosio oko 5.000 tona vrtnog biootpada godišnje... Biogasno postrojenje bi u početnoj fazi obrađivalo oko 250 tona kuhinjskog otpada godišnje, dok bi dugoročni cilj bio povećanje kapaciteta na 5.000 tona godišnje.",
+      "how_verified": "Opened the URL with web_extract and compared each sentence fragment of the recorded quote against the page text; every fragment matches verbatim, with ellipses marking omitted connecting sentences.",
+      "how_opened": "full text",
+      "limitations": "Only the quoted fragments were checked verbatim; sentences omitted by ellipses were read but not part of the quoted claim. The recorded title differs only in dash/hyphen styling ('-' vs '–') from the page's printed title. No DOI exists for this news article."
+    }
+  },
+  {
+    "source": {
+      "i": 3,
+      "url": "https://ijcce.ac.ir/article_700930_2b2adc7856893aa37fb3e55ce1d4194c.pdf",
+      "title": "Experimental and Numerical Analysis of the Co-Digestion Process of Municipal Sludge with Fruit and Vegetable Waste",
+      "why_relevant": "University of Tuzla (Bosnia and Herzegovina) group's peer-reviewed paper numerically simulating co-digestion with the openly published IWA Anaerobic Digestion Model No. 1 (ADM1) — the named open AD modeling framework used by a BiH group (ADM1 is a model, not commercial simulator software).",
+      "how_opened": "full text",
+      "quote": "In this work, a simulation of the process of co-digestion of waste sludge with fruit and vegetable waste was carried out numerically, with Anaerobic digestion model no. 1 model (ADM1) and experimentally. ... The International Water Association (IWA) Anaerobic Digestion Model No. 1, Batstone et al., has mainly been used for the simulation of digestion for different substrates, and it is already a universally accepted model for anaerobic digestion. Authors: Papraćanin, Stuhli, Alić, Abdel Djozić, Zohorović — Faculty of Technology, University of Tuzla, Tuzla, Bosnia and Herzegovina.",
+      "quote_en": "",
+      "jurisdiction": "FBiH"
+    },
+    "verify_file": "/workspace/research-rotation/t1358u/bosnia-71-slice2/runs/VERIFY-S03.json",
+    "verdict": "TRUE",
+    "verify": {
+      "url_opened": "https://ijcce.ac.ir/article_700930_2b2adc7856893aa37fb3e55ce1d4194c.pdf",
+      "doi": "",
+      "title": "Experimental and Numerical Analysis of the Co-Digestion Process of Municipal Sludge with Fruit and Vegetable Waste",
+      "claim": "the recorded quote was verbatim on the opened page",
+      "verdict": "TRUE",
+      "quote": "In this work, a simulation of the process of co-digestion of waste sludge with fruit and vegetable waste was carried out numerically, with Anaerobic digestion model no. 1 model (ADM1) and experimentally. ... The International Water Association (IWA) Anaerobic Digestion Model No. 1, Batstone et al., has mainly been used for the simulation of digestion for different substrates, and it is already a universally accepted model for anaerobic digestion.",
+      "how_verified": "Opened the URL with web_extract; compared the recorded quote against the page text.",
+      "how_opened": "full text",
+      "limitations": "No DOI appears on the page (only journal code 1021-9986/2023/8/2819-2833), so the doi field is left empty; the second sentence contains the citation marker [12] inserted by the journal, otherwise it matches verbatim."
+    }
+  }
+]

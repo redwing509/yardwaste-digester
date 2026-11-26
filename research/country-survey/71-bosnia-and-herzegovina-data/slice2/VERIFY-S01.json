@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://energetskiportal.ba/sarajevo-planira-obradu-do-15-000-tona-biootpada-godisnje-jkp-rad-raspisao-tender-za-studiju-o-kompostani-i-biogasnom-postrojenju/",
+  "doi": "",
+  "title": "Sarajevo planira obradu do 15.000 tona biootpada godišnje – JKP RAD raspisao tender za studiju o kompostani i biogasnom postrojenju",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "TRUE",
+  "quote": "Prema tenderskoj dokumentaciji, projekat podrazumijeva izradu studije opravdanosti i idejnog rješenja za kompostanu i biogasno postrojenje koje bi omogućilo efikasno zbrinjavanje vrtnog i kuhinjskog otpada, odnosno njegovo pretvaranje u korisni kompost i biogas. Za vrtni otpad predviđen je proces kompostiranja... Kada je riječ o kuhinjskom otpadu, planirano je njegovo zbrinjavanje kroz biogasno postrojenje zasnovano na anaerobnoj digestiji... Predviđeno je da se proizvedeni biogas koristi za proizvodnju električne i toplotne energije putem kogeneracijskog sistema. Dokumentacija predviđa da bi početni kapacitet kompostane iznosio oko 5.000 tona vrtnog biootpada godišnje... Biogasno postrojenje bi u početnoj fazi obrađivalo oko 250 tona kuhinjskog otpada godišnje, dok bi dugoročni cilj bio povećanje kapaciteta na 5.000 tona godišnje.",
+  "how_verified": "Opened the URL with web_extract and compared each sentence fragment of the recorded quote against the page text; every fragment matches verbatim, with ellipses marking omitted connecting sentences.",
+  "how_opened": "full text",
+  "limitations": "Only the quoted fragments were checked verbatim; sentences omitted by ellipses were read but not part of the quoted claim. The recorded title differs only in dash/hyphen styling ('-' vs '–') from the page's printed title. No DOI exists for this news article."
+}

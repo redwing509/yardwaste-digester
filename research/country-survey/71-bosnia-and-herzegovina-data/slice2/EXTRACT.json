@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "claim_or_test": "Sarajevo (Kanton Sarajevo, FBiH, BiH) — JKP RAD tender for a feasibility/conceptual study of a composting + biogas plant at Smiljevići landfill; planned yard-waste composting and kitchen-waste anaerobic digestion with CHP energy recovery",
+      "url": "https://energetskiportal.ba/sarajevo-planira-obradu-do-15-000-tona-biootpada-godisnje-jkp-rad-raspisao-tender-za-studiju-o-kompostani-i-biogasnom-postrojenju/",
+      "title": "Sarajevo planira obradu do 15.000 tona biootpada godišnje – JKP RAD raspisao tender za studiju o kompostani i biogasnom postrojenju",
+      "what_was_measured": "not measured — plan targets named in tender documentation: initial composting capacity of yard bio-waste; initial and long-term kitchen-waste digestion capacity; biogas for electricity and heat via cogeneration",
+      "population_or_system": "yard (garden) waste and kitchen waste; JKP RAD Sarajevo; Smiljevići landfill, Canton Sarajevo, Federation of BiH",
+      "measured_result_quote": "Prema tenderskoj dokumentaciji, projekat podrazumijeva izradu studije opravdanosti i idejnog rješenja za kompostanu i biogasno postrojenje koje bi omogućilo efikasno zbrinjavanje vrtnog i kuhinjskog otpada, odnosno njegovo pretvaranje u korisni kompost i biogas. Za vrtni otpad predviđen je proces kompostiranja... Kada je riječ o kuhinjskom otpadu, planirano je njegovo zbrinjavanje kroz biogasno postrojenje zasnovano na anaerobnoj digestiji... Predviđeno je da se proizvedeni biogas koristi za proizvodnju električne i toplotne energije putem kogeneracijskog sistema. Dokumentacija predviđa da bi početni kapacitet kompostane iznosio oko 5.000 tona vrtnog biootpada godišnje... Biogasno postrojenje bi u početnoj fazi obrađivalo oko 250 tona kuhinjskog otpada godišnje, dok bi dugoročni cilj bio povećanje kapaciteta na 5.000 tona godišnje.",
+      "how_opened": "full text",
+      "negatives_or_limits": "Planned project, not an operating plant; capacities are targets, not measured yields. Only the quoted fragments were checked verbatim (ellipses mark omitted sentences). No DOI exists for this news article."
+    },
+    {
+      "claim_or_test": "Co-digestion of municipal sludge with fruit and vegetable waste — numerical simulation with IWA Anaerobic Digestion Model No. 1 (ADM1) plus experiment, by the University of Tuzla (Bosnia and Herzegovina) group",
+      "url": "https://ijcce.ac.ir/article_700930_2b2adc7856893aa37fb3e55ce1d4194c.pdf",
+      "title": "Experimental and Numerical Analysis of the Co-Digestion Process of Municipal Sludge with Fruit and Vegetable Waste",
+      "what_was_measured": "co-digestion process simulated numerically with ADM1 and carried out experimentally (no measured yield figures in the opened quote)",
+      "population_or_system": "waste sludge with fruit and vegetable waste; Faculty of Technology, University of Tuzla, Tuzla, Bosnia and Herzegovina (authors Papraćanin, Stuhli, Alić, Abdel Djozić, Zohorović)",
+      "measured_result_quote": "In this work, a simulation of the process of co-digestion of waste sludge with fruit and vegetable waste was carried out numerically, with Anaerobic digestion model no. 1 model (ADM1) and experimentally. ... The International Water Association (IWA) Anaerobic Digestion Model No. 1, Batstone et al., has mainly been used for the simulation of digestion for different substrates, and it is already a universally accepted model for anaerobic digestion.",
+      "how_opened": "full text",
+      "negatives_or_limits": "ADM1 is a published model, not commercial simulator software. No DOI appears on the page (only journal code 1021-9986/2023/8/2819-2833). The opened quote reports the model used, not digestion performance results."
+    }
+  ],
+  "notes": "Excluded: source S02 (FEDERALNI PLAN UPRAVLJANJA OTPADOM KNJIGA 2 – PLAN (Nacrt) Mart, 2026, fmoit.gov.br PDF) has verdict UNKNOWN — PDF text extraction was capped (~50k chars of 186 pages), the biogas segment and the exact 10% separate-collection target sentence could not be verified from the opened portion, so per the 'use only verdict TRUE' rule nothing from it is extracted. No entity-level law/plan findings or measured digester yields were extractable from the TRUE sources."
+}

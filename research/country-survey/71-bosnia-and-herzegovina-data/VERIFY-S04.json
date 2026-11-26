@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://www.voda.ba/uimages/Mirnesa%20Zohorovic%20i%20sar%20ZR.pdf",
+  "doi": "",
+  "title": "ANAEROBNA KODIGESTIJA OTPADNOG MULJA IZ POSTROJENJA ZA PREČIŠĆAVANJE KOMUNALNIH OTPADNIH VODA I DRUGOG ORGANSKOG OTPADA",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "FALSE",
+  "quote": "U ovom radu ispitivana je anaerobna kodigestija otpadnog mulja sa postrojenja za prečišćavanje komunalnih otpadnih voda, kao osnovnog supstrata uz dodatak tri vrste organskog otpada (pileći ekskrementi, kuhinjski otpad i otpad od prerade voća i povrća) u cilju povećanja upotrebne vrijednosti otpadnog mulja kao sirovine za proizvodnju bioplina",
+  "how_verified": "web_extract opened the PDF URL and returned full text; recorded quote compared word-for-word against page text",
+  "how_opened": "full text",
+  "limitations": "Recorded quote says \"istraživana\" but page text says \"ispitivana\" (one word altered), so the recorded quote is not verbatim. Also, \"Autori: Tehnološki fakultet Univerziteta u Tuzli, Bosna i Hercegovina.\" does not appear verbatim on the page; the page lists named authors (Mirnesa Zohorović, Franc Andrejaš, Vedran Stuhli, Vahida Selimbašić, Nedim Hodžić, Abdel Đozić) with affiliation \"*Tehnološki fakultet Univerziteta u Tuzli, Univerzitetska 8, 75 000 Tuzla**. No DOI printed on the page. Could not determine whether the discrepancy is from the PDF itself or an extraction artifact, as no alternative copy of the document was checked."
+}

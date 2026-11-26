@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://fmoit.gov.ba/wp-content/uploads/dokumenti/FPUO_Knjiga-2-Plan_nacrt_v2.pdf",
+  "doi": "",
+  "title": "FEDERALNI PLAN UPRAVLJANJA OTPADOM KNJIGA 2 – PLAN (Nacrt) Mart, 2026.",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "UNKNOWN",
+  "quote": "U 2023. odvojeno je prikupljeno 2.560,17 tone biorazgradivog otpada i 421,32 tone biorazgradivog otpada iz kuhinja i kantina. U ukupnoj količini komunalnog otpada biorazgradivi otpad ima najveći udio (više od 26%). [verbatim on p. 16] Page 2032 goal box: Do 2032. najmanje 10% proizvedenog biorazgradivog otpada iz domaćinstava mora biti odvojeno prikupljeno. [verbatim on p. 16 — recorded wording inserts “godine,”: “Do 2032. godine, najmanje 10% ...”, so not verbatim at this location; a later occurrence in the document was not checkable] Biogas segment “Pored kompostana, analizirana je uspostava biogasnih postrojenja ... ratarstvo (farme domaćih životinja, vinogradi,” — not found in the extractable portion.",
+  "how_verified": "web_extract opened the PDF and its extracted text was compared segment by segment with the recorded quote; the saved full extraction (/workspace/hermes-box/research-home-t1358u/cache/web/fmoit.gov.ba-60b6b9dd36.md) and the prior run files under /workspace/research-rotation/t1358u/bosnia-71-slice2/runs/ were also checked.",
+  "how_opened": "full text",
+  "limitations": "PDF text extraction is capped at roughly 50k characters, so only pages 3-21 of the 186-page document were readable; the biogas segment (likely in B3.5 p. 31 or B5.5 p. 95) and any later occurrence of the exact 10% sentence could not be inspected. At its visible location, the recorded 10% segment is altered (“Do 2032. godine,” vs the page’s “Do 2032. najmanje...”). Neither TRUE nor FALSE can be established without reading the unopened pages."
+}
