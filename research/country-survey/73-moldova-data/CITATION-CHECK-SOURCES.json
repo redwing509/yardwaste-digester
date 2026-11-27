@@ -1,0 +1,38 @@
+{
+  "criterion": "Recorded quotation verbatim after layout whitespace normalization and accounting for explicitly marked omissions. Corrected excerpts are assessed separately.",
+  "sources": [
+    {
+      "source_id": "S01",
+      "verdict": "FALSE",
+      "excerpt_verdict": "TRUE",
+      "recorded_url": "https://legis.md/cautare/downloadpdf/141680",
+      "url_opened": "https://faolex.fao.org/docs/pdf/mol238806.pdf",
+      "how_opened": "curl; Legis HTTP 403; complete adopted text via FAOLEX, pdftotext -layout",
+      "reason": "Substantive passages confirmed. Exact composite has punctuation/spacing changes in the feedstock parenthesis and omits text."
+    },
+    {
+      "source_id": "S02",
+      "verdict": "FALSE",
+      "excerpt_verdict": "TRUE",
+      "url_opened": "https://adrnord.md/public/files/prs_mds_2014/2017_11_05_EIM_ZMD8_finalanexe.pdf",
+      "how_opened": "curl; full PDF, pdftotext -layout",
+      "reason": "Recorded quote changes verzi and realizarea a unei, and stitches table cells. The proposed capacity and open piles are present."
+    },
+    {
+      "source_id": "S03",
+      "verdict": "FALSE",
+      "excerpt_verdict": "TRUE",
+      "url_opened": "https://mediu.gov.md/sites/default/files/Cerere_AM_WMZ4_ro_varianta_finala.pdf",
+      "how_opened": "curl; full 174-page PDF, pdftotext -layout",
+      "reason": "Substantive passages confirmed. The composite changes diacritics and a sentence-ending period."
+    },
+    {
+      "source_id": "S04",
+      "verdict": "UNKNOWN",
+      "excerpt_verdict": "UNKNOWN",
+      "recorded_url": "http://www.repository.utm.md/bitstream/handle/5014/31840/26-34_24.pdf?isAllowed=y&sequence=1",
+      "how_opened": "curl attempted; HTTP 500 empty body and HTTPS variants timed out",
+      "reason": "No directly retrieved full text. All recorded claims dropped."
+    }
+  ]
+}

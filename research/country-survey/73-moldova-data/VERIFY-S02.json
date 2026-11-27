@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://adrnord.md/public/files/prs_mds_2014/2017_11_05_EIM_ZMD8_finalanexe.pdf",
+  "doi": "",
+  "title": "Documentația privind Evaluarea Impactului asupra Mediului a activității planificate — Sistem de Management Integrat al Deșeurilor pentru Zona de Management a Deșeurilor 8, Regiunea de Dezvoltare Nord, Chișinău 2017",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "FALSE",
+  "quote": "Closest verbatim matches on the page: line 917-918 \"implementarea colectării separate a deșeurilor vegetale (verzi) din parcurile și grădinile publice din întreaga zonă;\"; line 927 \"realizarea a unei stații de compostare a deșeurilor verzi la Dondușeni;\". The remainder of the recorded quote (\"Stație de compostare – compostare a deșeuri verzi în grămezi deschise; SC Dondușeni – 1,000 tone/an; compostarea se realizează în grămezi deschise și deservește toate cele trei raioane.\") is absent: zero matches for \"grămezi deschise\" and zero for \"1,000 tone/an\"; the composting station is listed nearby as \"-stație de compostare (9,52 t/an)\".",
+  "how_verified": "Opened the PDF with web_extract; full text saved to /workspace/hermes-box/research-home-t1358u/cache/web/adrnord.md-ca2f504562.md; searched that complete extracted text with search_files for \"Dondușeni\", \"grămezi deschise\", \"1,000 tone/an\", \"compostare\", \"vergi\".",
+  "how_opened": "full text",
+  "limitations": "Verification rests on PDF text extraction; layout/images were not visually inspected. Two fragments match only with alterations: page has \"(verzi)\" where the record says \"(vergi)\", and \"realizarea a unei stații\" where the record says \"realizarea unei stații\"."
+}
