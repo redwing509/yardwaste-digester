@@ -1,0 +1,17 @@
+{
+  "source": "VERIFIED.json",
+  "source_path": "runs/VERIFIED.json",
+  "source_content_opened": "[]",
+  "source_status": "empty list - zero verified URLs",
+  "urls_reopened": [],
+  "quotes_extracted": [],
+  "entries": [],
+  "simulators": [],
+  "notes": [
+    "VERIFIED.json contine `[]`: lista de URL-uri verificate este goala, deci nu au existat URL-uri de redeschis si nu au fost extrase citate exacte (fara sursa, fara citate, fara locator).",
+    "Pentru fiecare rubrica ceruta (localitate, stadiu, proces, materia prima): NOT FOUND - nu exista nicio instalație sau proiect citat.",
+    "Compostare vs digestie anaeroba: NU se poate distinctiona, pentru ca nu a fost deschis niciun text de sursa.",
+    "Simulatoare: nu se propune nicio intrare pentru /workspace/simulator-collection/CANDIDATES.md, deoarece nu exista nicio sursa deschisata de verificat independent. CANDIDATES.md nu a fost modificat. Nu s-a facut nicio instalare.",
+    "VERIFIED-Sall.json exista in folder dar NU a fost folosit: taskul spune 'numai VERIFIED.json'."
+  ]
+}

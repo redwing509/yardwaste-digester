@@ -1,0 +1,11 @@
+{
+  "url_opened": "http://www.repository.utm.md/bitstream/handle/5014/31840/26-34_24.pdf?isAllowed=y&sequence=1",
+  "doi": "",
+  "title": "DEȘEURILE CA RESURSE ENERGETICE: PROVOCĂRI ȘI OPORTUNITĂȚI ÎN ECONOMIA CIRCULARĂ A REPUBLICII MOLDOVA",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "FALSE",
+  "quote": "Line 176: \"**Digestia anaerobă (biomasa)** : Este o opțiune economică și eficientă pentru deșeurile\" (next line is \"...\", then \"Dacă se iau în considerare efectivele de animale (porci, bovine și păsări)\"). Lines 334-335: \"3. Fracția rămasă (materii organice care constituie 58%) este tratată prin digestie anaerobă pentru a produce biogaz care este apoi incinerat pentru a produce energie electrică.\"",
+  "how_verified": "web_extract opened the PDF URL (full text saved to /workspace/hermes-box/research-home-t1358u/cache/web/www.repository.utm.md-ec21ece5c9.md); then read_file and search_files (grep) checked the full document text verbatim",
+  "how_opened": "full text",
+  "limitations": "PDF text extraction may collapse line breaks/hyphenation; however, key phrases returned 0 matches across the entire document, so their absence is genuine. Recorded quote segment 1 continuation \"pentru deșeurile organice (resturi alimentare, deșeuri agricole).\" is NOT on the page (0 matches for \"resturi alimentare\"). Recorded quote segment 2 \"Biogazul produs poate fi utilizat pentru generarea de energie termică și electrică, iar costurile de întreținere sunt reduse.\" is NOT on the page (0 matches for \"Biogazul produs\" and \"costurile de întreținere\"). Only segment 3 \"Fracția rămasă (materii organice care constituie 58%) ... pentru a produce energie electrică.\" matches verbatim (lines 334-335). Title page/running header reads \"Conferința științifică Internațională PROMOVAREA VALORILOR SOCIAL-ECONOMICE ÎN CONTEXTUL INTEGRĂRII EUROPENE, Ediția a 7-ea, 6.12.2024\"."
+}

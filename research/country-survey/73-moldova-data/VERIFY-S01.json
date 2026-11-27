@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://legis.md/cautare/downloadpdf/141680",
+  "doi": "",
+  "title": "HOTĂRÂRE Nr. HG972/2023 din 06.12.2023 cu privire la aprobarea Programului național pentru gestionarea deșeurilor pe anii 2023-2027",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "UNKNOWN",
+  "quote": "Verbatim on the opened page: \"Evaluarea infrastructurii de gestionare a deșeurilor municipale existente denotă că, în 2023, la nivel național funcționează: ... 3) o platformă de compostare a deșeurilor biodegradabile în mun. Chișinău;\" (list items 1) through 5) are also present verbatim on the page) and \"Legea nr. 209/2016 privind deșeurile (art. 56) ... deșeurile biodegradabile provenite din parcuri și grădini trebuie să fie colectate separat și transportate la stațiile de compostare sau pe platforme individuale de compostare.\" Not confirmed: \"pentru deșeuri biodegradabile ( deșeuri vegetale colectate din parcuri, grădini, deșeuri alimentare / bucătărie etc.): ... c) încurajarea valorificării prin procedee aerobe și anaerobe și construirea capacităților de compostare și fermentare a deșeurilor, cel puțin câte una per raion; d) încurajarea producerii biogazului și utilizarea acestuia în scopul generării energiei electrice și termice.\"",
+  "how_verified": "Opened the URL with web_extract (redirect to www.legis.md), then read the complete saved page text with read_file and compared each recorded-quote segment against the page text.",
+  "how_opened": "full text",
+  "limitations": "The retrieved PDF text is truncated at about 50,000 characters; the saved copy ends mid-sentence at line 790 (\u201c...condiții de concuren...\u201d). The final recorded-quote segment (biodegradable-waste objectives: aerobic/anaerobic valorification, at least one composting/fermentation capacity per raion, biogas for electricity and heat) lies beyond the accessible portion, so its verbatim presence could not be confirmed. No DOI exists for this Official Gazette PDF."
+}

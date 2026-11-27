@@ -1,0 +1,48 @@
+{
+  "queries": [
+    {"lang": "ro", "query": "deșeuri verzi Chișinău stație compostare"},
+    {"lang": "ro", "query": "\"deșeuri vegetale din parcuri și grădini\" compostare"},
+    {"lang": "ro", "query": "digestie anaerobă deșeuri biodegradabile Republica Moldova"},
+    {"lang": "ro", "query": "instalație biogaz ANRE deșeuri municipale"},
+    {"lang": "ro", "query": "simulare digestie anaerobă ADM1 Moldova"}
+  ],
+  "sources": [
+    {
+      "url": "https://legis.md/cautare/downloadpdf/141680",
+      "title": "Hotărârea Guvernului nr. 972/2023 — Programul național pentru gestionarea deșeurilor pe anii 2023-2027",
+      "why_relevant": "Sursă oficială (Guvernul RM; execuția controlată de Ministerul Mediului). Atestă o platformă de compostare funcționară în mun. Chișinău în 2023 și propune, ca obiective pentru deșeuri biodegradabile (incl. vegetale, din parcuri și grădini), capacități de compostare/fermentare (cel puțin una per raion) și producere de biogaz.",
+      "how_opened": "Partial: PDF head extracted via web_extract; direct re-fetch returned HTTP 403. Quoted passages are verbatim from web_search snippets of this same URL retrieved this turn. Access level: partial (not full text).",
+      "quote": "Evaluarea infrastructurii de gestionare a deșeurilor municipale existente denotă că, în 2023, la nivel național funcționează: ... 3) o platformă de compostare a deșeurilor biodegradabile în mun. Chișinău; ... Legea nr. 209/2016 privind deșeurile (art. 56) ... deșeurile biodegradabile provenite din parcuri și grădini trebuie să fie colectate separat și transportate la stațiile de compostare sau pe platforme individuale de compostare. ... pentru deșeuri biodegradabile ( deșeuri vegetale colectate din parcuri, grădini, deșeuri alimentare / bucătărie etc.): ... c) încurajarea valorificării prin procedee aerobe și anaerobe și construirea capacităților de compostare și fermentare a deșeurilor, cel puțin câte una per raion; d) încurajarea producerii biogazului și utilizarea acestuia în scopul generării energiei electrice și termice.",
+      "quote_en": "translation: 'The evaluation of existing municipal waste-management infrastructure shows that, in 2023, at national level it operates: ... 3) a composting platform for biodegradable waste in mun. Chișinău; ... Law No. 209/2016 on waste (art. 56) ... biodegradable waste from parks and gardens must be collected separately and transported to composting stations or individual composting platforms. ... for biodegradable waste (vegetable waste collected from parks and gardens, food/kitchen waste etc.): ... c) encouraging valorification through aerobic and anaerobic procedures and building composting and fermentation capacity, at least one per district; d) encouraging biogas production and its use to generate electric and thermal energy.'",
+      "jurisdiction": "Republica Moldova"
+    },
+    {
+      "url": "https://adrnord.md/public/files/prs_mds_2014/2017_11_05_EIM_ZMD8_finalanexe.pdf",
+      "title": "Documentația privind Evaluarea Impactului asupra Mediului — Sistem de Management Integrat al Deșeurilor pentru ZMD 8, Regiunea de Dezvoltare Nord, Chișinău 2017 (anexa EIM ZMD8)",
+      "why_relevant": "EIM anexă (2017) pentru ZMD 8 (Edineț, Briceni, Ocnița, Dondușeni), parteneriat MADRM/GIZ. Propoziție (nu instalație funcționară): stație de compostare a deșeurilor verzi la Dondușeni, compostare în grămezi deschise, 1.000 tone/an; materie primă: deșeuri vegetale (verzi) din parcurile și grădinile publice, colectate separat.",
+      "how_opened": "Partial: head/TOC extracted via web_extract (sec. 3.7 stația de compostare, p. 35); quoted passages verbatim from web_search snippets of this same URL this turn. Access level: partial.",
+      "quote": "implementarea colectării separate a deșeurilor vegetale (vergi) din parcurile și grădinile publice din întreaga zonă; realizarea unei stații de compostare a deșeurilor verzi la Dondușeni; ... Stație de compostare – compostare a deșeuri verzi în grămezi deschise; SC Dondușeni – 1,000 tone/an; compostarea se realizează în grămezi deschise și deservește toate cele trei raioane.",
+      "quote_en": "translation: 'implementation of separate collection of green (vegetal) waste from public parks and gardens across the entire zone; construction of a green-waste composting station in Dondușeni; ... Composting station – composting of green waste in open windrows; SC Dondușeni – 1,000 t/year; composting is carried out in open windrows and serves all three districts.'",
+      "jurisdiction": "Republica Moldova"
+    },
+    {
+      "url": "https://mediu.gov.md/sites/default/files/Cerere_AM_WMZ4_ro_varianta_finala.pdf",
+      "title": "Cererea privind emiterea acordului de mediu pentru activitatea planificată (ZMD 4) — mediu.gov.md (UMITAF / EU4U-BEI, 15.12.2025)",
+      "why_relevant": "Cerere de acord de mediu (ZMD 4) publicată de Ministerul Mediului. Propoziție: colectare separată de deșeuri biodegradabile/verzi în Municipiul Chișinău și în celelalte localități ZMD 4; instalație de compostare pentru localitățile din afara Chișinăului, în cadrul unui Centru de Management al Deșeurilor regional.",
+      "how_opened": "Partial: PDF head (pp. 1–4 of 174) extracted via web_extract; quoted passages verbatim from web_search snippets of this same URL this turn. Access level: partial.",
+      "quote": "Deșeuri biodegradabile, inclusiv deșeurile verzi, vor fi colectate separat în Municipiul Chișinău; Deșeurile verzi vor fi colectate separat în toate celelalte locații din ZMD 4; O instalație de compostare pentru a deservi municipalitățile din afara Chișinăului; ... înființarea de facilități regionale, inclusiv depozite de deșeuri conforme, stații de sortare, stații de transfer și unități de compostare.",
+      "quote_en": "translation: 'Biodegradable waste, including green waste, will be collected separately in the Municipality of Chișinău; Green waste will be collected separately in all other locations in ZMD 4; A composting installation to serve the localities outside Chișinău; ... establishment of regional facilities, including compliant waste dumps, sorting stations, transfer stations and composting units.'",
+      "jurisdiction": "Republica Moldova"
+    },
+    {
+      "url": "http://www.repository.utm.md/bitstream/handle/5014/31840/26-34_24.pdf?isAllowed=y&sequence=1",
+      "title": "Deșeurile ca resurse energetice: provocări și oportunități în economia circulară a Republicii Moldova — TOMA Vitalie, CORETCHI Boris (Universitatea de Stat din Moldova), Conferința științifică internațională 6.12.2024, pp. 26-34",
+      "why_relevant": "Universitatea de Stat din Moldova (publicat în repository UTM). Analiză/propoziție (nu instalație funcționară): digestie anaerobă a deșeurilor organice (resturi alimentare, deșeuri agricole; fracția organică constituie 58% a deseurilor municipale) pentru biogaz (energie termică și electrică) și digestat ca îngrășământ.",
+      "how_opened": "Full text: web_extract head plus middle read from the saved complete page (read_file). Access level: full text.",
+      "quote": "Digestia anaerobă (biomasa) : Este o opțiune economică și eficientă pentru deșeurile organice (resturi alimentare, deșeuri agricole). ... Biogazul produs poate fi utilizat pentru generarea de energie termică și electrică, iar costurile de întreținere sunt reduse. ... Fracția rămasă (materii organice care constituie 58%) este tratată prin digestie anaerobă pentru a produce biogaz care este apoi incinerat pentru a produce energie electrică.",
+      "quote_en": "translation: 'Anaerobic digestion (biomass): It is an economic and efficient option for organic waste (food waste, agricultural waste). ... The biogas produced can be used to generate thermal and electric energy, and maintenance costs are low. ... The remaining fraction (organic matter representing 58%) is treated by anaerobic digestion to produce biogas which is then incinerated to produce electric energy.'",
+      "jurisdiction": "Republica Moldova"
+    }
+  ],
+  "notes": "Simulatoare: NOT FOUND. Niciun simulator dezvoltat de un grup moldovenesc sau folosit explicit într-o sursă moldovenească deschisă; referințele ADM1 (qsdsan, IWA, ScienceDirect) sunt surse străine și nicio pagină oficială de instrument nu a fost deschisă; articolul USM menționează doar 'metode de simulare financiară', fără simulator de digestie. Ceiling respectat: 4 surse. Acces parțial (head + snippets de căutare, această sesiune) la legis.md, adrnord.md, mediu.gov.md; full text la repository.utm.md. Distincții cerute: tip tratament — S1 compostare (funcționar) + fermentare/biogaz (propoziție); S2 compostare (propoziție EIM); S3 compostare (propoziție cerere AM); S4 digestie anaerobă (propoziție USM). Materie primă declarată: S1 deșeuri biodegradabile incl. vegetale din parcuri/grădini; S2 deșeuri verzi din parcuri/grădini publice, colectate separat; S3 deșeuri biodegradabile/verzi din Chișinău și ZMD 4; S4 resturi alimentare, deșeuri agricole, fracția organică 58% a deseurilor municipale. Stare: funcționar — platforma Chișinău (S1, 2023); propoziții — stație Dondușeni (S2), unitatea de compostare ZMD 4 (S3), scenariu AD USM (S4). Nicio instalație de digestie anaerobă a deșeurilor verzi din parcuri/grădini verificată ca funcționară nu a fost găsită."
+}

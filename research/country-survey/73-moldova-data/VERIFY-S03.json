@@ -1,0 +1,11 @@
+{
+  "url_opened": "https://mediu.gov.md/sites/default/files/Cerere_AM_WMZ4_ro_varianta_finala.pdf",
+  "doi": "",
+  "title": "Cererea privind emiterea acordului de mediu pentru activitatea planificata (ZMD 4)",
+  "claim": "the recorded quote was verbatim on the opened page",
+  "verdict": "UNKNOWN",
+  "quote": "UNKNOWN",
+  "how_verified": "Opened the URL with web_extract (tool result in this turn). Extraction returned the head only: pages 1-3 of 174 plus the start of the table of contents; identical on retry. I searched that returned text for the recorded quote's fragments — none appear on pages 1-3. The local cache of this fetch holds the same head only. An exact-phrase web search for the first sentence of the quote did not return the target PDF this run.",
+  "how_opened": "partial - head only (pages 1-3 of 174), not full text",
+  "limitations": "Pages 4-174 could not be read; extraction is capped and no full text was saved. The table of contents places the likely location of such a passage at section 6.1 Rezumatul proiectului (p. 40) and 6.2.1 Sistem de colectare a deseurilor (p. 41), both unchecked. Absence from pages 1-3 does not prove absence from the whole document, so the verdict is UNKNOWN rather than FALSE."
+}
